@@ -1,0 +1,1143 @@
+/*reset stuff*/
+
+
+/*
+*{
+	font-family: 'Roboto';
+	  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+
+*/
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.blackbackground{
+    background-color:#000;
+}
+
+.whitebackground{
+    background-color:#FFF;
+}
+
+.darkbackground{
+    background-color:#262626;
+}
+
+.container{
+    margin-top:-35px !important;
+}
+
+.navholder{
+    margin-bottom:20px;
+}
+
+.navselector{
+   float: left;
+   text-align: left;
+}
+
+.navabout{
+    float: right;
+    text-align: right;
+}
+
+
+.county{
+	margin-top: 35px;
+}
+
+.pol{
+    /* width: 100%; */
+	margin-bottom:5px;
+	align-items: center; 
+}
+
+.polpic{
+/*    width: 162; */
+    /*padding-left: 30; # wasn't working anyway */
+/*	display: inline-block; */
+	vertical-align: top;
+}
+
+.polpicpic{
+	width: 132;
+	height: 176;
+	outline: 1px solid black;
+	outline-offset: -1px;
+    float: right;
+}
+    
+.polbio{
+/*	display: inline-block; */
+	/* vertical-align: top; */
+    align-items: center; 
+}
+
+.polname{
+	margin-bottom: 5px !important;
+	
+}
+
+.poldeets{
+	
+}
+
+.grade{
+/*	display: inline-block; */
+	/*vertical-align: top; */
+	align-items: center; 
+}
+
+.basegrade{
+	font-size: 44px;
+	font-weight: 800;
+	
+}
+
+.superscript {
+	position: relative;
+	top: -9px; 
+	left: -2px; /* 4 was too tight*/
+}
+
+.subgrade{
+	font-size: 75%;
+	position: relative;
+
+}
+
+.pollink{
+    font-size: 75%;
+    position: relative;
+    top: -18px;
+    color: #7777EE;
+}
+
+.votehead{
+    font-weight: 700; 
+}
+
+.goright{
+    text-align: right;
+}
+
+.normalweight{
+    font-weight: 500;
+}
+
+.positivevote{
+    background-color: #abdda4;
+}
+
+.negativevote{
+    background-color: lightsalmon;
+}
+
+.creditbox{
+}
+
+.credit{
+	text-align:right;
+	padding-right: 15px;
+	font-weight: 700;
+}
+ 
+.polbottomlinks{
+    margin-top: 45px;
+} 
+ 
+.fa{
+    font-size: 2em;
+} 
+
+.right{
+    align: right;
+    text-align: right;
+}
+
+.center{
+    align: center;
+    text-align: center;
+}
+
+a.anchor{
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+   
+ 
+/*    targetwidth = 132
+targetheight = 176 */
+
+
+.inline.neighbor-wrapper{
+	width: 35%;
+	vertical-align: top;
+}
+
+.inline.neighbor-wrapper a{
+	text-decoration: none;
+}
+
+.explainertoggleholder{
+    margin-left:25px;
+    font-size: 75%;
+    position: relative;
+    color: #7777EE;
+}
+
+.explainertoggle{
+}
+
+.explainertext{
+    display: none;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+}   
+
+.explainertextlink{
+    color: #7777EE;
+}
+
+.topnav{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 50px;
+	background-color: black;
+	z-index: 5000;
+	-webkit-box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
+}
+
+.logo{
+	color: white;
+	/* font-size: 1.5em;
+	padding: 0.5em; */
+	display: inline-block;
+	vertical-align: top;
+    z-index:2;
+}
+
+.logo-thin{
+	color: white;
+	/* font-size: 1.5em;
+	padding: 0.5em; */
+	display: inline-block;
+	vertical-align: middle;
+    z-index:2;
+    width:100%;
+}
+
+@media screen and (min-width: 310px) {
+    .logo-thin{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 309px) {
+    .logo{
+        display: none !important;
+    }
+}
+
+
+.social-share-box{
+	display: inline-block;
+    text-align: right;
+	color: white;
+	font-size: 28px;
+	vertical-align: top;
+	position: fixed;
+	right: 10px;
+	top: 5px;
+    z-index:4;
+    overflow: hidden;
+}
+
+.social-share-box-bottom{
+	float: right;
+    text-align: right;
+	color: white;
+	font-size: 28px;
+	vertical-align: bottom;
+    z-index:4;
+}
+
+
+@media screen and (max-width: 612px) {
+    .social-share-box {
+        display: none !important;
+    }
+}
+
+/*
+@media screen and (min-width: 612px) {
+    .social-share-box-bottom {
+        display: none !important;
+    }
+}
+*/
+
+
+.social-share-box a, .social-share-box a:hover{
+	color: inherit;
+}
+
+.social-share-icon{
+	margin: 0 8px 0 8px;
+	cursor: pointer;
+}
+.social-share-icon:hover{
+	color: #ddd
+}
+/*css for search typeahead*/
+.person-search-container{
+	position: relative;
+}
+.filterbox--typeahead{
+    position: absolute;
+    left: 0;
+    margin-top: -10px;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 20;
+    font-size: 14px;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    background-color: white;
+    -webkit-box-shadow: 0px 3px 26px -5px rgba(48,48,48,0.58);
+    -moz-box-shadow: 0px 3px 26px -5px rgba(48,48,48,0.58);
+    box-shadow: 0px 3px 26px -5px rgba(48,48,48,0.58);
+ }
+
+ .filterbox--results{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.filterbox--results li {
+    margin: 0;
+    padding: 8px 10px;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    line-height: 1.1;
+ }
+
+ .filterbox--results a{
+ 	color: inherit;
+ 	text-decoration: none;
+ }
+
+ .filterbox--results a:hover{
+ 	text-decoration: none;
+ 	
+ }
+
+.filterbox--results li span{
+	font-weight: bold
+}
+ .filterbox--results li:hover,.filterbox--results li:focus {
+    cursor: pointer;
+    background-color: rgba(196,196,196,0.4);
+    color: #9E0000;
+}
+
+option.filteroption{
+	font-style: italic;
+	color: #6D6D6D;
+	border-bottom: 0.5px;
+	border-bottom-style: solid;
+	margin-bottom: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+.filterresults{
+	font-size: 1.2em;
+	bottom: 3em;
+	margin-left: 10px;
+	position: absolute;
+	z-index: 100;
+	max-width: 300px;
+	padding: 0.8em;
+	background-color: white;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    border-radius: 4px;
+}
+.filternumber{
+	font-weight: bold;
+}
+.totalnumber{
+	color: #6666
+}
+
+.activenumber{
+	color: #9E0000
+}
+
+.logo a{
+	color: inherit!important;
+}
+
+a:-moz-any-link {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:-webkit-any-link , .victimbox a{
+	color: inherit;
+	text-decoration: none;
+}
+
+body{
+	padding-bottom: 5em;
+}
+
+/* mapstuff for homepage */
+
+#cluster-label{
+	position: absolute;
+	background-color: white;
+	padding: 10px
+}
+
+.mapincidenthover .leaflet-popup-content-wrapper,#cluster-label{
+	border-radius: 5px;
+}
+
+.mapincidenthover .leaflet-popup-tip{
+	height: 12px;
+	margin: -10px auto 0 10px
+}
+
+.mapincidenthover .leaflet-popup-content,#cluster-label{
+	font-size: 1em;
+}
+
+.leaflet-popup-pane{
+	z-index: 100000
+}
+
+.leaflet-container .hoverdetails a{
+	color: #9E0000
+}
+
+.leaflet-container .hoverdetails{
+	text-align: right;
+	margin-top: 0.5em;
+}
+
+.hide,.loading.hide{
+	display: none;
+}
+
+.loading img{
+	width: 50px;
+	height: 50px;
+}
+
+/*.mapincidentmarker{
+	padding: 10px
+}*/
+/* topnav */
+
+
+.contentbody{
+	padding-top: 50px;
+}
+
+.leaflet-popup-tip-container{
+	display: none!important;
+}
+.leaflet-popup-content-wrapper{
+    border-radius: 5px!important;
+    font-size: 13px!important;
+}
+
+.leaflet-popup-content{
+	    margin: 9px 13px!important;
+}
+
+
+
+/* other stuff */
+
+#map{
+	width: 76%;
+    margin-left: 12%;
+    margin-right: 12%;
+	/*height: 300px;*/
+    height: 700px;
+    
+}
+#map.big{
+	height: 100%
+}
+#incidentmap{
+	width: 100%;
+	height: 200px;
+}
+
+/*
+#personphotos{
+    width: 100%;
+    margin: auto;
+    padding-left:10%;
+    padding-right: 10%;
+}
+
+#personphotoimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: auto;
+}
+
+*/
+
+#victimscontainer2{
+	margin: 0 auto 0em auto;
+	padding-left: 0%; 
+	padding-right: 0%;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+    background-color: #262626;
+    
+}
+
+/*    .victimbox2 feature2x1 feature2x2 feature4x2 feature3x2 */
+
+
+
+
+
+.victimphotoholder{
+    vertical-align: bottom !important;
+}
+
+.monthlysplit{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#262626+0,ffffff+50,262626+100 */
+    margin: 0em;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    /*padding-top: 15px;   // getting 5px margin from somewhere
+    padding-bottom: 15px;*/
+}
+
+p.bootstrap-overrides-h1{
+	font-family: Georgia, Times, "Times New Roman", serif important!;
+    color: white;
+	font-size: 2.5em;
+	font-style: normal;
+	font-variant: normal;
+	/*font-weight: 100 important!; */
+	line-height: 43px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.gridholdererer{
+    background-color: #262626;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid, .grid01, .grid02, .grid03, .grid04, .grid05, .grid06, .grid07, .grid08, .grid09, .grid10, .grid11, .grid12{
+    background-color: #262626;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+
+}
+
+.grid-item, .grid-item01, .grid-item02, .grid-item03, .grid-item04, .grid-item05, .grid-item06, .grid-item07, .grid-item08, .grid-item09, .grid-item10, .grid-item11, .grid-item12 {
+    float: left;
+    width: 225px;
+    height: 300px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    b
+}
+
+.victimbox2 {
+    width: 225px;
+    height: 300px;
+}
+
+.feature2x1 {
+    width: 450px;
+    height: 300px;
+}
+
+.feature2x2 {
+    width: 450px;
+    height: 600px;
+}
+
+.feature3x2 {
+    width: 675px;
+    height: 600px;
+}
+
+.feature4x2 {
+    width: 900px;
+    height: 600px;
+}
+
+/*
+.victimbox2{
+	display: inline-block;
+	margin: 0em;
+	border-style: solid;
+	border-width: 0px;
+	border-color: #727272;
+	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+	vertical-align: top;
+}
+
+*/
+
+
+/* Trying to get working from http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/ */
+
+span.text-overlay {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+
+span.text-overlay span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+div.victimbox2 img:hover span.text-content {
+  opacity: 1;
+}
+
+
+.squareimageholder{
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	margin: 1em;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 20px;
+	border-color: #727272;
+	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+	vertical-align: top;
+}
+
+.victimbox{
+	display: inline-block;
+	width: 300px;
+	height: 150px;
+	margin: 1em;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 20px;
+	border-color: #727272;
+	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+	vertical-align: top;
+}
+
+.victimbox .victimname{
+	background-color: #727272;
+	color: white;
+	padding: 1em;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+		-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+.victimbox a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.victimbox a:-moz-any-link{
+	text-decoration: none;
+	color: inherit;
+}
+.victimbox a:-webkit-any-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.victimbox .victimdate{
+	font-style: italic;
+	padding: 1em;
+	font-size: 1.2em;
+}
+
+.victimbox .withphoto .victimname{
+	font-size: 1.3em;
+}
+
+.victimbox .withphoto .victimphoto{
+	width: 120px;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	margin-right: 12px;
+	background-position:  50% 50%;
+	/*if you don't like the b/w photos, just get rid of this thing below*/
+		-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%); 
+    	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+}
+.victimbox:hover {
+	cursor: pointer;
+}
+
+.victimbox:hover .victimname{
+	background-color: #9E0000
+}
+.victimbox:hover .withphoto .victimphoto{
+		-webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    filter: grayscale(0); 
+}
+
+.victimbox .nophoto .victimname{
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.victimbox .nophoto .victimdate{
+	text-align: center;
+}
+
+#victimscontainer{
+	margin: 0 auto 4em auto;
+	padding-left: 3%; 
+	padding-right: 3%;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.button{
+	background-color: #9E0000;
+	padding: 0.8em;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	border-radius: 5px;
+
+}
+
+.button:hover{
+	background-color: gray;
+}
+
+/* css for incidents */
+
+.incidentpanel img, .incidentpanel.left{
+	width: 200px;
+}
+
+.incidentpanel img{
+	border-radius: 5px;
+	margin-bottom: 0.8em;
+}
+
+.incidentpanel.left .details{
+	margin: 0.5em 0 0 0.5em;
+}
+
+.incidentpanel {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.incidentpanel.right{
+	margin-left: 4em;
+	width: 60%;
+}
+
+.dod {
+	font-size: 1.2em;
+}
+
+.description{
+	/*margin: 3em 0 2em 0; */
+    margin: 3em 0 2em 0;
+	font-size: 1.2em;
+	line-height: 1.8em;
+}
+
+.fullstory{
+    display:inline-block;
+	background-color: #9E0000;
+	padding: 0.8em;
+    margin-right: 40px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 1.4em;
+	color: white;
+	cursor: pointer;
+	width: 220px;
+}
+
+.fullstory:hover{
+	background-color: gray;
+}
+
+.incidentpanel.right a:hover{
+	text-decoration: none!important;
+}
+
+.bottom-content {
+	width: 80%;
+	margin: 2em auto 0 auto;
+}
+
+.inline{
+	display: inline-block;
+}
+
+.bottom-nav{
+	position: relative;
+	margin-top: 2em;
+}
+
+.previous{
+	text-align: left;
+}
+
+.return{
+	text-align: center;
+}
+
+.next{
+	text-align: right;
+	right: 0;
+	position: absolute;
+}
+
+.neighbor i.fa{
+	font-size: 4em;
+	margin-bottom: 0.3em;
+}
+
+.next .neighbor i.fa{
+	margin-left: 0.3em;
+}
+
+.previous .neighbor i.fa{
+	margin-right: 0.3em;
+}
+
+.neighbor:hover{
+	color: #9E0000
+}
+
+.mobilepanel{
+	display: none;
+}
+
+/* CSS for select boxes */
+select{
+	-moz-appearance:none;	
+}
+
+/* HEY! homicide-navbar border-radius was 6px, but was cutting stuff off too much in Firefox */
+/* This patch failed in Firefox:
+	-webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding:2px;
+    
+    A suggestion was to use this:
+    
+    "rich_harris [3:36 PM] 
+@stucka best approach we've found is to set opacity: 0 on the <select>, and put a <div> beneath it that looks however you want it to look. Still get the accessibility benefits (and native <select> elements on mobile, etc) but with complete control over how it looks. see http://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database for an example. (Disclaimer: this might in fact be a terrible idea for reasons I don't yet understand)"
+    
+    Yeah, not worth it right now.
+    
+    */
+
+.homicide-navbar select{
+
+    border-radius: 6px;
+    height: 45px;
+    border: none;
+    font-size: 1.3em;
+    font-weight: 300;
+    margin: 0 0.5em 1em 0;
+    cursor: pointer;
+	background-color: #F4F4F4;
+
+}
+
+.homicide-navbar select.active{
+	background-color: #9E0000;
+	color: white;
+}
+
+.homicide-navbar select,.homicide-navbar select.active option.active,.homicide-navbar select.active option{
+	background-color: #F4F4F4;
+	color: black;
+}
+
+.homicide-navbar #person-search{
+	 border-radius: 6px;
+    height: 45px;
+    font-size: 1.3em;
+    margin: 0 0.5em 1em 0;
+	background-color: #F4F4F4;
+	border: none;
+	padding-left: 10px;
+	width: 100%;
+	border-bottom: solid 2px #fff;
+
+}
+
+.homicide-navbar #person-search:focus{
+	border-bottom: solid 2px #9E0000;
+	outline: none;
+}
+
+.person-search-container{
+	width: 250px;
+	margin-right: 5px; 
+}
+
+.homicide-navbar{
+	margin: 0 3.5% 0 3.5%;
+	margin-top: 1em;
+	border-bottom: solid;
+	padding-bottom: 1em;
+	border-color: #E3E3E3;
+	border-width: 1px;
+	margin-bottom: 1em;
+
+}
+
+@media(max-width: 900px){
+
+
+	.return.mobilepanel{
+		width: 100%
+	}
+}
+@media(max-width: 810px){
+	.desktoppanel{
+		display: none;
+
+	}
+
+
+
+	.neighbor-wrapper{
+		width: 220px;
+	}
+
+	.mobilepanel{
+		display: block;
+	}
+
+	.incidentpanel.right{
+		margin-left: 0
+	}
+
+	.incidentpanel.right,.incidentpanel.left{
+		display: block;
+		width: 100%
+	}
+
+	.fullstory{
+		margin: 0 auto 0 auto;
+	}
+
+	.neighbornames{
+		width: 80%
+	}
+
+	.incidentpanel img{
+		margin-top: 0.8em;
+	}
+}
+
+@media(max-width: 700px){
+			.inline.neighbor-wrapper{
+		width: 45%
+	}
+	.previous .neighbor i.fa {
+		margin-right: 0.2em
+	}
+	.next .neighbor i.fa {
+		margin-left: 0.2em
+	}
+	.victimbox {
+		display: block;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto
+	}
+}
+
+@media(max-width: 500px){
+
+	.next{
+		position: relative;
+		right: auto;
+	}
+
+	.neighbor-wrapper,.inline.neighbor-wrapper{
+		width: 100%;
+	}
+
+	.neighbornames{
+		width: 80%
+	}
+
+	.bottom-nav{
+		border-top-style: solid;
+		border-bottom-style: solid;
+		border-color: #ccc;
+		border-top-width: 0.5px;
+		border-bottom-width: 0.5px;
+	}
+
+	.victimbox{
+		width: 80%;
+	}
+}
+
+
+@media(max-width: 300px){
+	.incidentpanel img{
+		width: 80%;
+	}
+}
+
+@media(max-width: 450px){
+	.victimbox{
+		width: 95%;
+	}
+}
+
+div.grid-item div.caption{
+    display:none
+}
+
+div.grid-item:hover div.caption{
+    position:absolute;
+    bottom:0;
+    color:#ddd;
+    background-color:#2a2a2a;
+    background-color:rgba(0,0,0,0.5);
+    width:100%;
+    display:block;
+    padding-left:.75em;
+    padding-right:.75em;
+    padding-bottom:.50em;
+    padding-top:.50em;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: -2px;
+    
+}
+
+span.name{
+    /*font-family: Georgia, Times, "Times New Roman", serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+    line-height: 1.2em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+
+div.introtext{
+    padding: 7px;
+    background-color: #AAAAAA;
+    color: black;
+    /* font-size: 16px;
+    font-size: 2.3vw; */
+    font-size: 1.5em;
+    line-height: 110%;
+}
+.introtext a{
+    color: black;
+    text-decoration:underline;
+}
+
+div.description a{
+    color: black;
+    text-decoration: underline;
+    
+}
+
+div.logolinkythingy {
+	float: left;
+    text-align: left;
+	vertical-align: bottom;
+    z-index:4;
+    margin: 30px;
+
+}
+
+
+/*
+div.grid-item:hover div.caption span,div.grid-item:hover div.caption time{
+    padding-right:.25em
+}
+*/

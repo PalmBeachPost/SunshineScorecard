@@ -1,0 +1,8 @@
+frozen-flask
+nameparser
+flask
+slugify
+pillow
+requests
+pyquery
+flask-optimize

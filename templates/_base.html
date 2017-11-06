@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% block metatags %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+<meta name="description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government"{% endif %} />
+<meta property="og:description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government"{% endif %} />
+<meta property="og:title" content="SunshineScorecard gives grades to Florida lawmakers for their support of -- and opposition to -- open government." />
+<meta property="og:image" content="{{ baseurl}}/..{{ url_for('static', filename='sunshinescorecard-fbwide.png') }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="{{ baseurl }}{{ request.path }}" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pbpost" />
+
+<title>{% if request.url_rule.endpoint == "scorecard" %}SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}{% else %}SunshineScorecard: Documenting Florida legislators' support for open government{% endif %}</title>
+{% endblock metatags %}
+
+{% block styles %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="{{ url_for('static', filename='base.css') }}" rel="stylesheet">
+
+{% endblock styles %}
+
+{% block fontawesome %}
+<script src="https://use.fontawesome.com/2b8e6f392d.js"></script>
+{% endblock fontawesome %}
+
+{% block bootstrap4support %}
+<!-- originally called for SLIM -- 3.1.1.slim.min.js -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ url_for("static", filename="js/countyfinder.js") }}"></script>
+{% endblock bootstrap4support %}
+
+{% block explainertext %}    
+    <script>
+        $(document).ready(function(){
+            $(".explainertoggleholder").click(function(){
+                $(".explainertext").toggle();
+                        return false;
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.explainertoggleholder').click(function(){
+                var $this = $(this);
+                $this.toggleClass('explainertoggle');
+                if($this.hasClass('explainertoggle')){
+                $this.text('Hide explanation');         
+                } else {
+                    $this.text('Show explanation');
+                }
+            });
+        });;
+    </script>
+    
+{% endblock explainertext %}
+
+{% block ga360metrics %}
+               
+				<!-- begin metrics_config_complete_override block -->
+                <!-- begin metrics_common_override block -->
+				
+
+
+
+
+
+<script>localStorage.setItem("sdsat_debug", true);</script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+if(typeof(pubsub)=="undefined"){
+	pubsub={
+			subscribe:function(){
+				if(typeof(DDO.deferredSubscribe) == "undefined"){
+					DDO.deferredSubscribe = [];
+				}
+				DDO.deferredSubscribe.push(arguments);
+			},
+			publish:function(){
+				if(typeof(DDO.deferredPublish) == "undefined"){
+					DDO.deferredPublish = [];
+				}
+				DDO.deferredPublish.push(arguments);
+			}
+	};
+	
+}
+window.pubsub = pubsub;
+</script>
+
+<script src='//assets.adobedtm.com/20d5deb47c9e7fe47a9f969db01578a739d7179d/satelliteLib-3bdb96ce8c62153cdc81a8a72fc964fe2ffa1652-staging.js'></script>
+
+
+
+<!-- begin metrics_complete_override block -->
+
+
+
+
+
+
+
+<!-- METRIC TAG -->
+
+
+
+
+
+<!-- Primary Category -->
+
+
+
+
+<!-- Setting originating site Start-->
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+
+ 
+
+
+	
+
+
+
+<!-- Setting originating site End-->
+
+<!-- Setting Site Domain and Site ID Start-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Setting Site Domain and Site ID End-->
+
+<!-- Setting Provide Name -->
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+	
+
+
+<!--Standalone -->
+
+
+
+
+<!-- Setting video proxy and video proxy play list vendor names -->
+
+ 
+<script>
+var DDO = DDO || {};
+
+<!-- begin metrics_dtm_library_override block -->
+	DDO.DTMLibraryURL = '//assets.adobedtm.com/20d5deb47c9e7fe47a9f969db01578a739d7179d/satelliteLib-3bdb96ce8c62153cdc81a8a72fc964fe2ffa1652-staging.js';
+<!-- end metrics_dtm_library_override block -->
+
+
+DDO.hasLocalStorage = function(){
+	isDefined = typeof(localStorage) != "undefined";
+	if(isDefined){
+		localStorage.setItem("test", "test");
+		canRetrieve = localStorage.getItem("test") == "test";
+	}
+	localStorage.removeItem("test");
+	return isDefined && canRetrieve;
+		 
+}
+</script>
+
+
+
+<script src="//preview-dev.myajc.com/r//PortalConfig/np-paid/metrics/js/dtm-ddo-utilities.js"></script>
+
+
+
+
+<script>
+
+	// 	SITE DATA
+	
+	DDO.siteData = {
+		siteID: 'myajc',
+	    siteDomain: 'myajc.com',
+	    siteVersion: 'responsive site',
+	    siteFormat: 'newspaper',
+	    siteMetro: 'ga: atlanta',
+	    siteMedium: 'newspaper',
+	    siteType: 'main: premium',
+	    siteCMS: 'methode'
+	};
+    // PAGE DATA
+	var isDwp = false;
+	console.log("isDwp: ", isDwp);
+	var isHome = isDwp && false;
+	console.log("page Title:" + 'TEST:  Flatpage for Big J wraps ');
+	var trimPageNameUrl = removeExtracharFromUrl('/flatpage-for-bigj-wraps/');
+	console.log("Primary Category: " + '/News');
+		    
+	DDO.pageData = {
+		pageFlow : "",
+		pageNumber : '1',
+		pageType : 'standalone page',
+		pageIsDwp: isDwp // Necessary for bookmarklet purposes.
+	};
+	if(isDwp) {
+	    DDO.pageData.pageContentType = (isHome) ? 'homepage' : 'section front';
+		DDO.pageData.pageMainSection = (isHome) ? '/'+'homepage' : '/flatpage-for-bigj-wraps/';
+		DDO.pageData.pageName = (isHome) ? '/' + 'homepage' + '/' : '/flatpage-for-bigj-wraps/';
+	} else {
+	    DDO.pageData.pageContentType = 'flat page';
+		DDO.pageData.pageMainSection ='/georgia-politics';
+		DDO.pageData.pageName = trimPageNameUrl;
+	}
+	
+	DDO.pageData.pageTitle = 'TEST:  Flatpage for Big J wraps ';
+	DDO.pageData.pageSiteSection = (isHome) ? 'home' : 'News';
+	 
+	if (DDO.pageData.pageContentType == '') {
+		var pageName = DDO.pageData.pageName;
+		var pageNameSplit = pageName.split('/');
+		DDO.pageData.pageContentType = pageNameSplit[1];
+	}
+	
+	DDO.pageData.pageCategory = '';
+	if (DDO.pageData.pageCategory == 'Error') {
+		DDO.pageData.pageContentType = "Page not found";
+	}
+	DDO.pageData.pageSubCategory = '';
+	
+	if(DDO.pageData.pageContentType =='404'){		
+		DDO.pageData.pageType="errorpage";		
+		DDO.pageData.pageTitle="page not found";		
+		DDO.pageData.pageContentType = "404 page";		
+		URLArray = window.location.href.split('/');		
+		DDO.pageData.pageName = '/404_page/'+URLArray[URLArray.length-1];		
+	}
+	
+	if(DDO.pageData.pageContentType == 'weather'){
+		DDO.pageData.pageCategory = 'weather';
+		DDO.pageData.pageTitle = 'weather';
+	}
+	
+	if(DDO.pageData.pageContentType == 'search'){
+		var aMetricsSiteSearchType, aMetricsSearchTerms, aMetricsNumResults;
+		DDO.pageData.pageName = "/search-results/";
+		DDO.pageData.pageTitle = "search results";
+		DDO.pageData.pageMainSection = "/search";
+		DDO.pageData.pageContentType = "search"; 
+		DDO.pageData.pageSiteSection = "search";
+		
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	}
+	
+	// CONTENT DATA (contentViewType is set in access meter metrics)
+	DDO.contentData = DDO.contentData || {};
+	var contentTopics ='';
+	
+	DDO.contentData.contentTopics = contentTopics;
+	var contentByline = '';
+	
+	DDO.contentData.contentByline = contentByline;
+	DDO.contentData.contentOriginatingSite =  'myajc';
+	DDO.contentData.contentID = 'dc4eef8a-3591-11e7-80f6-cc9ba65fe331';
+	DDO.contentData.contentVendor = '';
+	DDO.contentData.contentViewType = DDO.contentData.contentViewType || '';
+	DDO.contentData.contentPublishDate = '20170510150600';
+	DDO.contentData.contentUpdatedDate = '';
+	DDO.contentData.blogName = '';
+	DDO.contentData.galleryName = '';
+	var pageSubContentType = '';
+	if(pageSubContentType == 'Post') {
+		DDO.contentData.blogName = 'TEST:  Flatpage for Big J wraps ';
+	}else if(DDO.pageData.pageContentType == 'gallery') {
+		DDO.contentData.galleryName = 'TEST:  Flatpage for Big J wraps ';
+	}
+	
+	//We need to set this one only for imported stories.
+	DDO.contentData.contentOriginatingCMS='Methode';
+	DDO.contentData.contentOriginatingID='dc4eef8a-3591-11e7-80f6-cc9ba65fe331';
+	DDO.contentData.melvilID='';
+	
+	//SEARCH DATA PAGE CONTENT
+		
+   
+  
+   DDO.pageData.pageNumber = location.search.split('page=')[1] ? location.search.split('page=')[1] : location.search.split('offset=')[1] ? location.search.split('offset=')[1] : '1';
+   
+<!-- begin metrics_elements_override block -->
+				function getMetaContentByName(name, property, attribute) {
+    var attribute = (attribute === undefined) ? 'content' : attribute,
+        property = (property === undefined) ? 'name' : property,
+        metaTag = document.querySelector("meta[" + property + "='" + name + "']"),
+        value = null;
+    if (metaTag) {
+        value = metaTag.getAttribute(attribute);
+    }
+    return value;
+};
+
+var defaultPathname = location.pathname;
+DDO.pageData.pageName = (defaultPathname == '/') ? location.host : defaultPathname; // if this is a pathed-url (not domain root) then the path is used as the value.  If it's the domain root (index) then the value is the hostname (e.g. 'doctors.ajc.com')
+
+DDO.pageData.pageContentType = getMetaContentByName('cmg:contentType') || getMetaContentByName('og:type', 'property') || '[some default value]'; // see the list of possible values for pageContentType
+
+DDO.pageData.pageTitle = getMetaContentByName('og:title', 'property') || document.title;
+
+DDO.contentData.contentByline = getMetaContentByName('cmg:byline') || getMetaContentByName('author') || getMetaContentByName('og:author', 'property') || '[some default value]';
+
+DDO.siteData.siteCMS = 'external vendor'; // static value
+
+DDO.contentData.contentOriginatingCMS = 'external vendor'; // static value
+
+DDO.contentData.contentVendor = '[some static value]'; // e.g. "shorthand", "cap10k", "projects server"
+				<!-- end metrics_elements_override block -->	
+				
+//<!-- start pbpostdata overrides -->
+
+DDO.siteData.siteID = 'mypbp';
+DDO.siteData.siteDomain = 'mypalmbeachpost.com';
+DDO.siteData.siteVersion = 'responsive site';
+DDO.siteData.siteFormat = 'newspaper';
+DDO.siteData.siteMetro = "fl: west palm beach";
+DDO.siteData.siteMedium = 'newspaper';
+DDO.siteData.siteType = 'main: premium';
+DDO.siteData.siteCMS = 'external vendor';
+
+DDO.pageData.pageSiteSection = 'News';
+
+DDO.contentData.contentOriginatingSite = "mypbp";
+
+
+
+
+//Project-specific overrides
+DDO.pageData.pageMainSection = "/news/state--regional-govt--politics/";
+DDO.pageData.pageName = "/SunshineScorecard17/";
+DDO.pageData.pageSiteSection = "News";
+DDO.pageData.pageTitle = "SunshineScorecard17";
+DDO.pageData.pageType = "standalone page";
+
+DDO.contentData.contentByline = "Mike Stucka,pbpostdata";
+DDO.contentData.contentPublishDate = '20170623133433';
+DDO.contentData.contentUpdatedDate = '';
+DDO.contentData.OriginatingCMS = 'external vendor';
+DDO.contentData.contentTopics = 'pbpostdata,newsfeed,allpbc,taxon:allpbc,legislature,politics,Florida legislature,SunshineScorecard,Sunshine Scorecard,open government';
+
+DDO.contentData.contentID = 'bef69782-5817-11e7-932c-d8eb175a03e3';
+DDO.contentData.contentOriginatingID = 'bef69782-5817-11e7-932c-d8eb175a03e3';
+
+//<!-- end pbpostdataoverrides -->				
+				
+				
+				
+
+DDO.init = function(pubsub, dependentEvents) {
+	// The following code defers loading the DTM library until after certain events have been fired,
+	// namely janrain, mg2, and access meter.
+	// Note: we need to add access meter to list of dependent events etc!
+	DDO.dependentEvents = dependentEvents;// e.g. ['authn', 'authz'];
+	setTimeout(function(){
+		DDO.dependentEventCheck("TIMED OUT");
+	}, 10000);
+	if(dependentEvents.length == 0){
+		DDO.utilities.triggerDTMPageView();//DDO.utilities.loadDTMLibrary();
+	}
+	
+	pubsub.publish("DDO-initialized");
+	console.log('DDO: ', DDO);
+}
+
+//Function to remove last alphanumeric chars from DDO.pageData.pageName url
+function removeExtracharFromUrl(urlPath){
+    var urlArr = urlPath.split('/');
+    if (urlArr.length > 3) {
+    	var urlArr_new = [];
+		for (var i=0; i<urlArr.length-2;i++) {
+			urlArr_new.push(urlArr[i]);
+		}
+		return urlArr_new.join('/') + '/';
+    } 
+    else {
+    	return urlPath;	
+    }
+}
+
+</script>
+
+<!-- end metrics_complete_override block -->
+
+
+<!-- end metrics_common_override block -->
+                <!-- begin metrics_interaction_override block -->
+				
+
+
+
+
+
+
+
+<script>
+DDO.interaction = {
+	init: function(pubsub, $){
+		// pubsubcutioner can use regex for event names, thus all interaction type events
+		// can be listened to assuming the data is correct.
+		pubsub.subscribe("site-interaction", function(event, data){
+			// data should be like: {element:"[widget clicked]",action: "[button clicked]"}
+			DDO.action("interaction.Website", data);
+		});
+	}
+};
+</script><!-- end metrics_interaction_override block -->
+{% endblock ga360metrics %}
+
+
+
+</head>
+<body>
+
+{% block navbar %}
+    <div class = 'topnav'><div class='logo' id="logo"><a href="{{ url_for('static', filename='../') }}"><img src="{{ url_for('static', filename='sunshinescorecard-h.png')  }}" height=40 width=305 valign='' style="margin-top:5px; margin-left:5px;"></a></div><div class = 'logo-thin' style="padding: 0 !important; padding-left:5 !important; padding-top:5px !important; height: 50 !important; vertical-align: middle !important;" ><a href="{{ url_for('static', filename='../') }}"><img src="{{ url_for('static', filename='sunshinescorecard-h.png') }}" width="100%"></a></div><div class='social-share-box social-share-box-top'><a href="https://www.facebook.com/sharer/sharer.php?u={{ baseurl }}{{ request.path }}" target="_blank"><i class="social-share-icon fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://twitter.com/intent/tweet?url={{ baseurl }}{{ request.path }}&via=pbpost&text=" target="_blank"><i class="social-share-icon fa fa-twitter-square" aria-hidden="true"></i></a></div></div>
+
+{% endblock navbar %}
+<div class = 'contentbody'>
+{% block content %}
+{% endblock content %}
+</div>
+
+{% block js_scripts %}
+
+
+{% endblock js_scripts %}
+
+{% block sitecatscripts %}
+
+<script type="text/javascript" src="http://alt.coxnewsweb.com/coxnet/js/brightcove/metrics.js"></script>
+<!-- <script type="text/javascript" src="http://alt.coxnewsweb.com/palmbeachpost/js/external_templates/escenic/blogs/s_code.js"></script> -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/chartbeat.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/sitecat_actual.js') }}"></script>
+<!-- End SiteCatalyst code version: H.1. -->
+
+{% endblock sitecatscripts %}
+
+{% block custom_js %}
+
+{% endblock custom_js %}
+</body>
+</html>
