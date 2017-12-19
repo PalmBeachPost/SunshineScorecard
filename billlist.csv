@@ -1,10 +1,10 @@
-billno,description,position,url
-HB111,Hide IDs of murder victims,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=56752&SessionId=83
-SB118,Hide criminal histories,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=56694&SessionId=83
-HB351,Hide college president searches,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=57004&SessionId=83
-HB441,Add court clerk liability protection,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=57076&SessionId=83
-HB843,Let two board members meet privately,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=58235&SessionId=83
-SB1018,Tell public about major pollution,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=58321&SessionId=83
-SB1502,Require public info of contract details,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=59163&SessionId=83
-SB1514,Strengthen Sunshine law,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=59171&SessionId=83
-HB7093,Hide employees' families' info,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=59568&SessionId=83
+billno,description,position,url,house,senate
+HB111,Hide IDs of murder victims,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=56752&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17008&BillId=56752&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17119&BillId=56752&SessionId=83&
+SB118,Hide criminal histories,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=56694&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17428&BillId=56694&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17035&BillId=56694&SessionId=83&
+HB351,Hide college president searches,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=57004&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17251&BillId=57004&SessionId=83&,
+HB441,Add court clerk liability protection,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=57076&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17187&BillId=57076&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17710&BillId=57076&SessionId=83&
+HB843,Let two board members meet privately,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=58235&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17499&BillId=58235&SessionId=83&,
+SB1018,Tell public about major pollution,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=58321&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17538&BillId=58321&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17483&BillId=58321&SessionId=83&
+SB1502,Require public info of contract details,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=59163&SessionId=83,,
+SB1514,Strengthen Sunshine law,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=59171&SessionId=83,,
+HB7093,Hide employees' families' info,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=59568&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17206&BillId=59568&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17579&BillId=59568&SessionId=83&
