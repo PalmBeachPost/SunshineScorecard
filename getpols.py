@@ -22,6 +22,8 @@ replist = []
 senate = requests.get(senateurl).content
 print("Processing senators ...")
 senators = pq(senate)("table#Senators")
+# for senator in pq(senators)("tr")[1:3]:
+# for senator in pq(senators)("tr")[-2:-1]:
 for senator in pq(senators)("tr")[1:-1]:
     countiesraw = pq(senator)("tr").attr('class')
     counties = "|".join(countiesraw.split()[1:])
@@ -30,9 +32,13 @@ for senator in pq(senators)("tr")[1:-1]:
     alphaname = pq(senator)("a").text().replace(" , ", ", ").strip().replace("  ", " ") # Tried to fix Braynon, Oscar  II 
     alphaname = re.sub(r'\"\w+\"', '', alphaname).replace(" ,", " ")    # Kill off nicknames.
     alphaname = alphaname.replace(", MD, ", ", ")   # Sorry Dr. Ralph E. Massullo
-    if alphaname.split(", ")[1] == "Jr." or alphaname.split(", ")[1] == "Sr.":
-        temp = alphaname.split(", ")
-        alphaname = temp[0] + ", " + temp[2] + ", " + temp[1]
+    if alphaname == "Vacant":
+        party = "vacant"
+    else:
+        if alphaname.split(", ")[1] == "Jr." or alphaname.split(", ")[1] == "Sr.":
+            temp = alphaname.split(", ")
+            alphaname = temp[0] + ", " + temp[2] + ", " + temp[1]
+        party = pq(senator)("td")[1].text.strip()[:1]
     alphaname = re.sub(r'\s+', ' ', alphaname).replace(" , ", ", ")
     print("\t" + alphaname)
     district = pq(senator)("td")[0].text_content().strip()
@@ -50,7 +56,6 @@ for senator in pq(senators)("tr")[1:-1]:
     name = " ".join(name.split())       # Replace multiple spaces with one, via Jeremy Bowers and rdmurphy
     slug = slugify(title + " " + first + " " + last + " " + district)
     slug = slug.replace("NuÃ±ez", "Nunez").replace(u"Nuñez", "Nunez")
-    party = pq(senator)("td")[1].text.strip()[:1]
     personhtml = requests.get(personurl).content
     biohtml = str(pq(personhtml)('div#sidebar'))
     m = re.search('(^.+?)(, FL )', biohtml, re.MULTILINE)
@@ -62,6 +67,7 @@ for senator in pq(senators)("tr")[1:-1]:
 house = requests.get(houseurl).content
 print("Processing representatives ...")
 reps = pq(pq(house)("div.rep_listing1"))
+# for rep in pq(reps)[0:2]:
 for rep in pq(reps):
     title = "Rep."
     chamber = "House"
@@ -122,12 +128,12 @@ for rep in pq(reps):
 print("Writing CSV.")
 sortedreps = sorted(replist, key=itemgetter(0))   # Sort by last name then first, using alphaname field
 # print(sortedreps[:10])
-with open('pols.csv', 'wb') as f:
+with open('pols.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(["alphaname", "name", "first", "last", "slug", "title", "chamber", "personurl", "photourl", "district", "party", "city", "counties"])
     for row in sortedreps:
         newrow = []
         for item in row:
-            newrow.append(item.encode('utf-8'))
+            newrow.append(item)
         # writer.writerows(replist)
         writer.writerow(newrow)
