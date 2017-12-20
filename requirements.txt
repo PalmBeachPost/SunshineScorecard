@@ -1,8 +1,9 @@
 frozen-flask
 nameparser
 flask
-slugify
+awesome-slugify
 pillow
 requests
 pyquery
 flask-optimize
+nameparser
