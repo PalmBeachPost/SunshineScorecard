@@ -1,38 +1,41 @@
-# coding: utf-8
+'''Makes pols.csv'''
 
+# coding: utf-8
+import re #place before import requests
+from operator import itemgetter #place before import requests
+import csv #place before import requests
 import requests
 from pyquery import PyQuery as pq
-import re
-from operator import itemgetter
-import csv
 from nameparser import HumanName
 from slugify import slugify
 
-# To-do:
-# Begin building photo scraper, resizer
-# Clemons, Burgess in House -- name splits?
+HOUSEURL = "http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx"
+SENATEURL = "https://www.flsenate.gov/Senators"
+HOUSEPRE = "http://www.myfloridahouse.gov"
+SENATEPRE = "http://www.flsenate.gov"
 
-houseurl = "http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx"
-senateurl = "https://www.flsenate.gov/Senators"
-housepre = "http://www.myfloridahouse.gov"
-senatepre = "http://www.flsenate.gov"
+REPLIST = []
 
-replist = []
-
-senate = requests.get(senateurl).content
+SENATE = requests.get(SENATEURL).content
 print("Processing senators ...")
-senators = pq(senate)("table#Senators")
-for senator in pq(senators)("tr")[1:-1]:
+SENATORS = pq(SENATE)("table#Senators")
+# for senator in pq(senators)("tr")[1:3]:
+# for senator in pq(senators)("tr")[-2:-1]:
+for senator in pq(SENATORS)("tr")[1:-1]:
     countiesraw = pq(senator)("tr").attr('class')
     counties = "|".join(countiesraw.split()[1:])
     counties = counties.replace("St_", "St. ").replace("_", " ")
-    personurl = senatepre + pq(senator)("a").attr('href')
-    alphaname = pq(senator)("a").text().replace(" , ", ", ").strip().replace("  ", " ") # Tried to fix Braynon, Oscar  II 
+    personurl = SENATEPRE + pq(senator)("a").attr('href')
+    alphaname = pq(senator)("a").text().replace(" , ", ", ").strip().replace("  ", " ") # Tried to fix Braynon, Oscar II
     alphaname = re.sub(r'\"\w+\"', '', alphaname).replace(" ,", " ")    # Kill off nicknames.
     alphaname = alphaname.replace(", MD, ", ", ")   # Sorry Dr. Ralph E. Massullo
-    if alphaname.split(", ")[1] == "Jr." or alphaname.split(", ")[1] == "Sr.":
-        temp = alphaname.split(", ")
-        alphaname = temp[0] + ", " + temp[2] + ", " + temp[1]
+    if alphaname == "Vacant":
+        party = "vacant"
+    else:
+        if alphaname.split(", ")[1] == "Jr." or alphaname.split(", ")[1] == "Sr.":
+            temp = alphaname.split(", ")
+            alphaname = temp[0] + ", " + temp[2] + ", " + temp[1]
+        party = pq(senator)("td")[1].text.strip()[:1]
     alphaname = re.sub(r'\s+', ' ', alphaname).replace(" , ", ", ")
     print("\t" + alphaname)
     district = pq(senator)("td")[0].text_content().strip()
@@ -50,23 +53,30 @@ for senator in pq(senators)("tr")[1:-1]:
     name = " ".join(name.split())       # Replace multiple spaces with one, via Jeremy Bowers and rdmurphy
     slug = slugify(title + " " + first + " " + last + " " + district)
     slug = slug.replace("NuÃ±ez", "Nunez").replace(u"Nuñez", "Nunez")
-    party = pq(senator)("td")[1].text.strip()[:1]
     personhtml = requests.get(personurl).content
     biohtml = str(pq(personhtml)('div#sidebar'))
     m = re.search('(^.+?)(, FL )', biohtml, re.MULTILINE)
     city = m.group(1).strip()
-    photourl = senatepre + pq(biohtml)("img").attr('src')
+    photourl = SENATEPRE + pq(biohtml)("img").attr('src')
     memberstuff = [alphaname, name, first, last, slug, title, chamber, personurl, photourl, district, party, city, counties]
-    replist.append(memberstuff)
+    REPLIST.append(memberstuff)
 
-house = requests.get(houseurl).content
+HOUSE = requests.get(HOUSEURL).content
 print("Processing representatives ...")
-reps = pq(pq(house)("div.rep_listing1"))
-for rep in pq(reps):
+REPS = pq(pq(HOUSE)("div.rep_listing1"))
+# for rep in pq(reps)[0:2]:
+
+
+
+for rep in pq(REPS):
     title = "Rep."
     chamber = "House"
     district = pq(rep)("div")[1].text.strip()
     party = pq(rep)("div")[2].text.strip()
+    
+    if not party:
+        continue
+
     alphaname = pq(pq(rep)("div")[3])("a").text()
     alphaname = re.sub(r'\"\w+\"', '', alphaname).replace(" ,", " ")    # Kill off nicknames.
     alphaname = alphaname.replace(", MD, ", ", ")   # Sorry Dr. Ralph E. Massullo
@@ -79,14 +89,14 @@ for rep in pq(reps):
     personurl = pq(pq(rep)("div")[3])("a").attr('href')
     m = re.search('(MemberId=)(\d+)(&)', personurl)
     memberno = m.group(2)
-    photourl = housepre + "/FileStores/Web/Imaging/Member/" + memberno + ".jpg"
-    personurl = housepre + personurl
+    photourl = HOUSEPRE + "/FileStores/Web/Imaging/Member/" + memberno + ".jpg"
+    personurl = HOUSEPRE + personurl
     # name = alphaname.split(",")[1].strip() + " " + alphaname.split(",")[0].strip()
     parsedname = HumanName(alphaname)
     first = parsedname.first
     last = parsedname.last
     middle = parsedname.middle
-    suffix = parsedname.suffix
+    suffix = parsedname.    suffix
     if len(first) == 2: # fix for W. Travis
         first = first + " " + middle
         middle = ""
@@ -116,18 +126,18 @@ for rep in pq(reps):
     if pq(biohtml)("span")[0].text == "City of Residence:":
         city = pq(biohtml)("span")[1].text
     memberstuff = [alphaname, name, first, last, slug, title, chamber, personurl, photourl, district, party, city, counties]
-    replist.append(memberstuff)
+    REPLIST.append(memberstuff)
 
-# print replist[:5]
+# print REPLIST[:5]
 print("Writing CSV.")
-sortedreps = sorted(replist, key=itemgetter(0))   # Sort by last name then first, using alphaname field
+SORTEDREPS = sorted(REPLIST, key=itemgetter(0))   # Sort by last name then first, using alphaname field
 # print(sortedreps[:10])
-with open('pols.csv', 'wb') as f:
-    writer = csv.writer(f)
-    writer.writerow(["alphaname", "name", "first", "last", "slug", "title", "chamber", "personurl", "photourl", "district", "party", "city", "counties"])
-    for row in sortedreps:
+with open('pols.csv', 'w', newline='') as f:
+    WRITER = csv.writer(f)
+    WRITER.writerow(["alphaname", "name", "first", "last", "slug", "title", "chamber", "personurl", "photourl", "district", "party", "city", "counties"])
+    for row in SORTEDREPS:
         newrow = []
         for item in row:
-            newrow.append(item.encode('utf-8'))
-        # writer.writerows(replist)
-        writer.writerow(newrow)
+            newrow.append(item)
+        # writer.writerows(REPLIST)
+        WRITER.writerow(newrow)
