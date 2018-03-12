@@ -7,7 +7,7 @@ import csv #place before import requests
 import requests
 from pyquery import PyQuery as pq
 from nameparser import HumanName
-from slugify import slugify
+from slugify import slugify #for python3 requirements module is now python-slugify, but keep from slugify import slugify
 
 HOUSEURL = "http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx"
 SENATEURL = "https://www.flsenate.gov/Senators"
@@ -19,8 +19,6 @@ REPLIST = []
 SENATE = requests.get(SENATEURL).content
 print("Processing senators ...")
 SENATORS = pq(SENATE)("table#Senators")
-# for senator in pq(senators)("tr")[1:3]:
-# for senator in pq(senators)("tr")[-2:-1]:
 for senator in pq(SENATORS)("tr")[1:-1]:
     countiesraw = pq(senator)("tr").attr('class')
     counties = "|".join(countiesraw.split()[1:])
@@ -64,9 +62,6 @@ for senator in pq(SENATORS)("tr")[1:-1]:
 HOUSE = requests.get(HOUSEURL).content
 print("Processing representatives ...")
 REPS = pq(pq(HOUSE)("div.rep_listing1"))
-# for rep in pq(reps)[0:2]:
-
-
 
 for rep in pq(REPS):
     title = "Rep."
@@ -131,7 +126,6 @@ for rep in pq(REPS):
 # print REPLIST[:5]
 print("Writing CSV.")
 SORTEDREPS = sorted(REPLIST, key=itemgetter(0))   # Sort by last name then first, using alphaname field
-# print(sortedreps[:10])
 with open('pols.csv', 'w', newline='') as f:
     WRITER = csv.writer(f)
     WRITER.writerow(["alphaname", "name", "first", "last", "slug", "title", "chamber", "personurl", "photourl", "district", "party", "city", "counties"])

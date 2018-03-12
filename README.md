@@ -4,9 +4,9 @@ The initial commit here was used to build http://apps.mypalmbeachpost.com/Sunshi
 
 Converted to Python 3. Here are the moving pieces:
 
--- votescraper.ipynb, which when using a properly configured "wantedvotes" variable will attempt to pull regular voting history on a particular bill and generate scores for the bill. This creates autovotes.csv.
+-- votescraper.ipynb, which draws from billlist.csv. It attempt to pull regular voting history on a particular bill and generate scores for the bill. This creates autovotes.csv. It does not scrape late votes or sponsorships. This has been reworked to run in Python 3.
 
--- billlist.csv, basically a human-readable version of the wantedvotes variable that will be used to generate text for people to describe the bills.
+-- billlist.csv, basically a human-readable version of the wantedvotes variable that will be used to generate text for people to describe the bills. This now also feeds votescraper.ipynb. 
 
 -- extracredits.csv, a human-generated tracking file that includes all the stuff autovotes.csv does not include -- bill sponsorships and cosponsorships, late votes, and credits for discussing the bill with the Florida First Amendment Foundation.
 
