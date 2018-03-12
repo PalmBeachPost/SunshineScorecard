@@ -2,7 +2,7 @@
 
 The initial commit here was used to build http://apps.mypalmbeachpost.com/SunshineScorecard17, a scorecard for legislators' votes on bills affecting government openness in Florida in 2017. The project was lead by The Palm Beach Post for the Florida Society of News Editors using bills identified by the Florida First Amendment Foundation.
 
-This was built on a Python 2.7 template, which had some problems with Unicode. It might be easy -- but annoying -- to convert over to Python 3. There were a bunch of moving pieces in this:
+Converted to Python 3. Here are the moving pieces:
 
 -- votescraper.ipynb, which draws from billlist.csv. It attempt to pull regular voting history on a particular bill and generate scores for the bill. This creates autovotes.csv. It does not scrape late votes or sponsorships. This has been reworked to run in Python 3.
 
@@ -22,16 +22,10 @@ This was built on a Python 2.7 template, which had some problems with Unicode. I
 
 Clone the repo.
 
-Create a virtual environment with Python 2.7. Activate it.
+Create a virtual environment with Python3. Activate it.
 
 pip install -r requirements.txt
 
 ### Drawbacks
 
-Realize the correct version of Jupyter is missing from requirements, and possibly some other sthings
-
-Realize all the code is in Python 2.7
-
-Realize this will need some work to get it usable for 2018 legislative information, or with Python 3
-
-Realize this was put together under a deadline
+Realize the correct version of Jupyter is missing from requirements, and possibly some other things
