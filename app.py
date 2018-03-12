@@ -19,8 +19,6 @@ LISTOFVOTES = []
 DICTOFVOTES = {}
 HIGHESTSCORE = 0
 SCORESDICT = {}
-#SCORESDICT is now a list
-#SCORESDICT = []
 IMGORIGINALPATH = "./static/imgoriginals/"
 IMGTHUMBPATH = "./static/imgthumbs/"
 TARGETWIDTH = 132
@@ -165,11 +163,9 @@ def structure_data():
         sortedbillistreader = sorted(billlistreader)
         billlistreader = sortedbillistreader[0] #to remove extra outer list, not sure where the outer list came from
         sortedbillistreader = None
-###########################################        
         billlu = {}       
         for row in billlistreader:
             billlu[row['billno']] = row
-            #billlu.append(row['billno']) #['HB111', 'SB118', 'HB351', 'HB441', 'HB843', 'SB1018', 'SB1502', 'SB1514', 'HB7093']
            
     csvmembers = []
     print("listofvotes size: " + str(len(LISTOFVOTES)))
@@ -182,7 +178,6 @@ def structure_data():
         for row in autovotesreader: 
             memberid = row['chamber'] + "|" + row['member'].replace(u"NuÃ±ez", u"Nunez").replace(u"Nuñez", u"Nunez")
             row['memberid'] = memberid
-            #print(memberid)
             LISTOFVOTES.append(row)            
             csvmembers.append(memberid)
             if memberid not in SCORESDICT:
@@ -232,11 +227,8 @@ def structure_data():
                 numericscore = SCORESDICT[legid]
                 bracket = get_bracket(HIGHESTSCORE, numericscore)
                 lettergrade = BRACKETLU[bracket]
-                #print(legid + ": score of " + str(numericscore) + " with grade " + lettergrade)
-                # print(COUNTYDICT[county])
                 COUNTYDICT[county][polindex]["numericscore"] = numericscore
                 COUNTYDICT[county][polindex]["lettergrade"] = lettergrade
-                # print(legid + ": Score of " + lettergrade + " for " + str(numericscore))
                 exportset[legid] = [legid, pol['alphaname'], pol['chamber'], pol['party'], str(numericscore), str(bracket), lettergrade, pol['counties']]
                 
     with open('report.csv', 'wb') as reportfile:
@@ -248,7 +240,6 @@ def structure_data():
     listofvotes = temp  # Sort by numerical part of bill number
     for row in listofvotes:  # Now, build a list keyed to each member
         memberid = row['memberid']
-        # print(row['chamber'])
         if memberid not in DICTOFVOTES:
             DICTOFVOTES[memberid] = []
         DICTOFVOTES[memberid].append(row)
@@ -285,9 +276,9 @@ def process_images(photourl, slug):
     global IMGTHUMBPATH
     global TARGETHEIGHT
     global TARGETWIDTH
-    filename = slug.encode("utf-8") + ".jpg".encode("utf-8")
-    original = IMGORIGINALPATH.encode("utf-8") + filename
-    thumb = IMGTHUMBPATH.encode("utf-8") + filename
+    filename = slug + ".jpg"
+    original = IMGORIGINALPATH + filename
+    thumb = IMGTHUMBPATH + filename
     for directory in (IMGORIGINALPATH, IMGTHUMBPATH):   # Make photo folders if they don't exist
         if not os.path.exists(directory):
             os.makedirs(directory)
@@ -299,7 +290,6 @@ def process_images(photourl, slug):
     if not(os.path.exists(thumb)):
         print("\tBuilding thumbnail ...")
         im = Image.open(original)
-        #width, height = im.size
         im.resize((TARGETWIDTH, TARGETHEIGHT), Image.LANCZOS).convert('RGB').save(thumb, optimize=True)
     return
 
