@@ -62,7 +62,6 @@ for senator in pq(SENATORS)("tr")[1:-1]:
 HOUSE = requests.get(HOUSEURL).content
 print("Processing representatives ...")
 REPS = pq(pq(HOUSE)("div.rep_listing1"))
-
 for rep in pq(REPS):
     title = "Rep."
     chamber = "House"
