@@ -10,6 +10,7 @@ from flask_optimize import FlaskOptimize #order says it should be placed before 
 from PIL import Image #order says it should be placed before Freezer
 from flask_frozen import Freezer #No matching distribution found for flask_frozen, only Freezer
 import uucsv
+import csv
 
 BUILDURL = "/SunshineScorecard18/"     # Also need to patch in static/app.js at homeurl
 BASEURL = "http://interactive.orlandosentinel.com" + BUILDURL
@@ -18,7 +19,10 @@ MASTERDICT = {}
 LISTOFVOTES = []
 DICTOFVOTES = {}
 HIGHESTSCORE = 0
+FLOORVOTEPOINTS = 3
+COMMITTEEVOTEPOINTS = 3
 SCORESDICT = {}
+POTENTIALSCORESDICT = {}
 IMGORIGINALPATH = "./static/imgoriginals/"
 IMGTHUMBPATH = "./static/imgthumbs/"
 TARGETWIDTH = 132
@@ -117,6 +121,9 @@ def structure_data():
         global DICTOFVOTES
         global HIGHESTSCORE
         global SCORESDICT
+        global POTENTIALSCORESDICT
+        global FLOORVOTEPOINTS
+        global COMMITTEEVOTEPOINTS
         pols = uucsv.UnicodeDictReader(csvfile)
         
         #sorted(pols, key=lambda k: k['alphaname']) in Python2 works, but in Python3 TypeError: list indices must be integers or slices, not str
@@ -192,6 +199,9 @@ def structure_data():
             if memberid not in SCORESDICT:
                 SCORESDICT[memberid] = 0
             SCORESDICT[memberid] += int(row["points"])
+            if memberid not in POTENTIALSCORESDICT:
+                POTENTIALSCORESDICT[memberid] = 0
+            POTENTIALSCORESDICT[memberid] += FLOORVOTEPOINTS    
 
     print("listofvotes size: " + str(len(LISTOFVOTES)))
     with open('extracredits.csv', 'r') as extrasfile:
@@ -210,6 +220,15 @@ def structure_data():
             if memberid not in SCORESDICT:
                 SCORESDICT[memberid] = 0
             SCORESDICT[memberid] += int(row["points"])
+
+            if memberid not in POTENTIALSCORESDICT:
+                POTENTIALSCORESDICT[memberid] = 0
+            if 'cmte vote?' not in row:
+                print("No 'cmte vote?' field found in extrasreader")
+            else:
+                if row['cmte vote?'] == "cmte vote":
+                    POTENTIALSCORESDICT[memberid] += COMMITTEEVOTEPOINTS
+                
     for memberid in SCORESDICT:
         if HIGHESTSCORE < abs(SCORESDICT[memberid]):
             HIGHESTSCORE = abs(SCORESDICT[memberid])
@@ -235,15 +254,18 @@ def structure_data():
                 print("****************** Hey! Missing " + legid)
             else:
                 numericscore = SCORESDICT[legid]
-                bracket = get_bracket(HIGHESTSCORE, numericscore)
+                potentialscore = POTENTIALSCORESDICT[legid]
+                # bracket = get_bracket(HIGHESTSCORE, numericscore)
+                bracket = get_bracket(potentialscore, numericscore)
                 lettergrade = BRACKETLU[bracket]
                 COUNTYDICT[county][polindex]["numericscore"] = numericscore
                 COUNTYDICT[county][polindex]["lettergrade"] = lettergrade
-                exportset[legid] = [legid, pol['alphaname'], pol['chamber'], pol['party'], str(numericscore), str(bracket), lettergrade, pol['counties']]
+                exportset[legid] = [legid, pol['alphaname'], pol['chamber'], pol['party'], numericscore, potentialscore, bracket, lettergrade, pol['counties']]
                 
-    with open('report.csv', 'wb') as reportfile:
-        put = uucsv.UnicodeWriter(reportfile)
-        put.writerow(["legid", "alphaname", "chamber", "party", "numericscore", "bracket", "lettergrade", "counties"])
+    with open('report.csv', 'w', newline='') as reportfile:
+        # put = uucsv.UnicodeWriter(reportfile)
+        put = csv.writer(reportfile)
+        put.writerow(["legid", "alphaname", "chamber", "party", "numericscore", "potentialscore", "bracket", "lettergrade", "counties"])
         for pol in exportset:
             put.writerow(exportset[pol])
     temp = sorted(LISTOFVOTES, key=lambda row: row["billnono"])
