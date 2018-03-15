@@ -11,8 +11,8 @@ from PIL import Image #order says it should be placed before Freezer
 from flask_frozen import Freezer #No matching distribution found for flask_frozen, only Freezer
 import uucsv
 
-BUILDURL = "/SunshineScorecard17"     # Also need to patch in static/app.js at homeurl
-BASEURL = "http://apps.mypalmbeachpost.com" + BUILDURL
+BUILDURL = "/SunshineScorecard18"     # Also need to patch in static/app.js at homeurl
+BASEURL = "http://interactive.orlandosentinel.com" + BUILDURL
 COUNTYDICT = {}
 MASTERDICT = {}
 LISTOFVOTES = []
@@ -30,17 +30,17 @@ BRACKETLU = {
     }
 
 
-APP = Flask(__name__)
+application = Flask(__name__)
 CONFIG_UPDATE = {'html': {'htmlmin': True, 'izip': False, 'cache': False},
                  'json': {'htmlmin': True, 'izip': False, 'cache': False},
                  'text': {'htmlmin': True, 'izip': False, 'cache': False}}
 
 FLASK_OPTIMIZE = FlaskOptimize(config_update=CONFIG_UPDATE)
 # flask_optimize = FlaskOptimize()
-freezer = Freezer(APP)
+freezer = Freezer(application)
 
 
-@APP.route('/')
+@application.route('/')
 # @flask_optimize.optimize('html')
 def index():
     template = 'index.html'
@@ -49,7 +49,7 @@ def index():
     return render_template(template, masterdict=MASTERDICT, counties=COUNTYDICT, baseurl=BASEURL)
 
 
-@APP.route('/scorecard/<slug>/')
+@application.route('/scorecard/<slug>/')
 # @flask_optimize.optimize('html')
 def scorecard(slug):
     template = 'pol.html'
@@ -103,7 +103,7 @@ def get_bracket(max, instancevalue):
 
 def structure_data():
     with open('pols.csv', 'r') as csvfile:
-        global POLS
+        global pols
         global COUNTYDICT
         global MASTERDICT
         global LISTOFVOTES
@@ -141,11 +141,13 @@ def structure_data():
         for pol in pols:
             last = pol['last']  # check for lastname overlaps
             if last not in dupslist[pol['chamber']]:
-                pol['legname'] = last.replace("Nu\/xf1ez", "Nunez").replace("Nuñez", "Nunez")
+                pol['legname'] = last.replace("NuÌ±ez", "Nunez").replace("Nuñez", "Nunez")
             else:
                 pol['legname'] = last + ", " + pol['first'][0] + "."
                 if pol['legname'] == "Cortes, R.":
                     pol['legname'] = "Cortes, B."   # Robert goes by Bob, and wants his initials to go that way too.
+                #if pol['legname'] == "Miller":
+                    #pol['legname'] == "Miller, M."    
             for county in pol['counties'].split("|"):
                 if county not in COUNTYDICT:
                     COUNTYDICT[county] = []
@@ -176,7 +178,7 @@ def structure_data():
         sortedautovotesreader = None
         
         for row in autovotesreader: 
-            memberid = row['chamber'] + "|" + row['member'].replace(u"NuÃ±ez", u"Nunez").replace(u"Nuñez", u"Nunez")
+            memberid = row['chamber'] + "|" + row['member']
             row['memberid'] = memberid
             LISTOFVOTES.append(row)            
             csvmembers.append(memberid)
@@ -192,7 +194,7 @@ def structure_data():
         sortedextrasreader = None
         
         for row in extrasreader:
-            memberid = row['chamber'] + "|" + row['member'].replace("NuÃ±ez", "Nunez").replace("Nuñez", "Nunez")
+            memberid = row['chamber'] + "|" + row['member']
             row['memberid'] = memberid
 
             LISTOFVOTES.append(row)
@@ -205,6 +207,7 @@ def structure_data():
         if HIGHESTSCORE < abs(SCORESDICT[memberid]):
             HIGHESTSCORE = abs(SCORESDICT[memberid])
     print("Highest score found: " + str(HIGHESTSCORE))
+    
 
     for row in LISTOFVOTES:
         row['billnono'] = int(row['billno'][2:])
@@ -266,7 +269,8 @@ def structure_data():
 @freezer.register_generator
 def generate_slugs():
     yield "/"
-    for pol in POLS:
+    print("Pols found: " + str(len(pols)))
+    for pol in pols:
         yield "/scorecard/" + pol['slug'] + "/"
     return
 
@@ -283,7 +287,7 @@ def process_images(photourl, slug):
         if not os.path.exists(directory):
             os.makedirs(directory)
     if not os.path.exists(original):  # if we don't have the original photo
-        print("\tDownloading image ...".encode("utf-8") + original)
+        print("\tDownloading image ..." + original)
         response = requests.get(photourl)   # download
         with open(original, 'wb') as f:
             f.write(response.content)   # save
@@ -291,27 +295,30 @@ def process_images(photourl, slug):
         print("\tBuilding thumbnail ...")
         im = Image.open(original)
         im.resize((TARGETWIDTH, TARGETHEIGHT), Image.LANCZOS).convert('RGB').save(thumb, optimize=True)
+
     return
 
 
 if __name__ == '__main__':
+    print("Running structure_data")
     structure_data()
     generate_slugs()
-    APP.url_map.strict_slashes = False
+    application.url_map.strict_slashes = False
     if (len(sys.argv) > 1) and (sys.argv[1] == "build"):
-        APP.config.update(FREEZER_BASE_URL=BUILDURL, FREEZER_RELATIVE_URLS=False, FREEZER_DESTINATION="..\openflorida-frozen")
+        application.config.update(FREEZER_RELATIVE_URLS=False, FREEZER_DESTINATION="../openflorida-frozen")
+        #application.config.update(FREEZER_BASE_URL=BUILDURL, FREEZER_RELATIVE_URLS=False, FREEZER_DESTINATION="..\openflorida-frozen")
         try:
             freezer.freeze()
         except OSError:
-            print("\tGot that OS error about deleting Git stuff. Life goes on.")    
-        except WindowsError:
-            print("\tGot that standard Windows error about deleting Git stuff. Life goes on.")
+            print("\tGot that OS error about deleting Git stuff. Life goes on.")
+        #except WindowsError:
+            #print("\tGot that standard Windows error about deleting Git stuff. Life goes on.")    
         print("\tAttempting to run post-processing script.")
         print("We need an upload script here, eh?")
         print("\tProcessing should be complete.")
     elif len(sys.argv) > 1 and sys.argv[1] == "webbuild":
-        APP.config.update(FREEZER_BASE_URL="/", FREEZER_RELATIVE_URLS=True)
+        application.config.update(FREEZER_BASE_URL="/", FREEZER_RELATIVE_URLS=True)
         freezer.run(debug=True, host="0.0.0.0")
     else:
-        APP.config.update(FREEZER_BASE_URL="/", FREEZER_RELATIVE_URLS=True)
-        APP.run(debug=True, use_reloader=True, host="0.0.0.0")
+        application.config.update(FREEZER_BASE_URL="/", FREEZER_RELATIVE_URLS=True)
+        application.run(debug=True, use_reloader=True, host="0.0.0.0")
