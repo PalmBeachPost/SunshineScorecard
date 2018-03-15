@@ -51,6 +51,7 @@ for senator in pq(SENATORS)("tr")[1:-1]:
     name = " ".join(name.split())       # Replace multiple spaces with one, via Jeremy Bowers and rdmurphy
     slug = slugify(title + " " + first + " " + last + " " + district)
     slug = slug.replace("NuÃ±ez", "Nunez").replace(u"Nuñez", "Nunez")
+    slug = slug.lower()
     personhtml = requests.get(personurl).content
     biohtml = str(pq(personhtml)('div#sidebar'))
     m = re.search('(^.+?)(, FL )', biohtml, re.MULTILINE)
@@ -96,7 +97,8 @@ for rep in pq(REPS):
         middle = ""
     name = first + " " + middle + " " + last + " " + suffix
     name = " ".join(name.split())       # Replace multiple spaces with one, via Jeremy Bowers and rdmurphy
-    slug = slugify(title + " " + first + " " + last + " " + district).replace("NuÃ±ez", "Nunez").replace(u"Nuñez", "Nunez")
+    slug = slugify(title + " " + first + " " + last + " " + district)
+    slug = slug.replace("NuÃ±ez", "Nunez").replace(u"Nuñez", "Nunez")
     slug = slug.lower()
     countiesraw = pq(rep)("div")[4].text_content().strip()
     # Here begins the ugly
