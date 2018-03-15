@@ -1,161 +1,156 @@
-legid,alphaname,chamber,party,numericscore,bracket,lettergrade,counties
-Senate|Hutson,"Hutson, Travis",Senate,R,-3,7,C-,Flagler|St. Johns|Volusia
-House|Shaw,"Shaw, Sean",House,D,-3,7,C-,Hillsborough
-House|Roth,"Roth, Rick",House,R,-16,4,D-,Palm Beach
-Senate|Mayfield,"Mayfield, Debbie",Senate,R,-3,7,C-,Indian River|Brevard
-"House|Diaz, M.","Diaz, Manny, Jr.",House,R,-12,5,D,Broward|Miami-Dade
-Senate|Young,"Young, Dana D.",Senate,R,-3,7,C-,Hillsborough
-House|Baez,"Baez, Daisy J.",House,D,3,9,C+,Miami-Dade
-House|Jones,"Jones, Shevrin D. ",House,D,-3,7,C-,Broward
-House|Hardemon,"Hardemon, Roy",House,D,-10,5,D,Miami-Dade
-House|Pigman,"Pigman, Cary",House,R,-9,6,D+,Glades|Highlands|Okeechobee|St. Lucie
-House|Byrd,"Byrd, Cord",House,R,-9,6,D+,Nassau|Duval
-House|Brodeur,"Brodeur, Jason T.",House,R,-3,7,C-,Seminole
-House|Plakon,"Plakon, Scott",House,R,-16,4,D-,Seminole
-House|Santiago,"Santiago, David",House,R,-9,6,D+,Volusia
-House|Jacobs,"Jacobs, Kristin Diane",House,D,3,9,C+,Broward
-Senate|Thurston,"Thurston, Perry E., Jr.",Senate,D,-3,7,C-,Broward
-House|Fant,"Fant, Jay",House,R,-9,6,D+,Duval
-House|Stevenson,"Stevenson, Cyndi",House,R,-3,7,C-,St. Johns
-House|Avila,"Avila, Bryan",House,R,-9,6,D+,Miami-Dade
-Senate|Hukill,"Hukill, Dorothy L.",Senate,R,0,8,C,Brevard|Volusia
-House|Beshears,"Beshears, Halsey",House,R,-3,7,C-,Calhoun|Franklin|Gulf|Jefferson|Lafayette|Liberty|Madison|Taylor|Wakulla|Leon
-House|Geller,"Geller, Joseph",House,D,16,12,B+,Broward|Miami-Dade
-Senate|Passidomo,"Passidomo, Kathleen",Senate,R,-3,7,C-,Collier|Hendry|Lee
-House|Sprowls,"Sprowls, Chris",House,R,-9,6,D+,Pinellas
-Senate|Broxson,"Broxson, Doug",Senate,R,-3,7,C-,Escambia|Santa Rosa|Okaloosa
-House|Harrison,"Harrison, Shawn",House,R,-3,7,C-,Hillsborough
-Senate|Negron,"Negron, Joe",Senate,R,0,8,C,Martin|St. Lucie|Palm Beach
-House|Burton,"Burton, Colleen",House,R,-9,6,D+,Polk
-House|Killebrew,"Killebrew, Sam H.",House,R,-9,6,D+,Polk
-House|Leek,"Leek, Thomas J. ",House,R,-3,7,C-,Volusia
-Senate|Baxley,"Baxley, Dennis",Senate,R,0,8,C,Sumter|Lake|Marion
-House|Stafford,"Stafford, Cynthia A.",House,D,-13,5,D,Miami-Dade
-House|Silvers,"Silvers, David",House,D,-3,7,C-,Palm Beach
-House|Ingoglia,"Ingoglia, Blaise",House,R,-16,4,D-,Hernando
-House|Massullo,"Massullo, Ralph E.",House,R,-9,6,D+,Citrus|Hernando
-House|Renner,"Renner, Paul",House,R,-9,6,D+,Flagler|St. Johns|Volusia
-House|Richardson,"Richardson, David",House,D,-3,7,C-,Miami-Dade
-House|Jenne,"Jenne, Evan",House,D,-3,7,C-,Broward
-House|Willhite,"Willhite, Matt",House,D,-3,7,C-,Palm Beach
-House|Raulerson,"Raulerson, Daniel D. ",House,R,-9,6,D+,Hillsborough
-House|Trumbull,"Trumbull, Jay",House,R,-3,7,C-,Bay
-Senate|Farmer,"Farmer, Gary M., Jr.",Senate,D,-6,6,D+,Broward
-House|Yarborough,"Yarborough, Clay",House,R,-16,4,D-,Duval
-House|White,"White, Frank",House,R,-9,6,D+,Escambia|Santa Rosa
-House|Grall,"Grall, Erin",House,R,-3,7,C-,Indian River|St. Lucie
-House|Oliva,"Oliva, Jose R.",House,R,-9,6,D+,Miami-Dade
-House|Cummings,"Cummings, W. Travis",House,R,-9,6,D+,Clay
-Senate|Powell,"Powell, Bobby",Senate,D,-3,7,C-,Palm Beach
-House|Davis,"Davis, Tracie",House,D,-9,6,D+,Duval
-Senate|Rodriguez,"Rodriguez, Jose Javier",Senate,D,-3,7,C-,Miami-Dade
-Senate|Lee,"Lee, Tom",Senate,R,3,9,C+,Hillsborough|Pasco|Polk
-House|Harrell,"Harrell, Gayle B.",House,R,-16,4,D-,Martin|St. Lucie
-Senate|Book,"Book, Lauren Frances",Senate,D,-3,7,C-,Broward
-House|Brown,"Brown, Kamia L.",House,D,-10,5,D,Orange
-Senate|Rouson,"Rouson, Darryl Ervin",Senate,D,8,10,B-,Hillsborough|Pinellas
-House|Mercado,"Mercado, Amy",House,D,-3,7,C-,Orange
-Senate|Bracy,"Bracy, Randolph",Senate,D,-3,7,C-,Orange
-Senate|Perry,"Perry, Keith",Senate,R,-3,7,C-,Alachua|Putnam|Marion
-Senate|Bean,"Bean, Aaron",Senate,R,-3,7,C-,Nassau|Duval
-House|Ponder,"Ponder, Mel",House,R,-3,7,C-,Okaloosa
-House|Drake,"Drake, Brad",House,R,-16,4,D-,Holmes|Jackson|Walton|Washington|Bay
-House|Pritchett,"Pritchett, Sharon",House,D,-10,5,D,Broward|Miami-Dade
-House|Cruz,"Cruz, Janet",House,D,-3,7,C-,Hillsborough
-Senate|Flores,"Flores, Anitere",Senate,R,0,8,C,Monroe|Miami-Dade
-Senate|Latvala,"Latvala, Jack",Senate,R,-6,6,D+,Pasco|Pinellas
-House|Jacquet,"Jacquet, Al",House,D,-9,6,D+,Palm Beach
-Senate|Galvano,"Galvano, Bill",Senate,R,10,11,B,Manatee|Hillsborough
-House|La Rosa,"La Rosa, Mike",House,R,-3,7,C-,Osceola|Polk
-House|Moskowitz,"Moskowitz, Jared Evan",House,D,-3,7,C-,Broward
-House|Diamond,"Diamond, Ben",House,D,6,10,B-,Pinellas
-House|Payne,"Payne, Bobby",House,R,-9,6,D+,Bradford|Putnam|Union|Clay
-Senate|Campbell,"Campbell, Daphne",Senate,D,-3,7,C-,Miami-Dade
-Senate|Gainer,"Gainer, George B.",Senate,R,-3,7,C-,Bay|Holmes|Jackson|Walton|Washington|Okaloosa
-Senate|Torres,"Torres, Victor M., Jr.",Senate,D,0,8,C,Osceola|Orange
-House|Fitzenhagen,"Fitzenhagen, Heather",House,R,-16,4,D-,Lee
-House|Gonzalez,"Gonzalez, Julio",House,R,-16,4,D-,Sarasota
-House|Hager,"Hager, Bill",House,R,-9,6,D+,Palm Beach
-Senate|Stargel,"Stargel, Kelli",Senate,R,-3,7,C-,Lake|Polk
-House|Plasencia,"Plasencia, Rene ""Coach P""",House,R,-6,6,D+,Brevard|Orange
-House|Smith,"Smith, Carlos Guillermo",House,D,3,9,C+,Orange
-House|Abruzzo,"Abruzzo, Joseph",House,D,3,9,C+,Palm Beach
-Senate|Steube,"Steube, Greg",Senate,R,-13,5,D,Sarasota|Charlotte
-Senate|Stewart,"Stewart, Linda",Senate,D,-3,7,C-,Orange
-House|Lee,"Lee, Larry, Jr.",House,D,-3,7,C-,St. Lucie
-House|Fine,"Fine, Randy",House,R,-9,6,D+,Brevard
-Senate|Clemens,"Clemens, Jeff",Senate,D,3,9,C+,Palm Beach
-Senate|Rader,"Rader, Kevin J.",Senate,D,8,10,B-,Broward|Palm Beach
-House|Ingram,"Ingram, Clay",House,R,-3,7,C-,Escambia
-Senate|Benacquisto,"Benacquisto, Lizbeth",Senate,R,-3,7,C-,Lee
-House|Henry,"Henry, Patrick",House,D,-9,6,D+,Volusia
-House|Nunez,"Nuñez, Jeanette M.",House,R,-9,6,D+,Miami-Dade
-Senate|Montford,"Montford, Bill",Senate,D,-3,7,C-,Calhoun|Franklin|Gadsden|Gulf|Hamilton|Jefferson|Leon|Liberty|Madison|Taylor|Wakulla
-House|Asencio,"Asencio, Robert",House,D,3,9,C+,Miami-Dade
-House|Trujillo,"Trujillo, Carlos",House,R,-6,6,D+,Broward|Collier|Miami-Dade
-House|Hahnfeldt,"Hahnfeldt, Don",House,R,-16,4,D-,Sumter|Lake|Marion
-House|Stone,"Stone, Charlie",House,R,-9,6,D+,Levy|Marion
-House|Mariano,"Mariano, Amber",House,R,-9,6,D+,Pasco
-"House|Watson, B.","Watson, Barbara",House,D,-10,5,D,Miami-Dade
-House|Boyd,"Boyd, Jim",House,R,-9,6,D+,Manatee|Sarasota
-House|Corcoran,"Corcoran, Richard",House,R,-9,6,D+,Pasco
-House|Antone,"Antone, Bruce",House,D,-10,5,D,Orange
-House|Magar,"Magar, MaryLynn ",House,R,-9,6,D+,Martin|Palm Beach
-House|Goodson,"Goodson, Tom",House,R,-3,7,C-,Brevard
-House|Combee,"Combee, Neil",House,R,-9,6,D+,Osceola|Polk
-House|Edwards,"Edwards, Katie A.",House,D,-9,6,D+,Broward
-House|Slosberg,"Slosberg, Emily",House,D,3,9,C+,Palm Beach
-Senate|Braynon,"Braynon, Oscar II",Senate,D,-3,7,C-,Broward|Miami-Dade
-House|Bileca,"Bileca, Michael",House,R,-9,6,D+,Miami-Dade
-House|Fischer,"Fischer, Jason",House,R,-9,6,D+,Duval
-Senate|Simmons,"Simmons, David",Senate,R,-3,7,C-,Seminole|Volusia
-House|Raburn,"Raburn, Jake",House,R,-3,7,C-,Hillsborough
-House|Peters,"Peters, Kathleen M.",House,R,-3,7,C-,Pinellas
-"House|Cortes, B.","Cortes, Robert ",House,R,-16,4,D-,Orange|Seminole
-Senate|Simpson,"Simpson, Wilton",Senate,R,-3,7,C-,Citrus|Hernando|Pasco
-House|Eagle,"Eagle, Dane",House,R,-16,4,D-,Lee
-"House|Diaz, J.","Diaz, Jose Felix",House,R,-9,6,D+,Miami-Dade
-House|DuBose,"DuBose, Bobby B.",House,D,-9,6,D+,Broward
-"House|Watson, C.","Watson Jr., Clovis",House,D,-10,5,D,Alachua|Marion
-House|Caldwell,"Caldwell, Matt",House,R,-3,7,C-,Lee
-House|Raschein,"Raschein, Holly",House,R,-9,6,D+,Monroe|Miami-Dade
-House|Donalds,"Donalds, Byron",House,R,-27,1,F-,Hendry|Collier
-"House|Cortes, J.","Cortes, John",House,D,-3,7,C-,Osceola
-House|Williams,"Williams, Patricia H.",House,D,-9,6,D+,Broward
-House|Clemons,"Clemons, Charles Wesley, Sr.",House,R,-3,7,C-,Dixie|Gilchrist|Alachua
-House|Latvala,"Latvala, Chris",House,R,-9,6,D+,Pinellas
-House|Moraitis,"Moraitis, George R., Jr.",House,R,-6,6,D+,Broward
-House|Albritton,"Albritton, Ben",House,R,-9,6,D+,DeSoto|Hardee|Polk
-House|Newton,"Newton, Wengay M., Sr.",House,D,-3,7,C-,Hillsborough|Manatee|Pinellas|Sarasota
-"House|Grant, M.","Grant, Michael",House,R,-9,6,D+,Charlotte
-House|Rodrigues,"Rodrigues, Ray Wesley",House,R,3,9,C+,Lee
-House|Williamson,"Williamson, Jayer",House,R,-3,7,C-,Okaloosa|Santa Rosa
-House|Ausley,"Ausley, Loranne",House,D,3,9,C+,Leon
-House|Daniels,"Daniels, Kimberly",House,D,-26,1,F-,Duval
-House|Gruters,"Gruters, Joe",House,R,-3,7,C-,Manatee|Sarasota
-House|Burgess,"Burgess, Daniel Wright, Jr.",House,R,-9,6,D+,Pasco
-House|Ahern,"Ahern, Larry",House,R,-16,4,D-,Pinellas
-Senate|Bradley,"Bradley, Rob",Senate,R,3,9,C+,Baker|Bradford|Clay|Columbia|Dixie|Gilchrist|Lafayette|Levy|Suwannee|Union|Marion
-"House|Miller, A.","Miller, Alexandra C. ",House,R,-16,4,D-,Sarasota
-House|Alexander,"Alexander, Ramon",House,D,-9,6,D+,Gadsden|Leon
-House|McGhee,"McGhee, Kionne L.",House,D,-13,5,D,Miami-Dade
-House|Berman,"Berman, Lori",House,D,15,12,B+,Palm Beach
-House|McClain,"McClain, Stan",House,R,-9,6,D+,Marion
-"House|Grant, J.","Grant, James ""J.W.""",House,R,-9,6,D+,Hillsborough|Pinellas
-Senate|Gibson,"Gibson, Audrey",Senate,D,-3,7,C-,Duval
-House|Spano,"Spano, Ross",House,R,-16,4,D-,Hillsborough
-House|Russell,"Russell, Barrington A. ",House,D,-3,7,C-,Broward
-House|Stark,"Stark, Richard",House,D,9,10,B-,Broward
-House|Eisnaugle,"Eisnaugle, Eric",House,R,-3,7,C-,Orange
-House|Porter,"Porter, Elizabeth W.",House,R,-9,6,D+,Baker|Columbia|Hamilton|Suwannee|Alachua
-House|Metz,"Metz, Larry",House,R,-16,4,D-,Lake
-House|Rommel,"Rommel, Bob",House,R,-28,1,F-,Collier
-House|Duran,"Duran, Nicholas X.",House,D,-3,7,C-,Miami-Dade
-Senate|Garcia,"Garcia, Rene",Senate,R,-6,6,D+,Miami-Dade
-House|Toledo,"Toledo, Jackie",House,R,-9,6,D+,Hillsborough
-House|Sullivan,"Sullivan, Jennifer Mae",House,R,-9,6,D+,Lake|Orange
-Senate|Grimsley,"Grimsley, Denise",Senate,R,7,10,B-,DeSoto|Glades|Hardee|Highlands|Okeechobee|Charlotte|Lee|Polk
-"House|Miller, M.","Miller, Mike",House,R,-9,6,D+,Orange
-Senate|Artiles,"Artiles, Frank",Senate,R,-6,6,D+,Miami-Dade
-Senate|Brandes,"Brandes, Jeff",Senate,R,13,11,B,Pinellas
-House|Altman,"Altman, Thad",House,R,-3,7,C-,Brevard
+b'legid',b'alphaname',b'chamber',b'party',b'numericscore',b'bracket',b'lettergrade',b'counties'
+b'House|Clemons',"b'Clemons, Charles Wesley, Sr.'",b'House',b'R',b'6',b'10',b'B-',b'Dixie|Gilchrist|Alachua'
+b'Senate|Perry',"b'Perry, Keith'",b'Senate',b'R',b'7',b'10',b'B-',b'Alachua|Putnam|Marion'
+b'House|Porter',"b'Porter, Elizabeth W.'",b'House',b'R',b'6',b'10',b'B-',b'Baker|Columbia|Hamilton|Suwannee|Alachua'
+"b'House|Watson, C.'","b'Watson, Clovis, Jr.'",b'House',b'D',b'6',b'10',b'B-',b'Alachua|Marion'
+b'Senate|Bradley',"b'Bradley, Rob'",b'Senate',b'R',b'-3',b'7',b'C-',b'Baker|Bradford|Clay|Columbia|Dixie|Gilchrist|Lafayette|Levy|Suwannee|Union|Marion'
+b'House|Drake',"b'Drake, Brad'",b'House',b'R',b'6',b'10',b'B-',b'Holmes|Jackson|Walton|Washington|Bay'
+b'Senate|Gainer',"b'Gainer, George B.'",b'Senate',b'R',b'-3',b'7',b'C-',b'Bay|Holmes|Jackson|Walton|Washington|Okaloosa'
+b'House|Trumbull',"b'Trumbull, Jay'",b'House',b'R',b'6',b'10',b'B-',b'Bay'
+b'House|Payne',"b'Payne, Bobby'",b'House',b'R',b'6',b'10',b'B-',b'Bradford|Putnam|Union|Clay'
+b'House|Altman',"b'Altman, Thad'",b'House',b'R',b'-3',b'7',b'C-',b'Brevard'
+b'House|Fine',"b'Fine, Randy'",b'House',b'R',b'6',b'10',b'B-',b'Brevard'
+b'House|Goodson',"b'Goodson, Tom'",b'House',b'R',b'6',b'10',b'B-',b'Brevard'
+b'Senate|Hukill',"b'Hukill, Dorothy L.'",b'Senate',b'R',b'-3',b'7',b'C-',b'Brevard|Volusia'
+b'Senate|Mayfield',"b'Mayfield, Debbie'",b'Senate',b'R',b'7',b'10',b'B-',b'Indian River|Brevard'
+b'House|Plasencia',"b'Plasencia, Rene ""Coach P""'",b'House',b'R',b'6',b'10',b'B-',b'Brevard|Orange'
+b'Senate|Book',"b'Book, Lauren'",b'Senate',b'D',b'0',b'8',b'C',b'Broward'
+b'Senate|Braynon',"b'Braynon, Oscar II'",b'Senate',b'D',b'-3',b'7',b'C-',b'Broward|Miami-Dade'
+b'House|Diaz',"b'Diaz, Manny, Jr.'",b'House',b'R',b'6',b'10',b'B-',b'Broward|Miami-Dade'
+b'House|DuBose',"b'DuBose, Bobby B.'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
+b'House|Edwards-Walpole',"b'Edwards-Walpole, Katie'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
+b'Senate|Farmer',"b'Farmer, Gary M., Jr.'",b'Senate',b'D',b'7',b'10',b'B-',b'Broward'
+b'House|Geller',"b'Geller, Joseph'",b'House',b'D',b'12',b'12',b'B+',b'Broward|Miami-Dade'
+b'House|Jacobs',"b'Jacobs, Kristin Diane'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
+b'House|Jenne',"b'Jenne, Evan'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
+b'House|Jones',"b'Jones, Shevrin D. '",b'House',b'D',b'3',b'9',b'C+',b'Broward'
+b'House|Moraitis',"b'Moraitis, George R., Jr.'",b'House',b'R',b'6',b'10',b'B-',b'Broward'
+b'House|Moskowitz',"b'Moskowitz, Jared Evan'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
+b'House|Pritchett',"b'Pritchett, Sharon'",b'House',b'D',b'6',b'10',b'B-',b'Broward|Miami-Dade'
+b'Senate|Rader',"b'Rader, Kevin J.'",b'Senate',b'D',b'7',b'10',b'B-',b'Broward|Palm Beach'
+b'House|Russell',"b'Russell, Barrington A. '",b'House',b'D',b'6',b'10',b'B-',b'Broward'
+b'House|Stark',"b'Stark, Richard'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
+b'Senate|Thurston',"b'Thurston, Perry E., Jr.'",b'Senate',b'D',b'-3',b'7',b'C-',b'Broward'
+b'House|Trujillo',"b'Trujillo, Carlos'",b'House',b'R',b'6',b'10',b'B-',b'Broward|Collier|Miami-Dade'
+b'House|Williams',"b'Williams, Patricia H.'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
+b'House|Beshears',"b'Beshears, Halsey'",b'House',b'R',b'0',b'8',b'C',b'Calhoun|Franklin|Gulf|Jefferson|Lafayette|Liberty|Madison|Taylor|Wakulla|Leon'
+b'Senate|Montford',"b'Montford, Bill'",b'Senate',b'D',b'-3',b'7',b'C-',b'Calhoun|Franklin|Gadsden|Gulf|Hamilton|Jefferson|Leon|Liberty|Madison|Taylor|Wakulla'
+"b'House|Grant, M.'","b'Grant, Michael'",b'House',b'R',b'6',b'10',b'B-',b'Charlotte'
+b'Senate|Grimsley',"b'Grimsley, Denise'",b'Senate',b'R',b'-3',b'7',b'C-',b'DeSoto|Glades|Hardee|Highlands|Okeechobee|Charlotte|Lee|Polk'
+b'Senate|Steube',"b'Steube, Greg'",b'Senate',b'R',b'-13',b'4',b'D-',b'Sarasota|Charlotte'
+b'House|Massullo',"b'Massullo, Ralph E.'",b'House',b'R',b'16',b'13',b'A-',b'Citrus|Hernando'
+b'Senate|Simpson',"b'Simpson, Wilton'",b'Senate',b'R',b'-3',b'7',b'C-',b'Citrus|Hernando|Pasco'
+b'House|Cummings',"b'Cummings, W. Travis'",b'House',b'R',b'6',b'10',b'B-',b'Clay'
+b'House|Donalds',"b'Donalds, Byron'",b'House',b'R',b'-4',b'7',b'C-',b'Hendry|Collier'
+b'Senate|Passidomo',"b'Passidomo, Kathleen'",b'Senate',b'R',b'-3',b'7',b'C-',b'Collier|Hendry|Lee'
+b'House|Rommel',"b'Rommel, Bob'",b'House',b'R',b'16',b'13',b'A-',b'Collier'
+b'House|Albritton',"b'Albritton, Ben'",b'House',b'R',b'6',b'10',b'B-',b'DeSoto|Hardee|Polk'
+b'Senate|Bean',"b'Bean, Aaron'",b'Senate',b'R',b'-3',b'7',b'C-',b'Nassau|Duval'
+b'House|Byrd',"b'Byrd, Cord'",b'House',b'R',b'6',b'10',b'B-',b'Nassau|Duval'
+b'House|Daniels',"b'Daniels, Kimberly'",b'House',b'D',b'6',b'10',b'B-',b'Duval'
+b'House|Davis',"b'Davis, Tracie'",b'House',b'D',b'6',b'10',b'B-',b'Duval'
+b'House|Fant',"b'Fant, Jay'",b'House',b'R',b'6',b'10',b'B-',b'Duval'
+b'House|Fischer',"b'Fischer, Jason'",b'House',b'R',b'6',b'10',b'B-',b'Duval'
+b'Senate|Gibson',"b'Gibson, Audrey'",b'Senate',b'D',b'-3',b'7',b'C-',b'Duval'
+b'House|Yarborough',"b'Yarborough, Clay'",b'House',b'R',b'6',b'10',b'B-',b'Duval'
+b'Senate|Broxson',"b'Broxson, Doug'",b'Senate',b'R',b'-3',b'7',b'C-',b'Escambia|Santa Rosa|Okaloosa'
+b'House|Ingram',"b'Ingram, Clay'",b'House',b'R',b'6',b'10',b'B-',b'Escambia'
+b'House|White',"b'White, Frank'",b'House',b'R',b'6',b'10',b'B-',b'Escambia|Santa Rosa'
+b'Senate|Hutson',"b'Hutson, Travis'",b'Senate',b'R',b'-3',b'7',b'C-',b'Flagler|St. Johns|Volusia'
+b'House|Renner',"b'Renner, Paul'",b'House',b'R',b'6',b'10',b'B-',b'Flagler|St. Johns|Volusia'
+b'House|Alexander',"b'Alexander, Ramon'",b'House',b'D',b'6',b'10',b'B-',b'Gadsden|Leon'
+b'House|Pigman',"b'Pigman, Cary'",b'House',b'R',b'6',b'10',b'B-',b'Glades|Highlands|Okeechobee|St. Lucie'
+b'House|Ingoglia',"b'Ingoglia, Blaise'",b'House',b'R',b'6',b'10',b'B-',b'Hernando'
+b'House|Cruz',"b'Cruz, Janet'",b'House',b'D',b'6',b'10',b'B-',b'Hillsborough'
+b'Senate|Galvano',"b'Galvano, Bill'",b'Senate',b'R',b'-10',b'5',b'D',b'Manatee|Hillsborough'
+"b'House|Grant, J.'","b'Grant, James ""J.W.""'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough|Pinellas'
+b'House|Harrison',"b'Harrison, Shawn'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough'
+b'Senate|Lee',"b'Lee, Tom'",b'Senate',b'R',b'-3',b'7',b'C-',b'Hillsborough|Pasco|Polk'
+b'House|McClure',"b'McClure, Lawrence'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough'
+b'House|Newton',"b'Newton, Wengay '",b'House',b'D',b'16',b'13',b'A-',b'Hillsborough|Manatee|Pinellas|Sarasota'
+b'House|Raburn',"b'Raburn, Jake'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough'
+b'Senate|Rouson',"b'Rouson, Darryl Ervin'",b'Senate',b'D',b'-3',b'7',b'C-',b'Hillsborough|Pinellas'
+b'House|Shaw',"b'Shaw, Sean'",b'House',b'D',b'6',b'10',b'B-',b'Hillsborough'
+b'House|Spano',"b'Spano, Ross'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough'
+b'House|Toledo',"b'Toledo, Jackie'",b'House',b'R',b'3',b'9',b'C+',b'Hillsborough'
+b'Senate|Young',"b'Young, Dana D.'",b'Senate',b'R',b'-3',b'7',b'C-',b'Hillsborough'
+b'House|Grall',"b'Grall, Erin'",b'House',b'R',b'6',b'10',b'B-',b'Indian River|St. Lucie'
+b'Senate|Baxley',"b'Baxley, Dennis'",b'Senate',b'R',b'-3',b'7',b'C-',b'Sumter|Lake|Marion'
+b'House|Metz',"b'Metz, Larry'",b'House',b'R',b'6',b'10',b'B-',b'Lake'
+b'Senate|Stargel',"b'Stargel, Kelli'",b'Senate',b'R',b'-3',b'7',b'C-',b'Lake|Polk'
+b'House|Sullivan',"b'Sullivan, Jennifer Mae'",b'House',b'R',b'6',b'10',b'B-',b'Lake|Orange'
+b'Senate|Benacquisto',"b'Benacquisto, Lizbeth'",b'Senate',b'R',b'-10',b'5',b'D',b'Lee'
+b'House|Caldwell',"b'Caldwell, Matt'",b'House',b'R',b'6',b'10',b'B-',b'Lee'
+b'House|Eagle',"b'Eagle, Dane'",b'House',b'R',b'6',b'10',b'B-',b'Lee'
+b'House|Fitzenhagen',"b'Fitzenhagen, Heather'",b'House',b'R',b'6',b'10',b'B-',b'Lee'
+b'House|Rodrigues',"b'Rodrigues, Ray Wesley'",b'House',b'R',b'13',b'12',b'B+',b'Lee'
+b'House|Ausley',"b'Ausley, Loranne'",b'House',b'D',b'6',b'10',b'B-',b'Leon'
+b'House|Stone',"b'Stone, Charlie'",b'House',b'R',b'6',b'10',b'B-',b'Levy|Marion'
+b'House|Boyd',"b'Boyd, Jim'",b'House',b'R',b'6',b'10',b'B-',b'Manatee|Sarasota'
+b'House|Gruters',"b'Gruters, Joe'",b'House',b'R',b'6',b'10',b'B-',b'Manatee|Sarasota'
+b'House|McClain',"b'McClain, Stan'",b'House',b'R',b'6',b'10',b'B-',b'Marion'
+b'House|Harrell',"b'Harrell, Gayle B.'",b'House',b'R',b'6',b'10',b'B-',b'Martin|St. Lucie'
+b'House|Magar',"b'Magar, MaryLynn '",b'House',b'R',b'6',b'10',b'B-',b'Martin|Palm Beach'
+b'Senate|Negron',"b'Negron, Joe'",b'Senate',b'R',b'-3',b'7',b'C-',b'Martin|St. Lucie|Palm Beach'
+b'House|Asencio',"b'Asencio, Robert'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
+b'House|Avila',"b'Avila, Bryan'",b'House',b'R',b'3',b'9',b'C+',b'Miami-Dade'
+b'House|Bileca',"b'Bileca, Michael'",b'House',b'R',b'6',b'10',b'B-',b'Miami-Dade'
+b'Senate|Campbell',"b'Campbell, Daphne'",b'Senate',b'D',b'-3',b'7',b'C-',b'Miami-Dade'
+b'House|Duran',"b'Duran, Nicholas X.'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
+b'Senate|Flores',"b'Flores, Anitere'",b'Senate',b'R',b'-3',b'7',b'C-',b'Monroe|Miami-Dade'
+b'Senate|Garcia',"b'Garcia, Rene'",b'Senate',b'R',b'0',b'8',b'C',b'Miami-Dade'
+b'House|Hardemon',"b'Hardemon, Roy'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
+b'House|McGhee',"b'McGhee, Kionne L.'",b'House',b'D',b'9',b'11',b'B',b'Miami-Dade'
+b'House|Nunez',"b'Nunez, Jeanette M.'",b'House',b'R',b'6',b'10',b'B-',b'Miami-Dade'
+b'House|Oliva',"b'Oliva, Jose R.'",b'House',b'R',b'-4',b'7',b'C-',b'Miami-Dade'
+b'House|Perez',"b'Perez, Daniel'",b'House',b'R',b'6',b'10',b'B-',b'Miami-Dade'
+b'House|Raschein',"b'Raschein, Holly'",b'House',b'R',b'6',b'10',b'B-',b'Monroe|Miami-Dade'
+b'House|Richardson',"b'Richardson, David'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
+b'Senate|Rodriguez',"b'Rodriguez, Jose Javier'",b'Senate',b'D',b'-3',b'7',b'C-',b'Miami-Dade'
+b'House|Stafford',"b'Stafford, Cynthia A.'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
+b'Senate|Taddeo',"b'Taddeo, Annette'",b'Senate',b'D',b'-3',b'7',b'C-',b'Miami-Dade'
+"b'House|Watson, B.'","b'Watson, Barbara'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
+b'House|Ponder',"b'Ponder, Mel'",b'House',b'R',b'6',b'10',b'B-',b'Okaloosa'
+b'House|Williamson',"b'Williamson, Jayer'",b'House',b'R',b'6',b'10',b'B-',b'Okaloosa|Santa Rosa'
+b'House|Antone',"b'Antone, Bruce'",b'House',b'D',b'6',b'10',b'B-',b'Orange'
+b'Senate|Bracy',"b'Bracy, Randolph'",b'Senate',b'D',b'-23',b'1',b'F-',b'Orange'
+b'House|Brown',"b'Brown, Kamia L.'",b'House',b'D',b'-4',b'7',b'C-',b'Orange'
+"b'House|Cortes, B.'","b'Cortes, Robert '",b'House',b'R',b'6',b'10',b'B-',b'Orange|Seminole'
+b'House|Mercado',"b'Mercado, Amy'",b'House',b'D',b'6',b'10',b'B-',b'Orange'
+b'House|Miller',"b'Miller, Mike'",b'House',b'R',b'6',b'10',b'B-',b'Orange'
+b'House|Olszewski',"b'Olszewski, Robert ""Bobby O""'",b'House',b'R',b'6',b'10',b'B-',b'Orange'
+b'House|Smith',"b'Smith, Carlos Guillermo'",b'House',b'D',b'13',b'12',b'B+',b'Orange'
+b'Senate|Stewart',"b'Stewart, Linda'",b'Senate',b'D',b'-3',b'7',b'C-',b'Orange'
+b'Senate|Torres',"b'Torres, Victor M., Jr.'",b'Senate',b'D',b'-3',b'7',b'C-',b'Osceola|Orange'
+"b'House|Cortes, J.'","b'Cortes, John'",b'House',b'D',b'6',b'10',b'B-',b'Osceola'
+b'House|La Rosa',"b'La Rosa, Mike'",b'House',b'R',b'0',b'8',b'C',b'Osceola|Polk'
+b'House|Abruzzo',"b'Abruzzo, Joseph'",b'House',b'D',b'6',b'10',b'B-',b'Palm Beach'
+b'House|Berman',"b'Berman, Lori'",b'House',b'D',b'12',b'12',b'B+',b'Palm Beach'
+b'House|Hager',"b'Hager, Bill'",b'House',b'R',b'6',b'10',b'B-',b'Palm Beach'
+b'House|Jacquet',"b'Jacquet, Al'",b'House',b'D',b'6',b'10',b'B-',b'Palm Beach'
+b'Senate|Powell',"b'Powell, Bobby'",b'Senate',b'D',b'-3',b'7',b'C-',b'Palm Beach'
+b'House|Roth',"b'Roth, Rick'",b'House',b'R',b'6',b'10',b'B-',b'Palm Beach'
+b'House|Silvers',"b'Silvers, David'",b'House',b'D',b'6',b'10',b'B-',b'Palm Beach'
+b'House|Slosberg',"b'Slosberg, Emily'",b'House',b'D',b'13',b'12',b'B+',b'Palm Beach'
+b'House|Willhite',"b'Willhite, Matt'",b'House',b'D',b'6',b'10',b'B-',b'Palm Beach'
+b'House|Burgess',"b'Burgess, Daniel Wright, Jr.'",b'House',b'R',b'6',b'10',b'B-',b'Pasco'
+b'House|Corcoran',"b'Corcoran, Richard'",b'House',b'R',b'6',b'10',b'B-',b'Pasco'
+b'House|Mariano',"b'Mariano, Amber'",b'House',b'R',b'6',b'10',b'B-',b'Pasco'
+b'House|Ahern',"b'Ahern, Larry'",b'House',b'R',b'6',b'10',b'B-',b'Pinellas'
+b'Senate|Brandes',"b'Brandes, Jeff'",b'Senate',b'R',b'7',b'10',b'B-',b'Pinellas'
+b'House|Diamond',"b'Diamond, Ben'",b'House',b'D',b'6',b'10',b'B-',b'Pinellas'
+b'House|Latvala',"b'Latvala, Chris'",b'House',b'R',b'6',b'10',b'B-',b'Pinellas'
+b'House|Peters',"b'Peters, Kathleen M.'",b'House',b'R',b'6',b'10',b'B-',b'Pinellas'
+b'House|Sprowls',"b'Sprowls, Chris'",b'House',b'R',b'6',b'10',b'B-',b'Pinellas'
+b'House|Burton',"b'Burton, Colleen'",b'House',b'R',b'6',b'10',b'B-',b'Polk'
+b'House|Killebrew',"b'Killebrew, Sam H.'",b'House',b'R',b'6',b'10',b'B-',b'Polk'
+b'House|Gonzalez',"b'Gonzalez, Julio'",b'House',b'R',b'6',b'10',b'B-',b'Sarasota'
+b'House|Good',"b'Good, Margaret'",b'House',b'D',b'3',b'9',b'C+',b'Sarasota'
+b'House|Brodeur',"b'Brodeur, Jason T.'",b'House',b'R',b'6',b'10',b'B-',b'Seminole'
+b'House|Plakon',"b'Plakon, Scott'",b'House',b'R',b'3',b'9',b'C+',b'Seminole'
+b'Senate|Simmons',"b'Simmons, David'",b'Senate',b'R',b'-3',b'7',b'C-',b'Seminole|Volusia'
+b'House|Stevenson',"b'Stevenson, Cyndi'",b'House',b'R',b'-4',b'7',b'C-',b'St. Johns'
+b'House|Lee',"b'Lee, Larry, Jr.'",b'House',b'D',b'6',b'10',b'B-',b'St. Lucie'
+b'House|Henry',"b'Henry, Patrick'",b'House',b'D',b'6',b'10',b'B-',b'Volusia'
+b'House|Leek',"b'Leek, Thomas J.'",b'House',b'R',b'6',b'10',b'B-',b'Volusia'
+b'House|Santiago',"b'Santiago, David'",b'House',b'R',b'6',b'10',b'B-',b'Volusia'
