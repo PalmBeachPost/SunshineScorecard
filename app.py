@@ -89,7 +89,7 @@ def get_bracket(max, instancevalue):
         brackets.append(target)
     brackets.append(1000.0)
     bracketnumber = sys.maxsize
-    if instancevalue < (-1 *  max):         # If off the charts low, assign F--
+    if instancevalue < (0 - max):         # If off the charts low, assign F--
         bracketnumber = 0
     elif instancevalue > max:               # If off the charts high, assign A++
         bracketnumber = 16
