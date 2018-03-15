@@ -50,7 +50,7 @@ class UnicodeWriter:
 
     def __init__(self, f, dialect=csv.excel, encoding="utf-8", **kwds):
         # Redirect output to a queue
-        self.queue = io.StringIO()
+        self.queue = io.StringIO() #https://stackoverflow.com/questions/13120127/how-can-i-use-io-stringio-with-the-csv-module
         self.writer = csv.writer(self.queue, dialect=dialect, **kwds)
         self.stream = f
         self.encoder = codecs.getincrementalencoder(encoding)()
