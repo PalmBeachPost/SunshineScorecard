@@ -1,10 +1,20 @@
 billno,description,position,url,house,senate
-HB111,Hide IDs of murder victims,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=56752&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17008&BillId=56752&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17119&BillId=56752&SessionId=83&
-SB118,Hide criminal histories,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=56694&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17428&BillId=56694&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17035&BillId=56694&SessionId=83&
-HB351,Hide college president searches,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=57004&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17251&BillId=57004&SessionId=83&,
-HB441,Add court clerk liability protection,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=57076&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17187&BillId=57076&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17710&BillId=57076&SessionId=83&
-HB843,Let two board members meet privately,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=58235&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17499&BillId=58235&SessionId=83&,
-SB1018,Tell public about major pollution,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=58321&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17538&BillId=58321&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17483&BillId=58321&SessionId=83&
-SB1502,Require public info of contract details,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=59163&SessionId=83,,
-SB1514,Strengthen Sunshine law,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=59171&SessionId=83,,
-HB7093,Hide employees' families' info,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=59568&SessionId=83,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17206&BillId=59568&SessionId=83&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17579&BillId=59568&SessionId=83&
+HB273,Public Records - Prohibition on Dec Actions,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60058&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=17855&BillId=60058&SessionId=86&,
+SB750,Public Records - Prohibition on Dec Actions,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60458&SessionId=86,,
+HB459,Public Records - Agency Contracts,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60314&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=18005&BillId=60314&SessionId=86&,
+SB956,Public Records - Agency Contracts,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=61036&SessionId=86,,
+HB589,Public Meetings - Notice & Public Comment,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60580&SessionId=86,,
+SB1092,Public Meetings - Notice & Public Comment,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=61720&SessionId=86,,
+SB1476,Prohibited Recordkeeping - Firearms,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62301&SessionId=86,,
+SB1480,Centralized Database - Public Charters,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62303&SessionId=86,,
+SB1588,Budget Transparency,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62386&SessionId=86,,
+HB7057,Budget Transparency,good,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=18038&BillId=62785&SessionId=86&,
+HB439,Exemp/Litigation Meetings - Imminent Litigation,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60280&SessionId=86,,
+SB560,Exemp/Litigation Meetings - Imminent Litigation,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60186&SessionId=86,,
+HB761,Exemp/Voter Registration Information,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=61165&SessionId=86,,
+HB919,Sealing Criminal History Records - Minors,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=61825&SessionId=86,,
+SB860,Sealing Criminal History Records - Minors,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60723&SessionId=86,,
+SB690,Sealing Criminal History Records,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60345&SessionId=86,,
+SB1178,Exemp/Killing of a Person,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=61901&SessionId=86,,
+HB7103,Exemp/School Marshals,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62864&SessionId=86,,
+SB1940,Exemp/School Marshals,bad,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62866&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=18342&BillId=62866&SessionId=86&,http://www.myfloridahouse.gov/Sections/Bills/floorvote.aspx?VoteId=18266&BillId=62866&SessionId=86&
