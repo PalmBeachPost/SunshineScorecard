@@ -24,7 +24,7 @@
                     <span class="biodeets">{{ pol['party'] }}-{{ pol['city']}} for District {{ pol['district']}}</span></A>
                 </div>
                 <div class="col grade">
-                    <A HREF="{{buildurl}}{{ url_for('static', filename="../scorecard/" + pol['slug'] + "/") }}"><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1] }}</span></span><br><span class="pollink">Details</span>
+                    <A HREF="{{buildurl}}{{ url_for('static', filename="../scorecard/" + pol['slug'] + "/") }}"><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1:] }}</span></span><br><span class="pollink">Details</span>
                 </A></div>
             </div>
             {% endfor %}

@@ -24,9 +24,11 @@ IMGTHUMBPATH = "./static/imgthumbs/"
 TARGETWIDTH = 132
 TARGETHEIGHT = 176
 BRACKETLU = {
+    0: "F--",
     1: "F-", 2: "F", 3: "F+", 4: "D-", 5: "D", 6: "D+",
     7: "C-", 8: "C", 9: "C+", 10: "B-", 11: "B", 12: "B+",
-    13: "A-", 14: "A", 15: "A+"
+    13: "A-", 14: "A", 15: "A+",
+    16: "A++"
     }
 
 
@@ -78,7 +80,7 @@ def get_neighbors(key,sourcelist): #https://stackoverflow.com/questions/18453290
     return newlist                        
          
 def get_bracket(max, instancevalue):
-    lengthofrange = 2*max
+    lengthofrange = 2 * max
     spread = lengthofrange / 15.0
     # print(spread)
     brackets = []
@@ -87,15 +89,20 @@ def get_bracket(max, instancevalue):
         brackets.append(target)
     brackets.append(1000.0)
     bracketnumber = sys.maxsize
-    for i in range(0, 15):
-        # print(str(i + 1) + ": " + str(brackets[i]))
-        # print(str(instancevalue) + " instancevalue")
-        # print("bracket range " + str(brackets[i]) + " to " + str(brackets[i+1]))
-        if instancevalue >= brackets[i] and instancevalue < brackets[i+1]:
-            bracketnumber = i + 1   # Show brackets as 1-15 rather than 0-14
-            # break
-    if bracketnumber == sys.maxsize:
-        print("Something broke on value" + str(instancevalue))
+    if instancevalue < (-1 *  max):         # If off the charts low, assign F--
+        bracketnumber = 0
+    elif instancevalue > max:               # If off the charts high, assign A++
+        bracketnumber = 16
+    else:
+        for i in range(0, 15):
+            # print(str(i + 1) + ": " + str(brackets[i]))
+            # print(str(instancevalue) + " instancevalue")
+            # print("bracket range " + str(brackets[i]) + " to " + str(brackets[i+1]))
+            if instancevalue >= brackets[i] and instancevalue < brackets[i+1]:
+                bracketnumber = i + 1   # Show brackets as 1-15 rather than 0-14
+                # break
+        if bracketnumber == sys.maxsize:
+            print("Something broke on value" + str(instancevalue))
     return bracketnumber
 
 # Call like this: bracket = get_bracket(maxvalue, person's score)
