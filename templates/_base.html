@@ -8,20 +8,20 @@
 <meta name="description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government"{% endif %} />
 <meta property="og:description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government"{% endif %} />
 <meta property="og:title" content="SunshineScorecard gives grades to Florida lawmakers for their support of -- and opposition to -- open government." />
-<meta property="og:image" content="{{ baseurl}}/..{{ url_for('static', filename='sunshinescorecard-fbwide.png') }}" />
+<meta property="og:image" content="{{ baseurl }}{{ url_for('static', filename='sunshinescorecard-fbwide.png') }}" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:url" content="{{ baseurl }}{{ request.path }}" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@pbpost" />
+<meta name="twitter:site" content="@orlandosentinel" />
 
 <title>{% if request.url_rule.endpoint == "scorecard" %}SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}{% else %}SunshineScorecard: Documenting Florida legislators' support for open government{% endif %}</title>
 {% endblock metatags %}
 
 {% block styles %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<link href="{{ url_for('static', filename='base.css') }}" rel="stylesheet">
+<link href="{{buildurl}}{{ url_for('static', filename='base.css') }}" rel="stylesheet">
 
 {% endblock styles %}
 
@@ -68,7 +68,7 @@
 <body>
 
 {% block navbar %}
-    <div class = 'topnav'><div class='logo' id="logo"><a href="{{ url_for('static', filename='../') }}"><img src="{{ url_for('static', filename='sunshinescorecard-h.png')  }}" height=40 width=305 valign='' style="margin-top:5px; margin-left:5px;"></a></div><div class = 'logo-thin' style="padding: 0 !important; padding-left:5 !important; padding-top:5px !important; height: 50 !important; vertical-align: middle !important;" ><a href="{{ url_for('static', filename='../') }}"><img src="{{ url_for('static', filename='sunshinescorecard-h.png') }}" width="100%"></a></div><div class='social-share-box social-share-box-top'><a href="https://www.facebook.com/sharer/sharer.php?u={{ baseurl }}{{ request.path }}" target="_blank"><i class="social-share-icon fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://twitter.com/intent/tweet?url={{ baseurl }}{{ request.path }}&via=pbpost&text=" target="_blank"><i class="social-share-icon fa fa-twitter-square" aria-hidden="true"></i></a></div></div>
+    <div class = 'topnav'><div class='logo' id="logo"><a href="{{ url_for('static', filename='../') }}"><img src="{{buildurl}}{{ url_for('static', filename='sunshinescorecard-h.png')  }}" height=40 width=305 valign='' style="margin-top:5px; margin-left:5px;"></a></div><div class = 'logo-thin' style="padding: 0 !important; padding-left:5 !important; padding-top:5px !important; height: 50 !important; vertical-align: middle !important;" ><a href="{{ url_for('static', filename='../') }}"><img src="{{buildurl}}{{ url_for('static', filename='sunshinescorecard-h.png') }}" width="100%"></a></div><div class='social-share-box social-share-box-top'><a href="https://www.facebook.com/sharer/sharer.php?u={{ baseurl }}{{ request.path }}" target="_blank"><i class="social-share-icon fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://twitter.com/intent/tweet?url={{ baseurl }}{{ request.path }}&via=orlandosentinel&text=" target="_blank"><i class="social-share-icon fa fa-twitter-square" aria-hidden="true"></i></a></div></div>
 
 {% endblock navbar %}
 <div class = 'contentbody'>
@@ -81,15 +81,7 @@
 
 {% endblock js_scripts %}
 
-{% block sitecatscripts %}
 
-<script type="text/javascript" src="http://alt.coxnewsweb.com/coxnet/js/brightcove/metrics.js"></script>
-<!-- <script type="text/javascript" src="http://alt.coxnewsweb.com/palmbeachpost/js/external_templates/escenic/blogs/s_code.js"></script> -->
-<script type="text/javascript" src="{{ url_for('static', filename='js/chartbeat.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/sitecat_actual.js') }}"></script>
-<!-- End SiteCatalyst code version: H.1. -->
-
-{% endblock sitecatscripts %}
 
 {% block custom_js %}
 

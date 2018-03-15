@@ -12,12 +12,12 @@
     <div class="container" >
 		<div class="row pol"  style="margin-top:25px;">
 			<div class="col-sm-3 polpic">
-				<A HREF="{{ pol['personurl'] }}"><img class="polpicpic" alt="Photo of {{ pol['title']}} {{ pol['first'] }} {{ pol['last'] }}" src="{{ url_for('static', filename="imgthumbs/" + pol['slug'] + ".jpg") }}"></A>
+				<A HREF="{{ pol['personurl'] }}"><img class="polpicpic" alt="Photo of {{ pol['title']}} {{ pol['first'] }} {{ pol['last'] }}" src="{{buildurl}}{{ url_for('static', filename="imgthumbs/" + pol['slug'] + ".jpg") }}"></A>
 			</div>
 			<div class="col-sm-5 polbio">
 				<A HREF="{{ pol['personurl'] }}"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4></A>
 				<span class="biodeets">{{ pol['party'] }}-{{ pol['city']}} for District {{ pol['district']}}<br>
-                Representing {% set lastcounty = pol['counties'].split("|")[-1] %}{% for county in pol['counties'].split("|") %}<A HREF="{{ url_for('static', filename="../") }}#{{county.replace(" ", "-")}}">{{ county }}</A>{% if lastcounty != county %}, {% endif %}{% endfor %}</span>
+                Representing {% set lastcounty = pol['counties'].split("|")[-1] %}{% for county in pol['counties'].split("|") %}<A HREF="{{buildurl}}#{{county.replace(" ", "-")}}">{{ county }}</A>{% if lastcounty != county %}, {% endif %}{% endfor %}</span>
 			</div>
 
 		</div>

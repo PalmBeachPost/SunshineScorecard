@@ -7,24 +7,24 @@
 
 <div class="navholder"><div class="navselector"><select name="dropdown" size="1" id="select-anchor">
     <option value="#All-Counties">Showing all counties</option>
-{% for county in counties %}    <option value="#{{ county.replace(" ", "-") }}">Jump to {{ county }} County</option>{% endfor %}
+{% for county in counties %}    <option value="{{ buildurl }}#{{ county.replace(" ", "-") }}">Jump to {{ county }} County</option>{% endfor %}
 </select></div><div class="navabout"><A HREF="#explainertext">About this project</div>
 </div><br clear>
 
 <div class="container">
     {% for county in counties %}
-        <div class="row county"><A class="anchor" id="{{ county.replace(" ", "-") }}"></A><h2>{{ county }} County</h2></div>
+        <div class="row county"><a class="anchor" id="{{ county.replace(" ", "-") }}"></A><h2>{{ county }} County</h2></div>
             {% for pol in counties[county] %}
             <div class="row pol">
                 <div class="col polpic">
-                    <img class="polpicpic" alt="Photo of {{ pol['title']}} {{ pol['first'] }} {{ pol['last'] }}" src="{{ url_for('static', filename="imgthumbs/" + pol['slug'] + ".jpg") }}">
+                    <img class="polpicpic" alt="Photo of {{ pol['title']}} {{ pol['first'] }} {{ pol['last'] }}" src="{{buildurl}}{{ url_for('static', filename="imgthumbs/" + pol['slug'] + ".jpg") }}">
                 </div>
                 <div class="col polbio">
-                    <A HREF="{{ url_for('static', filename="../scorecard/" + pol['slug'] + "/") }}"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4>
+                    <A HREF="{{buildurl}}{{ url_for('static', filename="../scorecard/" + pol['slug'] + "/") }}"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4>
                     <span class="biodeets">{{ pol['party'] }}-{{ pol['city']}} for District {{ pol['district']}}</span></A>
                 </div>
                 <div class="col grade">
-                    <A HREF="{{ url_for('static', filename="../scorecard/" + pol['slug'] + "/") }}"><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1] }}</span></span><br><span class="pollink">Details</span>
+                    <A HREF="{{buildurl}}{{ url_for('static', filename="../scorecard/" + pol['slug'] + "/") }}"><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1] }}</span></span><br><span class="pollink">Details</span>
                 </A></div>
             </div>
             {% endfor %}
@@ -37,7 +37,8 @@
     <tr><td class="credit">Design</td><td>Adelaide Chen, The Orlando Sentinel; Mike Stucka and Mark Buzek, The Palm Beach Post</td></tr>
     <tr><td class="credit">Concept</td><td>Sunshine Week Committee, Florida Society of News Editors</td></tr>
     <tr><td class="credit">Bill selection</td><td>Barbara Petersen, First Amendment Foundation</td></tr>
-    <tr><td class="credit">Previous version</td><td><a href="http://apps.mypalmbeachpost.com/SunshineScorecard17/</a>2017 edition</a> by The Palm Beach Post</td></tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td class="credit">Previous version</td><td><a href="http://apps.mypalmbeachpost.com/SunshineScorecard17/">2017 edition by The Palm Beach Post</a></td></tr>
     </table>
                 <p><A class="anchor" id="explainertext"></A></p>
                 <div class="">

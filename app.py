@@ -46,7 +46,7 @@ def index():
     template = 'index.html'
     global MASTERDICT
     global COUNTYDICT
-    return render_template(template, masterdict=MASTERDICT, counties=COUNTYDICT, baseurl=BASEURL)
+    return render_template(template, masterdict=MASTERDICT, counties=COUNTYDICT, baseurl=BASEURL, buildurl=BUILDURL)
 
 
 @application.route('/scorecard/<slug>/')
@@ -57,7 +57,7 @@ def scorecard(slug):
     for polslug in MASTERDICT:
         pol = MASTERDICT[polslug]
         if polslug == slug:
-            return render_template(template, pol=pol, baseurl=BASEURL)
+            return render_template(template, pol=pol, baseurl=BASEURL, buildurl=BUILDURL)
 
 def get_neighbors(key,sourcelist): #https://stackoverflow.com/questions/18453290/funcargs-kwargs-x-throwing-invalid-syntax        
     if(len(sourcelist)) == 0:
