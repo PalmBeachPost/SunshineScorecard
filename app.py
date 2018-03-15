@@ -11,7 +11,7 @@ from PIL import Image #order says it should be placed before Freezer
 from flask_frozen import Freezer #No matching distribution found for flask_frozen, only Freezer
 import uucsv
 
-BUILDURL = "/SunshineScorecard18"     # Also need to patch in static/app.js at homeurl
+BUILDURL = "/SunshineScorecard18/"     # Also need to patch in static/app.js at homeurl
 BASEURL = "http://interactive.orlandosentinel.com" + BUILDURL
 COUNTYDICT = {}
 MASTERDICT = {}
