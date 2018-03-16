@@ -20,11 +20,11 @@
                     <img class="polpicpic" alt="Photo of {{ pol['title']}} {{ pol['first'] }} {{ pol['last'] }}" src="{{buildurl}}{{ url_for('static', filename="imgthumbs/" + pol['slug'] + ".jpg") }}">
                 </div>
                 <div class="col polbio">
-                    <A HREF="{{buildurl}}{{ url_for('static', filename="../scorecard/" + pol['slug'] + "/") }}"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4>
+                    <A HREF="{{buildurl}}scorecard/{{pol['slug']}}/"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4>
                     <span class="biodeets">{{ pol['party'] }}-{{ pol['city']}} for District {{ pol['district']}}</span></A>
                 </div>
                 <div class="col grade">
-                    <A HREF="{{buildurl}}{{ url_for('static', filename="../scorecard/" + pol['slug'] + "/") }}"><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1:] }}</span></span><br><span class="pollink">Details</span>
+                    <A HREF="{{buildurl}}scorecard/{{pol['slug']}}/"><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1:] }}</span></span><br><span class="pollink">Details</span>
                 </A></div>
             </div>
             {% endfor %}
