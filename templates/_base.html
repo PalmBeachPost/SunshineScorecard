@@ -68,10 +68,10 @@
 <body>
 
 {% block navbar %}
-    <div class = 'topnav'><div class='logo' id="logo"><a href="{{ buildurl }}"><img src="{{buildurl}}static/sunshinescorecard-h.png" height=40 width=305 valign='' style="margin-top:5px; margin-left:5px;"></a></div><div class = 'logo-thin' style="padding: 0 !important; padding-left:5 !important; padding-top:5px !important; height: 50 !important; vertical-align: middle !important;" ><a href="{{ buildurl}} "><img src="{{buildurl}}static/sunshinescorecard-h.png" width="100%"></a></div><div class='social-share-box social-share-box-top'><a href="https://www.facebook.com/sharer/sharer.php?u={{ baseurl }}{{ request.path }}" target="_blank"><i class="social-share-icon fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://twitter.com/intent/tweet?url={{ baseurl }}{{ request.path }}&via=orlandosentinel&text=" target="_blank"><i class="social-share-icon fa fa-twitter-square" aria-hidden="true"></i></a></div></div>
+    <div class="topnav"><div class="logo" id="logo"><a href="{{ buildurl }}"><img src="{{buildurl}}static/sunshinescorecard-h.png" height=40 width=305 valign="" style="margin-top:5px; margin-left:5px;"></a></div><div class="logo-thin" style="padding: 0 !important; padding-left:5 !important; padding-top:5px !important; height: 50 !important; vertical-align: middle !important;"><a href="{{ buildurl}}"><img src="{{buildurl}}static/sunshinescorecard-h.png" width="100%"></a></div><div class="social-share-box social-share-box-top"><a href="https://www.facebook.com/sharer/sharer.php?u={{ baseurl }}{{ request.path }}" target="_blank"><i class="social-share-icon fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://twitter.com/intent/tweet?url={{ baseurl }}{{ request.path }}&via=orlandosentinel&text=" target="_blank"><i class="social-share-icon fa fa-twitter-square" aria-hidden="true"></i></a></div></div>
 
 {% endblock navbar %}
-<div class = 'contentbody'>
+<div class="contentbody">
 {% block content %}
 {% endblock content %}
 </div>
