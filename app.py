@@ -23,6 +23,7 @@ FLOORVOTEPOINTS = 3
 COMMITTEEVOTEPOINTS = 3
 SCORESDICT = {}
 POTENTIALSCORESDICT = {}
+MEMBERCOMMITTEESDICT = {}
 IMGORIGINALPATH = "./static/imgoriginals/"
 IMGTHUMBPATH = "./static/imgthumbs/"
 TARGETWIDTH = 132
@@ -124,6 +125,7 @@ def structure_data():
         global POTENTIALSCORESDICT
         global FLOORVOTEPOINTS
         global COMMITTEEVOTEPOINTS
+        global MEMBERSCOMMITTEESDICT
         pols = uucsv.UnicodeDictReader(csvfile)
         
         #sorted(pols, key=lambda k: k['alphaname']) in Python2 works, but in Python3 TypeError: list indices must be integers or slices, not str
@@ -166,6 +168,8 @@ def structure_data():
                 if county not in COUNTYDICT:
                     COUNTYDICT[county] = []
                 COUNTYDICT[county].append(pol)
+            MEMBERCOMMITTEESDICT[pol['chamber'] + '|' + pol['legname']] = {}
+                
     COUNTYDICTsorted = OrderedDict()
     for county in sorted(COUNTYDICT):
         COUNTYDICTsorted[county] = COUNTYDICT[county]      # Use sorted list of keys to build ordered dictionary
@@ -223,11 +227,15 @@ def structure_data():
 
             if memberid not in POTENTIALSCORESDICT:
                 POTENTIALSCORESDICT[memberid] = 0
-            if 'cmte vote?' not in row:
-                print("No 'cmte vote?' field found in extrasreader")
+            if 'cmte vote' not in row:
+                print("No 'cmte vote' field found in extrasreader")
             else:
-                if row['cmte vote?'] == "cmte vote":
+                if row['cmte vote'] == "cmte vote":
                     POTENTIALSCORESDICT[memberid] += COMMITTEEVOTEPOINTS
+                    if memberid not in MEMBERCOMMITTEESDICT:
+                        print("Found " + memberid + " in extracredits.csv, but didn't have that ID in master politican scrape.")
+                    else:                    
+                        MEMBERCOMMITTEESDICT[memberid][row['slug'][-3:]] = row['cmte name']
                 
     for memberid in SCORESDICT:
         if HIGHESTSCORE < abs(SCORESDICT[memberid]):
