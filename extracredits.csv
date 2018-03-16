@@ -1,32 +1,13 @@
 billno,chamber,member,vote,points,description,good or bad bill?,Y or N,cmte vote,slug,cmte name,vote URL,main URL
-HB273,House,Rodrigues,Sponsor,10,,,,,,,,
 HB273,House,Boyd,Late Yes,3,,,,,,,,
 HB273,House,Davis,Late Yes,3,,,,,,,,
 HB273,House,Hager,Late Yes,3,,,,,,,,
-HB439,House,Donalds,Sponsor,-10,,,,,,,,
 HB459,House,Hager,Late Yes,3,,,,,,,,
 HB459,House,Metz,Late Yes,3,,,,,,,,
-HB459,House,Massullo,Sponsor,10,,,,,,,,
 HB459,House,Slosberg,Cosponsor,7,,,,,,,,
 HB459,House,Smith,Cosponsor,7,,,,,,,,
-HB589,House,Newton,Sponsor,10,,,,,,,,
 HB7057,House,Jacquet,Late Yes,3,,,,,,,,
-HB7057,House,Rommel,Sponsor,10,,,,,,,,
-HB7103,House,Oliva,Sponsor,-10,,,,,,,,
-HB761,House,Stevenson,Sponsor,-10,,,,,,,,
-HB919,House,Brown,Sponsor,-10,,,,,,,,
-SB1092,Senate,Rader,Sponsor,10,,,,,,,,
-SB1178,Senate,Bracy,Sponsor,-10,,,,,,,,
-SB1476,Senate,Farmer,Sponsor,10,,,,,,,,
-SB1480,Senate,Brandes,Sponsor,10,,,,,,,,
-SB1588,Senate,Brandes,Sponsor,10,,,,,,,,
-SB1940,Senate,Galvano,Cosponsor,-7,,,,,,,,
 SB1940,Senate,Benacquisto,Cosponsor,-7,,,,,,,,
-SB560,Senate,Steube,Sponsor,-10,,,,,,,,
-SB690,Senate,Brandes,Sponsor,-10,,,,,,,,
-SB750,Senate,Perry,Sponsor,10,,,,,,,,
-SB860,Senate,Bracy,Sponsor,-10,,,,,,,,
-SB956,Senate,Mayfield,Sponsor,10,,,,,,,,
 HB273,House,Daniels,Committee Yes,3,Public Records - Prohibition on Dec Actions,good,Y,cmte vote,HB273HOV,"Oversight, Transparency & Administration Subcommittee",http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=44833&IsPCB=0&BillId=60058&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60058&SessionId=86
 HB273,House,Davis,Committee Yes,3,Public Records - Prohibition on Dec Actions,good,Y,cmte vote,HB273HOV,"Oversight, Transparency & Administration Subcommittee",http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=44833&IsPCB=0&BillId=60058&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60058&SessionId=86
 HB273,House,Drake,Committee Yes,3,Public Records - Prohibition on Dec Actions,good,Y,cmte vote,HB273HOV,"Oversight, Transparency & Administration Subcommittee",http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=44833&IsPCB=0&BillId=60058&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=60058&SessionId=86
@@ -107,7 +88,7 @@ HB7057,House,Jones,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HA
 HB7057,House,McGhee,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47411&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,Metz,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47411&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,Moraitis,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47411&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
-HB7057,House,Nuñez,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47411&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
+HB7057,House,NuÃ±ez,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47411&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,Oliva,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47411&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,Raschein,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47411&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,Richardson,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47411&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
@@ -125,7 +106,7 @@ HB7057,House,Jacobs,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057H
 HB7057,House,Latvala,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HGO,Government Accountability Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47765&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,McClain,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HGO,Government Accountability Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47765&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,Newton,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HGO,Government Accountability Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47765&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
-HB7057,House,Nuñez,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HGO,Government Accountability Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47765&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
+HB7057,House,NuÃ±ez,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HGO,Government Accountability Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47765&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,Olszewski,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HGO,Government Accountability Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47765&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,Raschein,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HGO,Government Accountability Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47765&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
 HB7057,House,Rommel,Committee Yes,3,Budget Transparency,good,Y,cmte vote,HB7057HGO,Government Accountability Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47765&IsPCB=0&BillId=62785&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62785&SessionId=86
@@ -156,7 +137,7 @@ HB7103,House,Jones,Committee Yes,-3,Exemp/School Marshals,bad,Y,cmte vote,HB7103
 HB7103,House,McGhee,Committee Yes,-3,Exemp/School Marshals,bad,Y,cmte vote,HB7103HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47911&IsPCB=1&BillId=62864&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62864&SessionId=86
 HB7103,House,Metz,Committee Yes,-3,Exemp/School Marshals,bad,Y,cmte vote,HB7103HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47911&IsPCB=1&BillId=62864&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62864&SessionId=86
 HB7103,House,Moraitis,Committee Yes,-3,Exemp/School Marshals,bad,Y,cmte vote,HB7103HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47911&IsPCB=1&BillId=62864&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62864&SessionId=86
-HB7103,House,Nuñez,Committee Yes,-3,Exemp/School Marshals,bad,Y,cmte vote,HB7103HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47911&IsPCB=1&BillId=62864&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62864&SessionId=86
+HB7103,House,NuÃ±ez,Committee Yes,-3,Exemp/School Marshals,bad,Y,cmte vote,HB7103HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47911&IsPCB=1&BillId=62864&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62864&SessionId=86
 HB7103,House,Oliva,Committee Yes,-3,Exemp/School Marshals,bad,Y,cmte vote,HB7103HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47911&IsPCB=1&BillId=62864&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62864&SessionId=86
 HB7103,House,Raschein,Committee Yes,-3,Exemp/School Marshals,bad,Y,cmte vote,HB7103HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47911&IsPCB=1&BillId=62864&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62864&SessionId=86
 HB7103,House,Richardson,Committee Yes,-3,Exemp/School Marshals,bad,Y,cmte vote,HB7103HAP,Appropriations Committee,http://www.myfloridahouse.gov/Sections/Committees/billvote.aspx?VoteId=47911&IsPCB=1&BillId=62864&SessionId=86,http://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=62864&SessionId=86
