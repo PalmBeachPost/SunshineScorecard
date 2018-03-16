@@ -335,7 +335,7 @@ def process_images(photourl, slug):
     if not(os.path.exists(thumb)):
         print("\tBuilding thumbnail ...")
         im = Image.open(original)
-        im.resize((TARGETWIDTH, TARGETHEIGHT), Image.LANCZOS).convert('RGB').save(thumb, optimize=True)
+        im.resize((TARGETWIDTH, TARGETHEIGHT), Image.LANCZOS).convert('RGB').save(thumb, optimize=True, quality=70)
 
     return
 
