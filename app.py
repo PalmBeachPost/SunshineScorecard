@@ -263,17 +263,21 @@ def structure_data():
             else:
                 numericscore = SCORESDICT[legid]
                 potentialscore = POTENTIALSCORESDICT[legid]
+                committeesdict = MEMBERCOMMITTEESDICT[legid]
                 # bracket = get_bracket(HIGHESTSCORE, numericscore)
                 bracket = get_bracket(potentialscore, numericscore)
                 lettergrade = BRACKETLU[bracket]
                 COUNTYDICT[county][polindex]["numericscore"] = numericscore
                 COUNTYDICT[county][polindex]["lettergrade"] = lettergrade
-                exportset[legid] = [legid, pol['alphaname'], pol['chamber'], pol['party'], numericscore, potentialscore, bracket, lettergrade, pol['counties']]
+                COUNTYDICT[county][polindex]["potentialscore"] = potentialscore
+                COUNTYDICT[county][polindex]["committeesdict"] = committeesdict
+                exportset[legid] = [legid, pol['alphaname'], pol['chamber'], pol['party'], numericscore, potentialscore, bracket, lettergrade, pol['counties'], committeesdict]
+                
                 
     with open('report.csv', 'w', newline='') as reportfile:
         # put = uucsv.UnicodeWriter(reportfile)
         put = csv.writer(reportfile)
-        put.writerow(["legid", "alphaname", "chamber", "party", "numericscore", "potentialscore", "bracket", "lettergrade", "counties"])
+        put.writerow(["legid", "alphaname", "chamber", "party", "numericscore", "potentialscore", "bracket", "lettergrade", "counties", "committesdict"])
         for pol in exportset:
             put.writerow(exportset[pol])
     temp = sorted(LISTOFVOTES, key=lambda row: row["billnono"])
