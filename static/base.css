@@ -65,8 +65,8 @@ a{
 }
 
 .polpicpic{
-	width: 132;
-	height: 176;
+	width: 132px;
+	height: 176px;
 	outline: 1px solid black;
 	outline-offset: -1px;
     float: right;
@@ -156,12 +156,10 @@ a{
 } 
 
 .right{
-    align: right;
     text-align: right;
 }
 
 .center{
-    align: center;
     text-align: center;
 }
 
@@ -380,11 +378,11 @@ option.filteroption{
 	font-weight: bold;
 }
 .totalnumber{
-	color: #6666
+	color: #666666;
 }
 
 .activenumber{
-	color: #9E0000
+	color: #9E0000;
 }
 
 .logo a{
@@ -540,7 +538,7 @@ body{
 }
 
 p.bootstrap-overrides-h1{
-	font-family: Georgia, Times, "Times New Roman", serif important!;
+	font-family: Georgia, Times, "Times New Roman", serif !important;
     color: white;
 	font-size: 2.5em;
 	font-style: normal;
@@ -562,10 +560,7 @@ p.bootstrap-overrides-h1{
 
 .grid, .grid01, .grid02, .grid03, .grid04, .grid05, .grid06, .grid07, .grid08, .grid09, .grid10, .grid11, .grid12{
     background-color: #262626;
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: 0 auto;
-
 }
 
 .grid-item, .grid-item01, .grid-item02, .grid-item03, .grid-item04, .grid-item05, .grid-item06, .grid-item07, .grid-item08, .grid-item09, .grid-item10, .grid-item11, .grid-item12 {
@@ -575,7 +570,6 @@ p.bootstrap-overrides-h1{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    b
 }
 
 .victimbox2 {
