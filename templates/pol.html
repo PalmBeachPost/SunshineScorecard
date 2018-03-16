@@ -39,7 +39,12 @@
 
         {% for vote in pol["votes"] %}
             <div class="row votes">
-                <div class="col-sm-1 voteaction"><A HREF="{{ vote["url"] }}" target="_blank">{{ vote["billno"] }}</A></div>
+                <div class="col-sm-1 voteaction"><A HREF="{{ vote["url"] }}" target="_blank">
+                    {%- if vote['slug'] | length > 1 -%}{{ vote['slug'] }}
+                {%- else -%}
+                    {{ vote['billno'] }}
+                {%- endif -%}
+                </A></div>
                 <div class="col-sm-4 voteaction"><A HREF="{{ vote["url"] }}" target="_blank">{{ vote['description'] }}</A></div>
                 <div class="col-sm-2 voteaction"><A HREF="{{ vote["url"] }}" target="_blank">{{ vote['vote'] }}</A></div>
                 <div class="col-sm-1 voteaction goright {% if vote['points'][0] != "-" %}positivevote {% else %}negativevote{% endif %}"><A HREF="{{ vote["url"] }}" target="_blank">
