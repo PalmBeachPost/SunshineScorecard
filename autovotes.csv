@@ -73,14 +73,17 @@ HB273,House,Brown,Y,3
 HB273,House,Fitzenhagen,Y,3
 HB273,House,Leek,Y,3
 HB273,House,Pritchett,Y,3
+HB273,House,Vacant 114,-,0
 HB273,House,Burgess,Y,3
 HB273,House,Geller,Y,3
 HB273,House,Magar,Y,3
 HB273,House,Raburn,Y,3
+HB273,House,Vacant 33,-,0
 HB273,House,Burton,Y,3
 HB273,House,Gonzalez,Y,3
 HB273,House,Mariano,Y,3
 HB273,House,Raschein,Y,3
+HB273,House,Vacant 39,-,0
 HB273,House,Byrd,Y,3
 HB273,House,Good,-,0
 HB273,House,Massullo,Y,3
@@ -190,14 +193,17 @@ HB459,House,Brown,Y,3
 HB459,House,Fitzenhagen,Y,3
 HB459,House,Leek,Y,3
 HB459,House,Pritchett,Y,3
+HB459,House,Vacant 114,-,0
 HB459,House,Burgess,Y,3
 HB459,House,Geller,Y,3
 HB459,House,Magar,Y,3
 HB459,House,Raburn,Y,3
+HB459,House,Vacant 33,-,0
 HB459,House,Burton,Y,3
 HB459,House,Gonzalez,Y,3
 HB459,House,Mariano,Y,3
 HB459,House,Raschein,Y,3
+HB459,House,Vacant 39,-,0
 HB459,House,Byrd,Y,3
 HB459,House,Good,Y,3
 HB459,House,Massullo,Y,3
@@ -307,14 +313,17 @@ HB7057,House,Brown,Y,3
 HB7057,House,Fitzenhagen,Y,3
 HB7057,House,Leek,Y,3
 HB7057,House,Pritchett,Y,3
+HB7057,House,Vacant 114,-,0
 HB7057,House,Burgess,Y,3
 HB7057,House,Geller,Y,3
 HB7057,House,Magar,Y,3
 HB7057,House,Raburn,Y,3
+HB7057,House,Vacant 33,-,0
 HB7057,House,Burton,Y,3
 HB7057,House,Gonzalez,Y,3
 HB7057,House,Mariano,Y,3
 HB7057,House,Raschein,Y,3
+HB7057,House,Vacant 39,-,0
 HB7057,House,Byrd,Y,3
 HB7057,House,Good,Y,3
 HB7057,House,Massullo,Y,3
@@ -424,14 +433,17 @@ SB1940,House,Brown,Y,-3
 SB1940,House,Fitzenhagen,Y,-3
 SB1940,House,Leek,Y,-3
 SB1940,House,Pritchett,Y,-3
+SB1940,House,Vacant 114,-,0
 SB1940,House,Burgess,Y,-3
 SB1940,House,Geller,N,3
 SB1940,House,Magar,Y,-3
 SB1940,House,Raburn,Y,-3
+SB1940,House,Vacant 33,-,0
 SB1940,House,Burton,Y,-3
 SB1940,House,Gonzalez,Y,-3
 SB1940,House,Mariano,Y,-3
 SB1940,House,Raschein,Y,-3
+SB1940,House,Vacant 39,-,0
 SB1940,House,Byrd,Y,-3
 SB1940,House,Good,Y,-3
 SB1940,House,Massullo,Y,-3
@@ -505,3 +517,123 @@ SB1940,Senate,Young,Y,-3
 SB1940,Senate,Braynon,Y,-3
 SB1940,Senate,Gibson,Y,-3
 SB1940,Senate,Passidomo,Y,-3
+HB653,House,Abruzzo,-,0
+HB653,House,Cummings,Y,-3
+HB653,House,Hardemon,Y,-3
+HB653,House,Moraitis,Y,-3
+HB653,House,Shaw,Y,-3
+HB653,House,Ahern,Y,-3
+HB653,House,Daniels,Y,-3
+HB653,House,Harrell,-,0
+HB653,House,Moskowitz,-,0
+HB653,House,Silvers,Y,-3
+HB653,House,Albritton,Y,-3
+HB653,House,Davis,Y,-3
+HB653,House,Harrison,Y,-3
+HB653,House,Newton,Y,-3
+HB653,House,Slosberg,Y,-3
+HB653,House,Alexander,Y,-3
+HB653,House,Diamond,Y,-3
+HB653,House,Henry,Y,-3
+HB653,House,Nunez,Y,-3
+HB653,House,Smith,Y,-3
+HB653,House,Altman,-,0
+HB653,House,Diaz,Y,-3
+HB653,House,Ingoglia,Y,-3
+HB653,House,Oliva,Y,-3
+HB653,House,Spano,Y,-3
+HB653,House,Antone,-,0
+HB653,House,Donalds,Y,-3
+HB653,House,Ingram,Y,-3
+HB653,House,Olszewski,Y,-3
+HB653,House,Sprowls,Y,-3
+HB653,House,Asencio,Y,-3
+HB653,House,Drake,Y,-3
+HB653,House,Jacobs,Y,-3
+HB653,House,Payne,Y,-3
+HB653,House,Stafford,Y,-3
+HB653,House,Ausley,Y,-3
+HB653,House,DuBose,Y,-3
+HB653,House,Jacquet,Y,-3
+HB653,House,Perez,Y,-3
+HB653,House,Stark,Y,-3
+HB653,House,Avila,Y,-3
+HB653,House,Duran,Y,-3
+HB653,House,Jenne,Y,-3
+HB653,House,Peters,-,0
+HB653,House,Stevenson,Y,-3
+HB653,House,Berman,Y,-3
+HB653,House,Eagle,Y,-3
+HB653,House,Jones,Y,-3
+HB653,House,Pigman,-,0
+HB653,House,Stone,Y,-3
+HB653,House,Beshears,Y,-3
+HB653,House,Edwards-Walpole,Y,-3
+HB653,House,Killebrew,Y,-3
+HB653,House,Plakon,Y,-3
+HB653,House,Sullivan,Y,-3
+HB653,House,Bileca,Y,-3
+HB653,House,Fant,Y,-3
+HB653,House,La Rosa,Y,-3
+HB653,House,Plasencia,-,0
+HB653,House,Toledo,Y,-3
+HB653,House,Boyd,Y,-3
+HB653,House,Fine,Y,-3
+HB653,House,Latvala,Y,-3
+HB653,House,Ponder,Y,-3
+HB653,House,Trujillo,Y,-3
+HB653,House,Brodeur,-,0
+HB653,House,Fischer,Y,-3
+HB653,House,Lee,Y,-3
+HB653,House,Porter,Y,-3
+HB653,House,Trumbull,Y,-3
+HB653,House,Brown,Y,-3
+HB653,House,Fitzenhagen,Y,-3
+HB653,House,Leek,Y,-3
+HB653,House,Pritchett,Y,-3
+HB653,House,Vacant 114,-,0
+HB653,House,Burgess,Y,-3
+HB653,House,Geller,Y,-3
+HB653,House,Magar,Y,-3
+HB653,House,Raburn,Y,-3
+HB653,House,Vacant 33,-,0
+HB653,House,Burton,Y,-3
+HB653,House,Gonzalez,Y,-3
+HB653,House,Mariano,Y,-3
+HB653,House,Raschein,Y,-3
+HB653,House,Vacant 39,-,0
+HB653,House,Byrd,Y,-3
+HB653,House,Good,Y,-3
+HB653,House,Massullo,Y,-3
+HB653,House,Renner,Y,-3
+HB653,House,"Watson, B.",Y,-3
+HB653,House,Caldwell,Y,-3
+HB653,House,Goodson,Y,-3
+HB653,House,McClain,Y,-3
+HB653,House,Richardson,Y,-3
+HB653,House,"Watson, C.",Y,-3
+HB653,House,Clemons,Y,-3
+HB653,House,Grall,Y,-3
+HB653,House,McClure,Y,-3
+HB653,House,Rodrigues,Y,-3
+HB653,House,White,Y,-3
+HB653,House,Corcoran,Y,-3
+HB653,House,"Grant, J.",-,0
+HB653,House,McGhee,Y,-3
+HB653,House,Rommel,Y,-3
+HB653,House,Willhite,Y,-3
+HB653,House,"Cortes, B.",Y,-3
+HB653,House,"Grant, M.",Y,-3
+HB653,House,Mercado,Y,-3
+HB653,House,Roth,Y,-3
+HB653,House,Williams,Y,-3
+HB653,House,"Cortes, J.",Y,-3
+HB653,House,Gruters,Y,-3
+HB653,House,Metz,Y,-3
+HB653,House,Russell,Y,-3
+HB653,House,Williamson,Y,-3
+HB653,House,Cruz,Y,-3
+HB653,House,Hager,Y,-3
+HB653,House,Miller,Y,-3
+HB653,House,Santiago,Y,-3
+HB653,House,Yarborough,Y,-3
