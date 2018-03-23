@@ -188,7 +188,7 @@ def structure_data():
             billlu[row['billno']] = row
            
     csvmembers = []
-    print("listofvotes size: " + str(len(LISTOFVOTES)))
+    print("listofvotes size before data load: " + str(len(LISTOFVOTES)))
     with open('autovotes.csv', 'r') as autovotesfile:
         autovotesreader = uucsv.UnicodeDictReader(autovotesfile)
         sortedautovotesreader = sorted(autovotesreader)
@@ -207,7 +207,7 @@ def structure_data():
                 POTENTIALSCORESDICT[memberid] = 0
             POTENTIALSCORESDICT[memberid] += FLOORVOTEPOINTS    
 
-    print("listofvotes size: " + str(len(LISTOFVOTES)))
+    print("listofvotes size after autovotes: " + str(len(LISTOFVOTES)))
     with open('extracredits.csv', 'r') as extrasfile:
         extrasreader = uucsv.UnicodeDictReader(extrasfile)
         sortedextrasreader = sorted(extrasreader)
@@ -236,7 +236,8 @@ def structure_data():
                         print("Found " + memberid + " in extracredits.csv, but didn't have that ID in master politican scrape.")
                     else:                    
                         MEMBERCOMMITTEESDICT[memberid][row['slug'][-3:]] = row['cmte name']
-                
+
+    print("listofvotes size after extracredits: " + str(len(LISTOFVOTES)))                        
     for memberid in SCORESDICT:
         if HIGHESTSCORE < abs(SCORESDICT[memberid]):
             HIGHESTSCORE = abs(SCORESDICT[memberid])
