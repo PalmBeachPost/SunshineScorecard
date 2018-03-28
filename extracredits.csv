@@ -1,4 +1,12 @@
 billno,chamber,member,vote,points,good or bad bill?,Y or N,cmte vote,slug,cmte name,vote URL,main URL
+SB1212,Senate,Book,Consulted with FAF,1,,,,,,,
+SB1628,Senate,Book,Consulted with FAF,1,,,,,,,
+HB273,House,Geller,Consulted with FAF,1,,,,,,,
+HB459,House,Geller,Consulted with FAF,1,,,,,,,
+SB1940,House,Geller,Consulted with FAF,1,,,,,,,
+HB7057,House,Geller,Consulted with FAF,1,,,,,,,
+SB268,Senate,Passidomo,Consulted with FAF,1,,,,,,,
+HB761,House,Stevenson,Consulted with FAF,1,,,,,,,
 HB273,House,Rodrigues,Sponsor,10,,,,,,,
 SB750,Senate,Perry,Sponsor,10,,,,,,,
 HB273,House,Boyd,Late Yes,3,,,,,,,
