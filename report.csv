@@ -1,156 +1,156 @@
-b'legid',b'alphaname',b'chamber',b'party',b'numericscore',b'bracket',b'lettergrade',b'counties'
-b'House|Clemons',"b'Clemons, Charles Wesley, Sr.'",b'House',b'R',b'6',b'10',b'B-',b'Dixie|Gilchrist|Alachua'
-b'Senate|Perry',"b'Perry, Keith'",b'Senate',b'R',b'7',b'10',b'B-',b'Alachua|Putnam|Marion'
-b'House|Porter',"b'Porter, Elizabeth W.'",b'House',b'R',b'6',b'10',b'B-',b'Baker|Columbia|Hamilton|Suwannee|Alachua'
-"b'House|Watson, C.'","b'Watson, Clovis, Jr.'",b'House',b'D',b'6',b'10',b'B-',b'Alachua|Marion'
-b'Senate|Bradley',"b'Bradley, Rob'",b'Senate',b'R',b'-3',b'7',b'C-',b'Baker|Bradford|Clay|Columbia|Dixie|Gilchrist|Lafayette|Levy|Suwannee|Union|Marion'
-b'House|Drake',"b'Drake, Brad'",b'House',b'R',b'6',b'10',b'B-',b'Holmes|Jackson|Walton|Washington|Bay'
-b'Senate|Gainer',"b'Gainer, George B.'",b'Senate',b'R',b'-3',b'7',b'C-',b'Bay|Holmes|Jackson|Walton|Washington|Okaloosa'
-b'House|Trumbull',"b'Trumbull, Jay'",b'House',b'R',b'6',b'10',b'B-',b'Bay'
-b'House|Payne',"b'Payne, Bobby'",b'House',b'R',b'6',b'10',b'B-',b'Bradford|Putnam|Union|Clay'
-b'House|Altman',"b'Altman, Thad'",b'House',b'R',b'-3',b'7',b'C-',b'Brevard'
-b'House|Fine',"b'Fine, Randy'",b'House',b'R',b'6',b'10',b'B-',b'Brevard'
-b'House|Goodson',"b'Goodson, Tom'",b'House',b'R',b'6',b'10',b'B-',b'Brevard'
-b'Senate|Hukill',"b'Hukill, Dorothy L.'",b'Senate',b'R',b'-3',b'7',b'C-',b'Brevard|Volusia'
-b'Senate|Mayfield',"b'Mayfield, Debbie'",b'Senate',b'R',b'7',b'10',b'B-',b'Indian River|Brevard'
-b'House|Plasencia',"b'Plasencia, Rene ""Coach P""'",b'House',b'R',b'6',b'10',b'B-',b'Brevard|Orange'
-b'Senate|Book',"b'Book, Lauren'",b'Senate',b'D',b'0',b'8',b'C',b'Broward'
-b'Senate|Braynon',"b'Braynon, Oscar II'",b'Senate',b'D',b'-3',b'7',b'C-',b'Broward|Miami-Dade'
-b'House|Diaz',"b'Diaz, Manny, Jr.'",b'House',b'R',b'6',b'10',b'B-',b'Broward|Miami-Dade'
-b'House|DuBose',"b'DuBose, Bobby B.'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
-b'House|Edwards-Walpole',"b'Edwards-Walpole, Katie'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
-b'Senate|Farmer',"b'Farmer, Gary M., Jr.'",b'Senate',b'D',b'7',b'10',b'B-',b'Broward'
-b'House|Geller',"b'Geller, Joseph'",b'House',b'D',b'12',b'12',b'B+',b'Broward|Miami-Dade'
-b'House|Jacobs',"b'Jacobs, Kristin Diane'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
-b'House|Jenne',"b'Jenne, Evan'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
-b'House|Jones',"b'Jones, Shevrin D. '",b'House',b'D',b'3',b'9',b'C+',b'Broward'
-b'House|Moraitis',"b'Moraitis, George R., Jr.'",b'House',b'R',b'6',b'10',b'B-',b'Broward'
-b'House|Moskowitz',"b'Moskowitz, Jared Evan'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
-b'House|Pritchett',"b'Pritchett, Sharon'",b'House',b'D',b'6',b'10',b'B-',b'Broward|Miami-Dade'
-b'Senate|Rader',"b'Rader, Kevin J.'",b'Senate',b'D',b'7',b'10',b'B-',b'Broward|Palm Beach'
-b'House|Russell',"b'Russell, Barrington A. '",b'House',b'D',b'6',b'10',b'B-',b'Broward'
-b'House|Stark',"b'Stark, Richard'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
-b'Senate|Thurston',"b'Thurston, Perry E., Jr.'",b'Senate',b'D',b'-3',b'7',b'C-',b'Broward'
-b'House|Trujillo',"b'Trujillo, Carlos'",b'House',b'R',b'6',b'10',b'B-',b'Broward|Collier|Miami-Dade'
-b'House|Williams',"b'Williams, Patricia H.'",b'House',b'D',b'6',b'10',b'B-',b'Broward'
-b'House|Beshears',"b'Beshears, Halsey'",b'House',b'R',b'0',b'8',b'C',b'Calhoun|Franklin|Gulf|Jefferson|Lafayette|Liberty|Madison|Taylor|Wakulla|Leon'
-b'Senate|Montford',"b'Montford, Bill'",b'Senate',b'D',b'-3',b'7',b'C-',b'Calhoun|Franklin|Gadsden|Gulf|Hamilton|Jefferson|Leon|Liberty|Madison|Taylor|Wakulla'
-"b'House|Grant, M.'","b'Grant, Michael'",b'House',b'R',b'6',b'10',b'B-',b'Charlotte'
-b'Senate|Grimsley',"b'Grimsley, Denise'",b'Senate',b'R',b'-3',b'7',b'C-',b'DeSoto|Glades|Hardee|Highlands|Okeechobee|Charlotte|Lee|Polk'
-b'Senate|Steube',"b'Steube, Greg'",b'Senate',b'R',b'-13',b'4',b'D-',b'Sarasota|Charlotte'
-b'House|Massullo',"b'Massullo, Ralph E.'",b'House',b'R',b'16',b'13',b'A-',b'Citrus|Hernando'
-b'Senate|Simpson',"b'Simpson, Wilton'",b'Senate',b'R',b'-3',b'7',b'C-',b'Citrus|Hernando|Pasco'
-b'House|Cummings',"b'Cummings, W. Travis'",b'House',b'R',b'6',b'10',b'B-',b'Clay'
-b'House|Donalds',"b'Donalds, Byron'",b'House',b'R',b'-4',b'7',b'C-',b'Hendry|Collier'
-b'Senate|Passidomo',"b'Passidomo, Kathleen'",b'Senate',b'R',b'-3',b'7',b'C-',b'Collier|Hendry|Lee'
-b'House|Rommel',"b'Rommel, Bob'",b'House',b'R',b'16',b'13',b'A-',b'Collier'
-b'House|Albritton',"b'Albritton, Ben'",b'House',b'R',b'6',b'10',b'B-',b'DeSoto|Hardee|Polk'
-b'Senate|Bean',"b'Bean, Aaron'",b'Senate',b'R',b'-3',b'7',b'C-',b'Nassau|Duval'
-b'House|Byrd',"b'Byrd, Cord'",b'House',b'R',b'6',b'10',b'B-',b'Nassau|Duval'
-b'House|Daniels',"b'Daniels, Kimberly'",b'House',b'D',b'6',b'10',b'B-',b'Duval'
-b'House|Davis',"b'Davis, Tracie'",b'House',b'D',b'6',b'10',b'B-',b'Duval'
-b'House|Fant',"b'Fant, Jay'",b'House',b'R',b'6',b'10',b'B-',b'Duval'
-b'House|Fischer',"b'Fischer, Jason'",b'House',b'R',b'6',b'10',b'B-',b'Duval'
-b'Senate|Gibson',"b'Gibson, Audrey'",b'Senate',b'D',b'-3',b'7',b'C-',b'Duval'
-b'House|Yarborough',"b'Yarborough, Clay'",b'House',b'R',b'6',b'10',b'B-',b'Duval'
-b'Senate|Broxson',"b'Broxson, Doug'",b'Senate',b'R',b'-3',b'7',b'C-',b'Escambia|Santa Rosa|Okaloosa'
-b'House|Ingram',"b'Ingram, Clay'",b'House',b'R',b'6',b'10',b'B-',b'Escambia'
-b'House|White',"b'White, Frank'",b'House',b'R',b'6',b'10',b'B-',b'Escambia|Santa Rosa'
-b'Senate|Hutson',"b'Hutson, Travis'",b'Senate',b'R',b'-3',b'7',b'C-',b'Flagler|St. Johns|Volusia'
-b'House|Renner',"b'Renner, Paul'",b'House',b'R',b'6',b'10',b'B-',b'Flagler|St. Johns|Volusia'
-b'House|Alexander',"b'Alexander, Ramon'",b'House',b'D',b'6',b'10',b'B-',b'Gadsden|Leon'
-b'House|Pigman',"b'Pigman, Cary'",b'House',b'R',b'6',b'10',b'B-',b'Glades|Highlands|Okeechobee|St. Lucie'
-b'House|Ingoglia',"b'Ingoglia, Blaise'",b'House',b'R',b'6',b'10',b'B-',b'Hernando'
-b'House|Cruz',"b'Cruz, Janet'",b'House',b'D',b'6',b'10',b'B-',b'Hillsborough'
-b'Senate|Galvano',"b'Galvano, Bill'",b'Senate',b'R',b'-10',b'5',b'D',b'Manatee|Hillsborough'
-"b'House|Grant, J.'","b'Grant, James ""J.W.""'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough|Pinellas'
-b'House|Harrison',"b'Harrison, Shawn'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough'
-b'Senate|Lee',"b'Lee, Tom'",b'Senate',b'R',b'-3',b'7',b'C-',b'Hillsborough|Pasco|Polk'
-b'House|McClure',"b'McClure, Lawrence'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough'
-b'House|Newton',"b'Newton, Wengay '",b'House',b'D',b'16',b'13',b'A-',b'Hillsborough|Manatee|Pinellas|Sarasota'
-b'House|Raburn',"b'Raburn, Jake'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough'
-b'Senate|Rouson',"b'Rouson, Darryl Ervin'",b'Senate',b'D',b'-3',b'7',b'C-',b'Hillsborough|Pinellas'
-b'House|Shaw',"b'Shaw, Sean'",b'House',b'D',b'6',b'10',b'B-',b'Hillsborough'
-b'House|Spano',"b'Spano, Ross'",b'House',b'R',b'6',b'10',b'B-',b'Hillsborough'
-b'House|Toledo',"b'Toledo, Jackie'",b'House',b'R',b'3',b'9',b'C+',b'Hillsborough'
-b'Senate|Young',"b'Young, Dana D.'",b'Senate',b'R',b'-3',b'7',b'C-',b'Hillsborough'
-b'House|Grall',"b'Grall, Erin'",b'House',b'R',b'6',b'10',b'B-',b'Indian River|St. Lucie'
-b'Senate|Baxley',"b'Baxley, Dennis'",b'Senate',b'R',b'-3',b'7',b'C-',b'Sumter|Lake|Marion'
-b'House|Metz',"b'Metz, Larry'",b'House',b'R',b'6',b'10',b'B-',b'Lake'
-b'Senate|Stargel',"b'Stargel, Kelli'",b'Senate',b'R',b'-3',b'7',b'C-',b'Lake|Polk'
-b'House|Sullivan',"b'Sullivan, Jennifer Mae'",b'House',b'R',b'6',b'10',b'B-',b'Lake|Orange'
-b'Senate|Benacquisto',"b'Benacquisto, Lizbeth'",b'Senate',b'R',b'-10',b'5',b'D',b'Lee'
-b'House|Caldwell',"b'Caldwell, Matt'",b'House',b'R',b'6',b'10',b'B-',b'Lee'
-b'House|Eagle',"b'Eagle, Dane'",b'House',b'R',b'6',b'10',b'B-',b'Lee'
-b'House|Fitzenhagen',"b'Fitzenhagen, Heather'",b'House',b'R',b'6',b'10',b'B-',b'Lee'
-b'House|Rodrigues',"b'Rodrigues, Ray Wesley'",b'House',b'R',b'13',b'12',b'B+',b'Lee'
-b'House|Ausley',"b'Ausley, Loranne'",b'House',b'D',b'6',b'10',b'B-',b'Leon'
-b'House|Stone',"b'Stone, Charlie'",b'House',b'R',b'6',b'10',b'B-',b'Levy|Marion'
-b'House|Boyd',"b'Boyd, Jim'",b'House',b'R',b'6',b'10',b'B-',b'Manatee|Sarasota'
-b'House|Gruters',"b'Gruters, Joe'",b'House',b'R',b'6',b'10',b'B-',b'Manatee|Sarasota'
-b'House|McClain',"b'McClain, Stan'",b'House',b'R',b'6',b'10',b'B-',b'Marion'
-b'House|Harrell',"b'Harrell, Gayle B.'",b'House',b'R',b'6',b'10',b'B-',b'Martin|St. Lucie'
-b'House|Magar',"b'Magar, MaryLynn '",b'House',b'R',b'6',b'10',b'B-',b'Martin|Palm Beach'
-b'Senate|Negron',"b'Negron, Joe'",b'Senate',b'R',b'-3',b'7',b'C-',b'Martin|St. Lucie|Palm Beach'
-b'House|Asencio',"b'Asencio, Robert'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
-b'House|Avila',"b'Avila, Bryan'",b'House',b'R',b'3',b'9',b'C+',b'Miami-Dade'
-b'House|Bileca',"b'Bileca, Michael'",b'House',b'R',b'6',b'10',b'B-',b'Miami-Dade'
-b'Senate|Campbell',"b'Campbell, Daphne'",b'Senate',b'D',b'-3',b'7',b'C-',b'Miami-Dade'
-b'House|Duran',"b'Duran, Nicholas X.'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
-b'Senate|Flores',"b'Flores, Anitere'",b'Senate',b'R',b'-3',b'7',b'C-',b'Monroe|Miami-Dade'
-b'Senate|Garcia',"b'Garcia, Rene'",b'Senate',b'R',b'0',b'8',b'C',b'Miami-Dade'
-b'House|Hardemon',"b'Hardemon, Roy'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
-b'House|McGhee',"b'McGhee, Kionne L.'",b'House',b'D',b'9',b'11',b'B',b'Miami-Dade'
-b'House|Nunez',"b'Nunez, Jeanette M.'",b'House',b'R',b'6',b'10',b'B-',b'Miami-Dade'
-b'House|Oliva',"b'Oliva, Jose R.'",b'House',b'R',b'-4',b'7',b'C-',b'Miami-Dade'
-b'House|Perez',"b'Perez, Daniel'",b'House',b'R',b'6',b'10',b'B-',b'Miami-Dade'
-b'House|Raschein',"b'Raschein, Holly'",b'House',b'R',b'6',b'10',b'B-',b'Monroe|Miami-Dade'
-b'House|Richardson',"b'Richardson, David'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
-b'Senate|Rodriguez',"b'Rodriguez, Jose Javier'",b'Senate',b'D',b'-3',b'7',b'C-',b'Miami-Dade'
-b'House|Stafford',"b'Stafford, Cynthia A.'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
-b'Senate|Taddeo',"b'Taddeo, Annette'",b'Senate',b'D',b'-3',b'7',b'C-',b'Miami-Dade'
-"b'House|Watson, B.'","b'Watson, Barbara'",b'House',b'D',b'6',b'10',b'B-',b'Miami-Dade'
-b'House|Ponder',"b'Ponder, Mel'",b'House',b'R',b'6',b'10',b'B-',b'Okaloosa'
-b'House|Williamson',"b'Williamson, Jayer'",b'House',b'R',b'6',b'10',b'B-',b'Okaloosa|Santa Rosa'
-b'House|Antone',"b'Antone, Bruce'",b'House',b'D',b'6',b'10',b'B-',b'Orange'
-b'Senate|Bracy',"b'Bracy, Randolph'",b'Senate',b'D',b'-23',b'1',b'F-',b'Orange'
-b'House|Brown',"b'Brown, Kamia L.'",b'House',b'D',b'-4',b'7',b'C-',b'Orange'
-"b'House|Cortes, B.'","b'Cortes, Robert '",b'House',b'R',b'6',b'10',b'B-',b'Orange|Seminole'
-b'House|Mercado',"b'Mercado, Amy'",b'House',b'D',b'6',b'10',b'B-',b'Orange'
-b'House|Miller',"b'Miller, Mike'",b'House',b'R',b'6',b'10',b'B-',b'Orange'
-b'House|Olszewski',"b'Olszewski, Robert ""Bobby O""'",b'House',b'R',b'6',b'10',b'B-',b'Orange'
-b'House|Smith',"b'Smith, Carlos Guillermo'",b'House',b'D',b'13',b'12',b'B+',b'Orange'
-b'Senate|Stewart',"b'Stewart, Linda'",b'Senate',b'D',b'-3',b'7',b'C-',b'Orange'
-b'Senate|Torres',"b'Torres, Victor M., Jr.'",b'Senate',b'D',b'-3',b'7',b'C-',b'Osceola|Orange'
-"b'House|Cortes, J.'","b'Cortes, John'",b'House',b'D',b'6',b'10',b'B-',b'Osceola'
-b'House|La Rosa',"b'La Rosa, Mike'",b'House',b'R',b'0',b'8',b'C',b'Osceola|Polk'
-b'House|Abruzzo',"b'Abruzzo, Joseph'",b'House',b'D',b'6',b'10',b'B-',b'Palm Beach'
-b'House|Berman',"b'Berman, Lori'",b'House',b'D',b'12',b'12',b'B+',b'Palm Beach'
-b'House|Hager',"b'Hager, Bill'",b'House',b'R',b'6',b'10',b'B-',b'Palm Beach'
-b'House|Jacquet',"b'Jacquet, Al'",b'House',b'D',b'6',b'10',b'B-',b'Palm Beach'
-b'Senate|Powell',"b'Powell, Bobby'",b'Senate',b'D',b'-3',b'7',b'C-',b'Palm Beach'
-b'House|Roth',"b'Roth, Rick'",b'House',b'R',b'6',b'10',b'B-',b'Palm Beach'
-b'House|Silvers',"b'Silvers, David'",b'House',b'D',b'6',b'10',b'B-',b'Palm Beach'
-b'House|Slosberg',"b'Slosberg, Emily'",b'House',b'D',b'13',b'12',b'B+',b'Palm Beach'
-b'House|Willhite',"b'Willhite, Matt'",b'House',b'D',b'6',b'10',b'B-',b'Palm Beach'
-b'House|Burgess',"b'Burgess, Daniel Wright, Jr.'",b'House',b'R',b'6',b'10',b'B-',b'Pasco'
-b'House|Corcoran',"b'Corcoran, Richard'",b'House',b'R',b'6',b'10',b'B-',b'Pasco'
-b'House|Mariano',"b'Mariano, Amber'",b'House',b'R',b'6',b'10',b'B-',b'Pasco'
-b'House|Ahern',"b'Ahern, Larry'",b'House',b'R',b'6',b'10',b'B-',b'Pinellas'
-b'Senate|Brandes',"b'Brandes, Jeff'",b'Senate',b'R',b'7',b'10',b'B-',b'Pinellas'
-b'House|Diamond',"b'Diamond, Ben'",b'House',b'D',b'6',b'10',b'B-',b'Pinellas'
-b'House|Latvala',"b'Latvala, Chris'",b'House',b'R',b'6',b'10',b'B-',b'Pinellas'
-b'House|Peters',"b'Peters, Kathleen M.'",b'House',b'R',b'6',b'10',b'B-',b'Pinellas'
-b'House|Sprowls',"b'Sprowls, Chris'",b'House',b'R',b'6',b'10',b'B-',b'Pinellas'
-b'House|Burton',"b'Burton, Colleen'",b'House',b'R',b'6',b'10',b'B-',b'Polk'
-b'House|Killebrew',"b'Killebrew, Sam H.'",b'House',b'R',b'6',b'10',b'B-',b'Polk'
-b'House|Gonzalez',"b'Gonzalez, Julio'",b'House',b'R',b'6',b'10',b'B-',b'Sarasota'
-b'House|Good',"b'Good, Margaret'",b'House',b'D',b'3',b'9',b'C+',b'Sarasota'
-b'House|Brodeur',"b'Brodeur, Jason T.'",b'House',b'R',b'6',b'10',b'B-',b'Seminole'
-b'House|Plakon',"b'Plakon, Scott'",b'House',b'R',b'3',b'9',b'C+',b'Seminole'
-b'Senate|Simmons',"b'Simmons, David'",b'Senate',b'R',b'-3',b'7',b'C-',b'Seminole|Volusia'
-b'House|Stevenson',"b'Stevenson, Cyndi'",b'House',b'R',b'-4',b'7',b'C-',b'St. Johns'
-b'House|Lee',"b'Lee, Larry, Jr.'",b'House',b'D',b'6',b'10',b'B-',b'St. Lucie'
-b'House|Henry',"b'Henry, Patrick'",b'House',b'D',b'6',b'10',b'B-',b'Volusia'
-b'House|Leek',"b'Leek, Thomas J.'",b'House',b'R',b'6',b'10',b'B-',b'Volusia'
-b'House|Santiago',"b'Santiago, David'",b'House',b'R',b'6',b'10',b'B-',b'Volusia'
+legid,alphaname,chamber,party,numericscore,potentialscore,bracket,lettergrade,counties,committesdict
+House|Clemons,"Clemons, Charles Wesley, Sr.",House,R,6,12,10,B,Dixie|Gilchrist|Alachua,{}
+Senate|Perry,"Perry, Keith",Senate,R,1,9,8,C+,Alachua|Putnam|Marion,{'SRU': 'Rules'}
+House|Porter,"Porter, Elizabeth W.",House,R,6,12,10,B,Baker|Columbia|Hamilton|Suwannee|Alachua,{}
+"House|Watson, C.","Watson, Clovis, Jr.",House,D,12,24,10,B,Alachua|Marion,{'HGO': 'Government Accountability Committee'}
+Senate|Bradley,"Bradley, Rob",Senate,R,-3,27,6,C-,Baker|Bradford|Clay|Columbia|Dixie|Gilchrist|Lafayette|Levy|Suwannee|Union|Marion,"{'SJU': 'Judiciary', 'SRU': 'Rules', 'SCR': 'Criminal Justice Committee'}"
+House|Drake,"Drake, Brad",House,R,9,39,9,B-,Holmes|Jackson|Walton|Washington|Bay,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HGO': 'Government Accountability Committee'}"
+Senate|Gainer,"Gainer, George B.",Senate,R,-3,3,1,F,Bay|Holmes|Jackson|Walton|Washington|Okaloosa,{}
+House|Trumbull,"Trumbull, Jay",House,R,6,12,10,B,Bay,{}
+House|Payne,"Payne, Bobby",House,R,6,12,10,B,Bradford|Putnam|Union|Clay,{}
+House|Altman,"Altman, Thad",House,R,-6,15,4,D,Brevard,{'HCR': 'Criminal Justice Subcommittee'}
+House|Fine,"Fine, Randy",House,R,6,12,10,B,Brevard,{}
+House|Goodson,"Goodson, Tom",House,R,6,12,10,B,Brevard,{}
+Senate|Hukill,"Hukill, Dorothy L.",Senate,R,-3,3,1,F,Brevard|Volusia,{}
+Senate|Mayfield,"Mayfield, Debbie",Senate,R,7,15,10,B,Indian River|Brevard,"{'SGO': 'Governmental Oversight and Accountability Committee', 'SJU': 'Judiciary'}"
+House|Plasencia,"Plasencia, Rene ""Coach P""",House,R,6,12,10,B,Brevard|Orange,{}
+Senate|Book,"Book, Lauren",Senate,D,-4,9,4,D,Broward,{'SRU': 'Rules'}
+Senate|Braynon,"Braynon, Oscar II",Senate,D,-9,9,1,F,Broward|Miami-Dade,{'SRU': 'Rules'}
+House|Diaz,"Diaz, Manny, Jr.",House,R,6,18,9,B-,Broward|Miami-Dade,{'HAP': 'Appropriations Committee'}
+House|DuBose,"DuBose, Bobby B.",House,D,3,15,8,C+,Broward,{'HAP': 'Appropriations Committee'}
+House|Edwards-Walpole,"Edwards-Walpole, Katie",House,D,0,30,7,C,Broward,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HAP': 'Appropriations Committee'}"
+Senate|Farmer,"Farmer, Gary M., Jr.",Senate,D,7,3,14,A+,Broward,{}
+House|Geller,"Geller, Joseph",House,D,16,12,14,A+,Broward|Miami-Dade,{}
+House|Jacobs,"Jacobs, Kristin Diane",House,D,2,27,7,C,Broward,"{'HGO': 'Government Accountability Committee', 'HAP': 'Appropriations Committee'}"
+House|Jenne,"Jenne, Evan",House,D,6,12,10,B,Broward,{}
+House|Jones,"Jones, Shevrin D. ",House,D,3,18,8,C+,Broward,{'HAP': 'Appropriations Committee'}
+House|Moraitis,"Moraitis, George R., Jr.",House,R,6,18,9,B-,Broward,{'HAP': 'Appropriations Committee'}
+House|Moskowitz,"Moskowitz, Jared Evan",House,D,3,12,9,B-,Broward,{}
+House|Pritchett,"Pritchett, Sharon",House,D,-4,15,5,D+,Broward|Miami-Dade,{'HCR': 'Criminal Justice Subcommittee'}
+Senate|Rader,"Rader, Kevin J.",Senate,D,7,3,14,A+,Broward|Palm Beach,{}
+House|Russell,"Russell, Barrington A. ",House,D,6,12,10,B,Broward,{}
+House|Stark,"Stark, Richard",House,D,6,18,9,B-,Broward,{'HAP': 'Appropriations Committee'}
+Senate|Thurston,"Thurston, Perry E., Jr.",Senate,D,-15,15,1,F,Broward,"{'SJU': 'Judiciary', 'SRU': 'Rules'}"
+House|Trujillo,"Trujillo, Carlos",House,R,6,18,9,B-,Broward|Collier|Miami-Dade,{'HAP': 'Appropriations Committee'}
+House|Williams,"Williams, Patricia H.",House,D,6,12,10,B,Broward,{}
+House|Beshears,"Beshears, Halsey",House,R,0,12,7,C,Calhoun|Franklin|Gulf|Jefferson|Lafayette|Liberty|Madison|Taylor|Wakulla|Leon,{}
+Senate|Montford,"Montford, Bill",Senate,D,-9,9,1,F,Calhoun|Franklin|Gadsden|Gulf|Hamilton|Jefferson|Leon|Liberty|Madison|Taylor|Wakulla,{'SRU': 'Rules'}
+"House|Grant, M.","Grant, Michael",House,R,6,12,10,B,Charlotte,{}
+Senate|Grimsley,"Grimsley, Denise",Senate,R,3,15,8,C+,DeSoto|Glades|Hardee|Highlands|Okeechobee|Charlotte|Lee|Polk,{'SCR': 'Criminal Justice Committee'}
+Senate|Steube,"Steube, Greg",Senate,R,-13,9,0,F-,Sarasota|Charlotte,{'SJU': 'Judiciary'}
+House|Massullo,"Massullo, Ralph E.",House,R,16,12,14,A+,Citrus|Hernando,{}
+Senate|Simpson,"Simpson, Wilton",Senate,R,-9,9,1,F,Citrus|Hernando|Pasco,{'SRU': 'Rules'}
+House|Cummings,"Cummings, W. Travis",House,R,6,18,9,B-,Clay,{'HAP': 'Appropriations Committee'}
+House|Donalds,"Donalds, Byron",House,R,-4,12,5,D+,Hendry|Collier,{}
+Senate|Passidomo,"Passidomo, Kathleen",Senate,R,-2,3,3,D-,Collier|Hendry|Lee,{}
+House|Rommel,"Rommel, Bob",House,R,15,33,10,B,Collier,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HGO': 'Government Accountability Committee'}"
+House|Albritton,"Albritton, Ben",House,R,9,27,9,B-,DeSoto|Hardee|Polk,"{'HGO': 'Government Accountability Committee', 'HAP': 'Appropriations Committee'}"
+Senate|Bean,"Bean, Aaron",Senate,R,-6,6,1,F,Nassau|Duval,{'SCR': 'Criminal Justice Committee'}
+House|Byrd,"Byrd, Cord",House,R,6,12,10,B,Nassau|Duval,{}
+House|Daniels,"Daniels, Kimberly",House,D,6,18,9,B-,Duval,"{'HOV': 'Oversight, Transparency & Administration Subcommittee'}"
+House|Davis,"Davis, Tracie",House,D,3,27,8,C+,Duval,"{'HOV': 'Oversight, Transparency & Administration Subcommittee'}"
+House|Fant,"Fant, Jay",House,R,6,18,9,B-,Duval,{'HGO': 'Government Accountability Committee'}
+House|Fischer,"Fischer, Jason",House,R,6,12,10,B,Duval,{}
+Senate|Gibson,"Gibson, Audrey",Senate,D,-9,9,1,F,Duval,{'SJU': 'Judiciary'}
+House|Yarborough,"Yarborough, Clay",House,R,6,24,9,B-,Duval,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HCR': 'Criminal Justice Subcommittee'}"
+Senate|Broxson,"Broxson, Doug",Senate,R,-3,3,1,F,Escambia|Santa Rosa|Okaloosa,{}
+House|Ingram,"Ingram, Clay",House,R,6,18,9,B-,Escambia,{'HAP': 'Appropriations Committee'}
+House|White,"White, Frank",House,R,6,12,10,B,Escambia|Santa Rosa,{}
+Senate|Hutson,"Hutson, Travis",Senate,R,-3,3,1,F,Flagler|St. Johns|Volusia,{}
+House|Renner,"Renner, Paul",House,R,6,12,10,B,Flagler|St. Johns|Volusia,{}
+House|Alexander,"Alexander, Ramon",House,D,3,15,8,C+,Gadsden|Leon,{'HCR': 'Criminal Justice Subcommittee'}
+House|Pigman,"Pigman, Cary",House,R,6,33,8,C+,Glades|Highlands|Okeechobee|St. Lucie,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HGO': 'Government Accountability Committee'}"
+House|Ingoglia,"Ingoglia, Blaise",House,R,0,30,7,C,Hernando,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HAP': 'Appropriations Committee'}"
+House|Cruz,"Cruz, Janet",House,D,6,12,10,B,Hillsborough,{}
+Senate|Galvano,"Galvano, Bill",Senate,R,-16,12,0,F-,Manatee|Hillsborough,"{'SGO': 'Governmental Oversight and Accountability Committee', 'SRU': 'Rules'}"
+"House|Grant, J.","Grant, James ""J.W.""",House,R,3,12,9,B-,Hillsborough|Pinellas,{}
+House|Harrison,"Harrison, Shawn",House,R,6,12,10,B,Hillsborough,{}
+Senate|Lee,"Lee, Tom",Senate,R,-9,9,1,F,Hillsborough|Pasco|Polk,{'SRU': 'Rules'}
+House|McClure,"McClure, Lawrence",House,R,0,24,7,C,Hillsborough,"{'HOV': 'Oversight, Transparency & Administration Subcommittee'}"
+House|Newton,"Newton, Wengay ",House,D,22,24,13,A,Hillsborough|Manatee|Pinellas|Sarasota,{'HGO': 'Government Accountability Committee'}
+House|Raburn,"Raburn, Jake",House,R,6,12,10,B,Hillsborough,{}
+Senate|Rouson,"Rouson, Darryl Ervin",Senate,D,-18,18,1,F,Hillsborough|Pinellas,"{'SGO': 'Governmental Oversight and Accountability Committee', 'SCR': 'Criminal Justice Committee'}"
+House|Shaw,"Shaw, Sean",House,D,6,12,10,B,Hillsborough,{}
+House|Spano,"Spano, Ross",House,R,3,15,8,C+,Hillsborough,{'HCR': 'Criminal Justice Subcommittee'}
+House|Toledo,"Toledo, Jackie",House,R,3,12,9,B-,Hillsborough,{}
+Senate|Young,"Young, Dana D.",Senate,R,-3,3,1,F,Hillsborough,{}
+House|Grall,"Grall, Erin",House,R,6,12,10,B,Indian River|St. Lucie,{}
+Senate|Baxley,"Baxley, Dennis",Senate,R,-3,21,6,C-,Sumter|Lake|Marion,"{'SGO': 'Governmental Oversight and Accountability Committee', 'SCR': 'Criminal Justice Committee'}"
+House|Metz,"Metz, Larry",House,R,6,18,9,B-,Lake,{'HAP': 'Appropriations Committee'}
+Senate|Stargel,"Stargel, Kelli",Senate,R,-3,9,5,D+,Lake|Polk,{'SGO': 'Governmental Oversight and Accountability Committee'}
+House|Sullivan,"Sullivan, Jennifer Mae",House,R,9,39,9,B-,Lake|Orange,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HGO': 'Government Accountability Committee', 'HCR': 'Criminal Justice Subcommittee'}"
+Senate|Benacquisto,"Benacquisto, Lizbeth",Senate,R,-16,15,0,F-,Lee,"{'SJU': 'Judiciary', 'SRU': 'Rules'}"
+House|Caldwell,"Caldwell, Matt",House,R,12,24,10,B,Lee,"{'HGO': 'Government Accountability Committee', 'HOV': 'Oversight, Transparency & Administration Subcommittee'}"
+House|Eagle,"Eagle, Dane",House,R,3,21,8,C+,Lee,"{'HAP': 'Appropriations Committee', 'HCR': 'Criminal Justice Subcommittee'}"
+House|Fitzenhagen,"Fitzenhagen, Heather",House,R,6,12,10,B,Lee,{}
+House|Rodrigues,"Rodrigues, Ray Wesley",House,R,13,18,12,A-,Lee,{'HAP': 'Appropriations Committee'}
+House|Ausley,"Ausley, Loranne",House,D,6,12,10,B,Leon,{}
+House|Stone,"Stone, Charlie",House,R,9,39,9,B-,Levy|Marion,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HGO': 'Government Accountability Committee'}"
+House|Boyd,"Boyd, Jim",House,R,6,18,9,B-,Manatee|Sarasota,{'HAP': 'Appropriations Committee'}
+House|Gruters,"Gruters, Joe",House,R,6,12,10,B,Manatee|Sarasota,{}
+House|McClain,"McClain, Stan",House,R,9,21,10,B,Marion,{'HGO': 'Government Accountability Committee'}
+House|Harrell,"Harrell, Gayle B.",House,R,3,15,8,C+,Martin|St. Lucie,{'HCR': 'Criminal Justice Subcommittee'}
+House|Magar,"Magar, MaryLynn ",House,R,6,12,10,B,Martin|Palm Beach,{}
+Senate|Negron,"Negron, Joe",Senate,R,-3,3,1,F,Martin|St. Lucie|Palm Beach,{}
+House|Asencio,"Asencio, Robert",House,D,6,12,10,B,Miami-Dade,{}
+House|Avila,"Avila, Bryan",House,R,3,12,9,B-,Miami-Dade,{}
+House|Bileca,"Bileca, Michael",House,R,6,18,9,B-,Miami-Dade,{'HAP': 'Appropriations Committee'}
+Senate|Campbell,"Campbell, Daphne",Senate,D,-3,3,1,F,Miami-Dade,{}
+House|Duran,"Duran, Nicholas X.",House,D,6,12,10,B,Miami-Dade,{}
+Senate|Flores,"Flores, Anitere",Senate,R,-9,15,3,D-,Monroe|Miami-Dade,"{'SJU': 'Judiciary', 'SRU': 'Rules'}"
+Senate|Garcia,"Garcia, Rene",Senate,R,0,9,7,C,Miami-Dade,{'SJU': 'Judiciary'}
+House|Hardemon,"Hardemon, Roy",House,D,6,12,10,B,Miami-Dade,{}
+House|McGhee,"McGhee, Kionne L.",House,D,9,18,10,B,Miami-Dade,{'HAP': 'Appropriations Committee'}
+House|Nunez,"Nunez, Jeanette M.",House,R,6,24,9,B-,Miami-Dade,"{'HAP': 'Appropriations Committee', 'HGO': 'Government Accountability Committee'}"
+House|Oliva,"Oliva, Jose R.",House,R,6,18,9,B-,Miami-Dade,{'HAP': 'Appropriations Committee'}
+House|Perez,"Perez, Daniel",House,R,6,12,10,B,Miami-Dade,{}
+House|Raschein,"Raschein, Holly",House,R,12,30,10,B,Monroe|Miami-Dade,"{'HGO': 'Government Accountability Committee', 'HAP': 'Appropriations Committee'}"
+House|Richardson,"Richardson, David",House,D,3,21,8,C+,Miami-Dade,"{'HAP': 'Appropriations Committee', 'HCR': 'Criminal Justice Subcommittee'}"
+Senate|Rodriguez,"Rodriguez, Jose Javier",Senate,D,-3,9,5,D+,Miami-Dade,{'SRU': 'Rules'}
+House|Stafford,"Stafford, Cynthia A.",House,D,6,18,9,B-,Miami-Dade,{'HAP': 'Appropriations Committee'}
+Senate|Taddeo,"Taddeo, Annette",Senate,D,-3,3,1,F,Miami-Dade,{}
+"House|Watson, B.","Watson, Barbara",House,D,12,24,10,B,Miami-Dade,{'HGO': 'Government Accountability Committee'}
+House|Ponder,"Ponder, Mel",House,R,6,12,10,B,Okaloosa,{}
+House|Williamson,"Williamson, Jayer",House,R,6,36,8,C+,Okaloosa|Santa Rosa,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HGO': 'Government Accountability Committee'}"
+House|Antone,"Antone, Bruce",House,D,3,12,9,B-,Orange,{}
+Senate|Bracy,"Bracy, Randolph",Senate,D,-41,21,0,F-,Orange,"{'SJU': 'Judiciary', 'SCR': 'Criminal Justice Committee'}"
+House|Brown,"Brown, Kamia L.",House,D,-14,12,0,F-,Orange,{}
+"House|Cortes, B.","Cortes, Robert ",House,R,6,12,10,B,Orange|Seminole,{}
+House|Mercado,"Mercado, Amy",House,D,6,12,10,B,Orange,{}
+House|Miller,"Miller, Mike",House,R,6,12,10,B,Orange,{}
+House|Olszewski,"Olszewski, Robert ""Bobby O""",House,R,9,21,10,B,Orange,{'HGO': 'Government Accountability Committee'}
+House|Smith,"Smith, Carlos Guillermo",House,D,19,24,12,A-,Orange,{'HGO': 'Government Accountability Committee'}
+Senate|Stewart,"Stewart, Linda",Senate,D,-3,9,5,D+,Orange,{'SGO': 'Governmental Oversight and Accountability Committee'}
+Senate|Torres,"Torres, Victor M., Jr.",Senate,D,-3,3,1,F,Osceola|Orange,{}
+"House|Cortes, J.","Cortes, John",House,D,6,12,10,B,Osceola,{}
+House|La Rosa,"La Rosa, Mike",House,R,0,12,7,C,Osceola|Polk,{}
+House|Abruzzo,"Abruzzo, Joseph",House,D,9,21,10,B,Palm Beach,{'HGO': 'Government Accountability Committee'}
+House|Berman,"Berman, Lori",House,D,12,18,11,B+,Palm Beach,{'HAP': 'Appropriations Committee'}
+House|Hager,"Hager, Bill",House,R,3,21,8,C+,Palm Beach,"{'HAP': 'Appropriations Committee', 'HCR': 'Criminal Justice Subcommittee'}"
+House|Jacquet,"Jacquet, Al",House,D,6,12,10,B,Palm Beach,{}
+Senate|Powell,"Powell, Bobby",Senate,D,-9,9,1,F,Palm Beach,{'SJU': 'Judiciary'}
+House|Roth,"Roth, Rick",House,R,6,12,10,B,Palm Beach,{}
+House|Silvers,"Silvers, David",House,D,6,12,10,B,Palm Beach,{}
+House|Slosberg,"Slosberg, Emily",House,D,13,18,12,A-,Palm Beach,{'HCR': 'Criminal Justice Subcommittee'}
+House|Willhite,"Willhite, Matt",House,D,5,24,8,C+,Palm Beach,{'HGO': 'Government Accountability Committee'}
+House|Burgess,"Burgess, Daniel Wright, Jr.",House,R,0,24,7,C,Pasco,"{'HOV': 'Oversight, Transparency & Administration Subcommittee'}"
+House|Corcoran,"Corcoran, Richard",House,R,6,12,10,B,Pasco,{}
+House|Mariano,"Mariano, Amber",House,R,6,12,10,B,Pasco,{}
+House|Ahern,"Ahern, Larry",House,R,6,18,9,B-,Pinellas,{'HAP': 'Appropriations Committee'}
+Senate|Brandes,"Brandes, Jeff",Senate,R,1,21,7,C,Pinellas,"{'SRU': 'Rules', 'SCR': 'Criminal Justice Committee'}"
+House|Diamond,"Diamond, Ben",House,D,6,12,10,B,Pinellas,{}
+House|Latvala,"Latvala, Chris",House,R,9,27,9,B-,Pinellas,"{'HGO': 'Government Accountability Committee', 'HCR': 'Criminal Justice Subcommittee'}"
+House|Peters,"Peters, Kathleen M.",House,R,3,12,9,B-,Pinellas,{}
+House|Sprowls,"Sprowls, Chris",House,R,6,18,9,B-,Pinellas,{'HAP': 'Appropriations Committee'}
+House|Burton,"Burton, Colleen",House,R,6,12,10,B,Polk,{}
+House|Killebrew,"Killebrew, Sam H.",House,R,6,12,10,B,Polk,{}
+House|Gonzalez,"Gonzalez, Julio",House,R,3,15,8,C+,Sarasota,{'HCR': 'Criminal Justice Subcommittee'}
+House|Good,"Good, Margaret",House,D,3,12,9,B-,Sarasota,{}
+House|Brodeur,"Brodeur, Jason T.",House,R,3,18,8,C+,Seminole,{'HAP': 'Appropriations Committee'}
+House|Plakon,"Plakon, Scott",House,R,3,12,9,B-,Seminole,{}
+Senate|Simmons,"Simmons, David",Senate,R,-3,3,1,F,Seminole|Volusia,{}
+House|Stevenson,"Stevenson, Cyndi",House,R,-3,12,5,D+,St. Johns,{}
+House|Lee,"Lee, Larry, Jr.",House,D,6,12,10,B,St. Lucie,{}
+House|Henry,"Henry, Patrick",House,D,9,39,9,B-,Volusia,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HGO': 'Government Accountability Committee'}"
+House|Leek,"Leek, Thomas J. ",House,R,6,12,10,B,Volusia,{}
+House|Santiago,"Santiago, David",House,R,9,21,10,B,Volusia,{'HGO': 'Government Accountability Committee'}
