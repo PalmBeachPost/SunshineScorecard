@@ -5,8 +5,8 @@
 {% block metatags %}
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
-<meta name="description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government"{% endif %} />
-<meta property="og:description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government"{% endif %} />
+<meta name="description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government in {{edition}} "{% endif %} />
+<meta property="og:description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }} in {{edition}}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government in {{edition}}"{% endif %} />
 <meta property="og:title" content="SunshineScorecard gives grades to Florida lawmakers for their support of -- and opposition to -- open government." />
 <meta property="og:image" content="{{ baseurl }}static/sunshinescorecard-fbwide.png" />
 <meta property="og:url" content="{{ baseurl[:-1] }}{{ request.path }}" />
