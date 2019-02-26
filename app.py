@@ -1,19 +1,21 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import os #order says it should be placed before from flask import Flask
-import sys #order says it should be placed before from flask import Flask
-from collections import OrderedDict #order says it should be placed before from flask import Flask
 from flask import Flask, render_template   # redirect, url_for, request are not used in this file
-import requests #order says it should be placed before Freezer
-from flask_optimize import FlaskOptimize #order says it should be placed before Freezer
-from PIL import Image #order says it should be placed before Freezer
-from flask_frozen import Freezer #No matching distribution found for flask_frozen, only Freezer
+import requests
+from flask_optimize import FlaskOptimize
+from PIL import Image
+from flask_frozen import Freezer
+
+import os
+import sys
+from collections import OrderedDict
 import uucsv
 import csv
 
-BUILDURL = "/SunshineScorecard18/"     # Also need to patch in static/app.js at homeurl
-BASEURL = "http://interactive.orlandosentinel.com" + BUILDURL
+
+BUILDURL = "/SunshineScorecard19/" 
+BASEURL = "https://apps.palmbeachpost.com" + BUILDURL
 COUNTYDICT = {}
 MASTERDICT = {}
 LISTOFVOTES = []

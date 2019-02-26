@@ -9,18 +9,23 @@
 <meta property="og:description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government"{% endif %} />
 <meta property="og:title" content="SunshineScorecard gives grades to Florida lawmakers for their support of -- and opposition to -- open government." />
 <meta property="og:image" content="{{ baseurl }}static/sunshinescorecard-fbwide.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
 <meta property="og:url" content="{{ baseurl[:-1] }}{{ request.path }}" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@orlandosentinel" />
 
+<meta name="ghm:byline" content="mike stucka, pbpostdata">
+<meta name="ghm:category" content="News">
+<meta name="ghm:contentType" content="Article">
+<meta name="ghm:keywords" content="politics, legislature">
+<meta name="ghm:stateabbreviation" content="FL">
+<meta name="ghm:gacode" content="UA-116574139-2">
+<script src="https://apps.palmbeachpost.com/ghmmetrics/ghmmetricsv02.js" type="application/javascript"></script>
+
 <title>{% if request.url_rule.endpoint == "scorecard" %}SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}{% else %}SunshineScorecard: Documenting Florida legislators' support for open government{% endif %}</title>
 {% endblock metatags %}
 
 {% block styles %}
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="{{buildurl}}static/base.css" rel="stylesheet">
 
 {% endblock styles %}
@@ -30,11 +35,12 @@
 {% endblock fontawesome %}
 
 {% block bootstrap4support %}
-<!-- originally called for SLIM - 3.1.1.slim.min.js -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> -->
 <script src="{{ buildurl }}static/js/countyfinder.js"></script>
 {% endblock bootstrap4support %}
 
