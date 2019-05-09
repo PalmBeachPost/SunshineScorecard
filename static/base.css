@@ -29,16 +29,12 @@ a{
 }
 
 .container{
-    margin-top:-35px !important;
+	margin-top:-35px !important;
+	margin:0px !important;
 }
 
 .navholder{
     margin-bottom:20px;
-}
-
-.navselector{
-   float: left;
-   text-align: left;
 }
 
 .navabout{
@@ -211,7 +207,7 @@ targetheight = 176 */
 	position: fixed;
 	top: 0;
 	height: 50px;
-	background-color: black;
+	background-color:black;
 	z-index: 5000;
 	-webkit-box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
@@ -1129,6 +1125,60 @@ div.logolinkythingy {
     margin: 30px;
 
 }
+
+.navmen {
+	overflow: hidden;
+	position:absolute;
+	right:5px;
+	float:right;
+	display:inline-block;
+  }
+  
+  .navmen a {
+	float: right;
+	display: block;
+	color:darkgray;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  .navmen a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  #spacer:hover{
+  background-color:black !important;
+  }
+  
+	.navmen a {display: none;}
+	.navmen a.icon {
+	  float: right;
+	  display: block;
+	}
+  
+  
+.navmen.showmen {
+	position: fixed;
+}
+	.navmen.showmen .icon {
+	  position: fixed;
+	  right: 0;
+	  top: 0;
+	}
+
+	.navmen.showmen a {
+	  float: none;
+	  display: inline-block;
+	  text-align: right;
+	}
+	
+	.icon{
+	padding:5px 14px 9px 15px;
+	float:right;
+	}
 
 
 /*

@@ -26,7 +26,8 @@
 {% endblock metatags %}
 
 {% block styles %}
-<link href="{{buildurl}}static/base.css" rel="stylesheet">
+<link href="/static/base.css" rel="stylesheet"> 
+<!--was <link href="{{buildurl}}static/base.css" rel="stylesheet">-->
 
 {% endblock styles %}
 
@@ -35,13 +36,14 @@
 {% endblock fontawesome %}
 
 {% block bootstrap4support %}
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> -->
-<script src="{{ buildurl }}static/js/countyfinder.js"></script>
+<script src="/static/js/countyfinder.js"></script>
+<!--replace /static with {{buildurl}}static-->
 {% endblock bootstrap4support %}
 
 {% block explainertext %}    
@@ -75,7 +77,33 @@
 <body>
 
 {% block navbar %}
-    <div class="topnav"><div class="logo" id="logo"><a href="{{ buildurl }}"><img src="{{buildurl}}static/sunshinescorecard-h.png" alt="SunshineScorecard logo" height="40" width="305" style="margin-top:5px; margin-left:5px;"></a></div><div class="logo-thin" style="padding:0px !important; padding-left:5px !important; padding-top:5px !important; height:50px !important; vertical-align: middle !important;"><a href="{{ buildurl}}"><img src="{{buildurl}}static/sunshinescorecard-h.png" style="width:100%;" alt="SunshineScorecard logo"></a></div><div class="social-share-box social-share-box-top"><a href="https://www.facebook.com/sharer/sharer.php?u={{ baseurl }}{{ request.path }}" target="_blank"><i class="social-share-icon fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://twitter.com/intent/tweet?url={{ baseurl }}{{ request.path }}&via=orlandosentinel&text=" target="_blank"><i class="social-share-icon fa fa-twitter-square" aria-hidden="true"></i></a></div></div>
+    <div class="topnav" id="topnav">
+        <div class="logo" id="logo">
+            <!--add {{buildurl}} before static src instead of /-->
+            <a href="{{ buildurl }}"><img src="/static/sunshinescorecard-h.png" alt="SunshineScorecard logo" height="31" width="305" style="margin-top:8px; margin-left:7px;float:left">
+            </a>
+        </div>
+        <div class="logo-thin" style="padding:0px !important; padding-left:5px !important; padding-top:5px !important; height:50px !important; vertical-align: middle !important;">
+            <a href="{{ buildurl}}"><img src="/static/sunshinescorecard-h.png" style="width:100%;" alt="SunshineScorecard logo">
+            </a>
+        </div>
+       <!-- <div class="social-share-box social-share-box-top">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ baseurl }}{{ request.path }}" target="_blank">
+                <i class="social-share-icon fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url={{ baseurl }}{{ request.path }}&via=ndn&text=" target="_blank">
+                <i class="social-share-icon fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+        </div>-->
+        <div class="navmen" id="myTopnav">
+                <a style="cursor:default" id="spacer">&nbsp;</a>
+                <a href="#overview">overview</a>
+                <a href="#methodology" style="margin-right:40px;">methodology</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+        </div>
+    </div>
 
 {% endblock navbar %}
 <div class="contentbody">

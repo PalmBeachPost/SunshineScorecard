@@ -14,7 +14,7 @@ import uucsv
 import csv
 
 
-BUILDURL = "/SunshineScorecard19/" 
+BUILDURL = "" #edit this back to /SunshineScorecard19/
 BASEURL = "https://apps.palmbeachpost.com" + BUILDURL
 EDITION = "2019"
 COUNTYDICT = {}
@@ -45,7 +45,7 @@ CONFIG_UPDATE = {'html': {'htmlmin': True, 'izip': False, 'cache': False},
                  'json': {'htmlmin': True, 'izip': False, 'cache': False},
                  'text': {'htmlmin': True, 'izip': False, 'cache': False}}
 
-FLASK_OPTIMIZE = FlaskOptimize(config_update=CONFIG_UPDATE)
+FLASK_OPTIMIZE = FlaskOptimize()
 # flask_optimize = FlaskOptimize()
 freezer = Freezer(application)
 
@@ -363,7 +363,7 @@ if __name__ == '__main__':
         print("\tProcessing should be complete.")
     elif len(sys.argv) > 1 and sys.argv[1] == "webbuild":
         application.config.update(FREEZER_BASE_URL="/", FREEZER_RELATIVE_URLS=True)
-        freezer.run(debug=True, host="0.0.0.0")
+        freezer.run(debug=True, host="localhost")
     else:
         application.config.update(FREEZER_BASE_URL="/", FREEZER_RELATIVE_URLS=True)
-        application.run(debug=True, use_reloader=True, host="0.0.0.0")
+        application.run(debug=True, use_reloader=True, host="0.0.0")

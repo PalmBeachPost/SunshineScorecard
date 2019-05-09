@@ -4,15 +4,34 @@
 
 <div><A id="All-Counties"></A></div>
 
-<div class="navholder"><div class="navselector"><select name="dropdown" size="1" id="select-anchor">
-    <option value="#All-Counties">Showing all counties</option>
-{% for county in counties %}    <option value="{{ buildurl }}#{{ county.replace(" ", "-") }}">Jump to {{ county }} County</option>{% endfor %}
-</select></div><div class="navabout"><A HREF="#explainertext">About this project</div>
-</div><br clear>
+
+<div style="text-align:center;padding:25px;background-image:linear-gradient(black, gray 40%,lightgray, white 90%);height:calc(100vh)" id="topslide">
+    <div style="max-width:650px;margin:auto;font-size:17px;margin-top:140px;">
+        <p style="text-align:left;margin-bottom:0px;color:#f8c30a;opacity:0.5;font-weight:bold;margin-left:45px;font-size:22px">
+            <i>The 2019</i>
+        </p>
+        <h1 style="color:#f8c30a;font-weight:bold;text-shadow:0px 0px 10px #f8c30a;font-size:50px;margin-top:-10px">
+            SUNSHINE SCORECARD
+        </h1>
+        <h1 style="font-size:30px !important;margin-bottom:25px">See if your Florida legislator supports transparency in government</h1>
+        <p>
+                Florida lawmakers can vote to keep government records and documents open to the public — or to keep them hidden. What did yours do?
+        </p>
+        <div class="navholder"><div class="navselector" style="margin-top:20px"><select name="dropdown" size="1" id="select-anchor">
+                <option value="">Choose a county</option>
+            {% for county in counties %}    <option value="{{ buildurl }}#{{ county.replace(" ", "-") }}">{{ county }} County</option>{% endfor %}
+            </select></div>
+         </div><br clear>
+    </div>
+</div>
+
+<div class="navabout"><A HREF="#explainertext">About this project</div>
 
 <div class="container">
     {% for county in counties %}
-        <div class="row county"><a class="anchor" id="{{ county.replace(" ", "-") }}"></A><h2>{{ county }} County</h2></div>
+        <div class="row county" style="background-color:#f8c30a;padding:0px 100px;padding-top:5px;width:80vw;margin-bottom:25px;box-shadow:0px 3px 10px #f8c30a">
+            <a class="anchor" id="{{ county.replace(" ", "-") }}"></A><h2>{{ county }} County</h2>
+        </div>
             {% for pol in counties[county] %}
             <div class="row pol">
                 <div class="col polpic">
