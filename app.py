@@ -117,7 +117,7 @@ def get_bracket(max, instancevalue):
 
 
 def structure_data():
-    with open('pols.csv', 'r') as csvfile:
+    with open('pols2.csv', 'r') as csvfile:
         global pols
         global COUNTYDICT
         global MASTERDICT
@@ -181,7 +181,7 @@ def structure_data():
         for pol in COUNTYDICT[county]:
             process_images(photourl=pol["photourl"], slug=pol["slug"])
     print(str(len(COUNTYDICTsorted)) + " counties found")
-    with open('billlist.csv') as billlistfile:  # Let's build a lookup table
+    with open('billlist2.csv', encoding='utf-8-sig') as billlistfile:  # Let's build a lookup table
         billlistreader = uucsv.UnicodeDictReader(billlistfile)
         sortedbillistreader = sorted(billlistreader)
         billlistreader = sortedbillistreader[0] #to remove extra outer list, not sure where the outer list came from
@@ -192,7 +192,7 @@ def structure_data():
            
     csvmembers = []
     print("listofvotes size before data load: " + str(len(LISTOFVOTES)))
-    with open('autovotes.csv', 'r') as autovotesfile:
+    with open('autovotes2.csv', 'r', encoding='utf-8-sig') as autovotesfile:
         autovotesreader = uucsv.UnicodeDictReader(autovotesfile)
         sortedautovotesreader = sorted(autovotesreader)
         autovotesreader = sortedautovotesreader[0] #to remove extra outer list, not sure where the outer list came from
@@ -211,7 +211,7 @@ def structure_data():
             POTENTIALSCORESDICT[memberid] += FLOORVOTEPOINTS    
 
     print("listofvotes size after autovotes: " + str(len(LISTOFVOTES)))
-    with open('extracredits.csv', 'r') as extrasfile:
+    with open('extracredits2.csv', 'r', encoding='utf-8-sig') as extrasfile:
         extrasreader = uucsv.UnicodeDictReader(extrasfile)
         sortedextrasreader = sorted(extrasreader)
         extrasreader = sortedextrasreader[0]
@@ -236,7 +236,7 @@ def structure_data():
                 if row['cmte vote'] == "cmte vote":
                     POTENTIALSCORESDICT[memberid] += COMMITTEEVOTEPOINTS
                     if memberid not in MEMBERCOMMITTEESDICT:
-                        print("Found " + memberid + " in extracredits.csv, but didn't have that ID in master politican scrape.")
+                        print("Found " + memberid + " in extracredits2.csv, but didn't have that ID in master politican scrape.")
                     else:                    
                         MEMBERCOMMITTEESDICT[memberid][row['slug'][-3:]] = row['cmte name']
 
@@ -257,6 +257,7 @@ def structure_data():
             row["vote"] = "Voted No"
         if row["vote"] == "-":
             row["vote"] = "Missed vote"
+        
            
     exportset = {}  # because we needed more data structures
     for county in COUNTYDICT:
@@ -278,7 +279,7 @@ def structure_data():
                 exportset[legid] = [legid, pol['alphaname'], pol['chamber'], pol['party'], numericscore, potentialscore, bracket, lettergrade, pol['counties'], committeesdict]
                 
                 
-    with open('report.csv', 'w', newline='') as reportfile:
+    with open('report2.csv', 'w', newline='', encoding='utf-8-sig') as reportfile:
         # put = uucsv.UnicodeWriter(reportfile)
         put = csv.writer(reportfile)
         put.writerow(["legid", "alphaname", "chamber", "party", "numericscore", "potentialscore", "bracket", "lettergrade", "counties", "committesdict"])
