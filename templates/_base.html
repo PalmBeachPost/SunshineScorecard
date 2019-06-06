@@ -80,29 +80,29 @@
     <div class="topnav" id="topnav">
         <div class="logo" id="logo">
             <!--add {{buildurl}} before static src instead of /-->
-            <a href="{{ buildurl }}"><img src="/static/sunshinescorecard-h.png" alt="SunshineScorecard logo" height="31" width="305" style="margin-top:8px; margin-left:7px;float:left">
+            <a href="{{ buildurl }}"><img src="/static/sunshinescorecard-h.png" alt="SunshineScorecard logo" id="headerimg" >
             </a>
         </div>
         <div class="logo-thin" style="padding:0px !important; padding-left:5px !important; padding-top:5px !important; height:50px !important; vertical-align: middle !important;">
             <a href="{{ buildurl}}"><img src="/static/sunshinescorecard-h.png" style="width:100%;" alt="SunshineScorecard logo">
             </a>
         </div>
-       <!-- <div class="social-share-box social-share-box-top">
+       <div class="social-share-box social-share-box-top">
             <a href="https://www.facebook.com/sharer/sharer.php?u={{ baseurl }}{{ request.path }}" target="_blank">
                 <i class="social-share-icon fa fa-facebook-square" aria-hidden="true"></i>
             </a>
             <a href="https://twitter.com/intent/tweet?url={{ baseurl }}{{ request.path }}&via=ndn&text=" target="_blank">
                 <i class="social-share-icon fa fa-twitter-square" aria-hidden="true"></i>
             </a>
-        </div>-->
-        <div class="navmen" id="myTopnav">
+        </div>
+       <!--disabling this until it's needed <div class="navmen" id="myTopnav">
                 <a style="cursor:default" id="spacer">&nbsp;</a>
                 <a href="#overview">overview</a>
                 <a href="#methodology" style="margin-right:40px;">methodology</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
                 </a>
-        </div>
+        </div>-->
     </div>
 
 {% endblock navbar %}

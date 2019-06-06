@@ -25,3 +25,12 @@ function myFunction() {
             $(".topnav").css('background-color', 'rgb(' + channel + ',' + channel + ',' + channel + ')');
         });
     });
+
+
+    function openNav() {
+        document.getElementById("myNav").style.height = "calc(100% - 40px)";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }

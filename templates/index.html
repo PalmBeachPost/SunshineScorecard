@@ -2,18 +2,29 @@
 
 {% block content %}
 
+
 <div><A id="All-Counties"></A></div>
 
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        
+      <p style="padding-top:20px">All data from the Florida Forest Service, and includes only wildfires on state land. <a href="https://docs.google.com/spreadsheets/d/1gYMvrE40q6aP3Q0m3a_5aHeHJIfUeuMc3aVtA0jceyQ/edit?usp=sharing" target="_blank">Click here to view in Google Sheets</a>.
+        </p>
+        <p style="padding-top:20px">See more Florida data at <a href="https://data.naplesnews.com/" target="_blank">data.naplesnews.com</a>.</p>
+        <p style="margin-top:6%;font-size:18px">This tool created by</p><p style="margin-top:-10px;font-size:18px"><a href="https://www.naplesnews.com/staff/50229/janie-haseman/" target="_blank">Janie Haseman</a></p>
+    </div>
+  </div>
 
-<div style="text-align:center;padding:25px;background-image:linear-gradient(black, gray 40%,lightgray, white 90%);height:calc(100vh)" id="topslide">
-    <div style="max-width:650px;margin:auto;font-size:17px;margin-top:140px;">
-        <p style="text-align:left;margin-bottom:0px;color:#f8c30a;opacity:0.5;font-weight:bold;margin-left:45px;font-size:22px">
+<div id="topslide">
+    <div class="topslidechild">
+        <p id="sunyear">
             <i>The 2019</i>
         </p>
-        <h1 style="color:#f8c30a;font-weight:bold;text-shadow:0px 0px 10px #f8c30a;font-size:50px;margin-top:-10px">
+        <h1 id="headertext">
             SUNSHINE SCORECARD
         </h1>
-        <h1 style="font-size:30px !important;margin-bottom:25px">See if your Florida legislator supports transparency in government</h1>
+        <h1 id="desctext" >See if your Florida legislator supports transparency in government</h1>
         <p>
                 Florida lawmakers can vote to keep government records and documents open to the public — or to keep them hidden. What did yours do?
         </p>
@@ -69,6 +80,8 @@
 
 </div>
 
+<div id="footer" style="z-index:100;cursor:pointer" onclick="openNav()"><p id="nomargin" onclick="openNav()" style="cursor:pointer;text-decoration:underline">About this map
+</p></div>
 
 
 {% endblock content %}

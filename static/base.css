@@ -49,7 +49,7 @@ a{
 
 .pol{
     /* width: 100%; */
-	margin-bottom:5px;
+	margin-bottom:15px;
 	align-items: center; 
 }
 
@@ -63,7 +63,8 @@ a{
 .polpicpic{
 	width: 132px;
 	height: 176px;
-	outline: 1px solid black;
+	//outline: 1px solid black;
+	box-shadow: -3px 3px 3px gray;
 	outline-offset: -1px;
     float: right;
 }
@@ -71,7 +72,8 @@ a{
 .polbio{
 /*	display: inline-block; */
 	/* vertical-align: top; */
-    align-items: center; 
+	align-items: center; 
+	//max-width:250px !important;
 }
 
 .polname{
@@ -451,6 +453,11 @@ body{
 
 .contentbody{
 	padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 .leaflet-popup-tip-container{
@@ -882,7 +889,8 @@ div.victimbox2 img:hover span.text-content {
 
 /* CSS for select boxes */
 select{
-	-moz-appearance:none;	
+	-moz-appearance:none;
+	box-shadow: 0px 0px 1px #f8c30a;
 }
 
 /* HEY! homicide-navbar border-radius was 6px, but was cutting stuff off too much in Firefox */
@@ -1179,6 +1187,189 @@ div.logolinkythingy {
 	padding:5px 14px 9px 15px;
 	float:right;
 	}
+
+
+	#topslide{
+		text-align:center;
+		padding:25px;
+		background-image:linear-gradient(black, gray 40%,lightgray, white 90%);
+		height:calc(100vh);
+	}
+	
+	.topslidechild{
+		max-width:650px;
+		margin:auto;
+		font-size:17px;
+		margin-top:80px;
+	}
+	
+	#sunyear{
+		text-align:center;
+		margin-bottom:0px;
+		color:#f8c30a;
+		opacity:0.5;
+		font-weight:bold;
+		font-size:22px;
+	}
+	
+	#headertext{
+		color:#f8c30a;
+		font-weight:bold;
+		text-shadow:0px 0px 10px #f8c30a;
+		font-size:40px;
+	}
+	
+	#desctext{
+		font-size:20px !important;
+		margin-bottom:25px;
+	}
+
+	#headerimg{
+		height:26px;
+		width:259px;
+		margin-top:12px;
+		margin-left:7px;
+		float:left;
+	}
+
+@media screen and (min-width: 400px) {
+
+#topslide{
+	text-align:center;
+	padding:25px;
+	background-image:linear-gradient(black, gray 40%,lightgray, white 90%);
+	height:calc(100vh);
+}
+
+.topslidechild{
+	max-width:650px;
+	margin:auto;
+	font-size:17px;
+	margin-top:140px;
+}
+
+#sunyear{
+	margin-bottom:0px;
+	color:#f8c30a;
+	opacity:0.5;
+	font-weight:bold;
+	font-size:22px;
+}
+
+#headertext{
+	color:#f8c30a;
+	font-weight:bold;
+	text-shadow:0px 0px 10px #f8c30a;
+	font-size:50px;
+}
+
+#desctext{
+	font-size:30px !important;
+	margin-bottom:25px;
+}
+#headerimg{
+	height:31px;
+	width:305px;
+	margin-top:8px;
+}
+}
+
+@media screen and (min-width: 700px) {
+	#sunyear{
+		text-align:left;
+		margin-left:45px;
+	}
+	#headertext{
+		margin-top:-10px;
+	}
+}
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(215, 228, 244, 0.9);
+	color: grey;
+	opacity: 1;
+	text-align: right;
+	transition: 8s;
+	height:45px;
+	padding: 10px;
+	text-align:center;
+	
+}
+
+.overlay {
+	width: 100%;
+	height: 0;
+	position: fixed;
+	z-index: 5;
+	bottom: 0;
+	left: 0;
+	margin-top:40px;
+	background-color: rgba(215, 228, 244, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+  }
+  
+  .overlay-content {
+	font-size:25px;
+	position: relative;
+	top: 25%;
+	width: 80%;
+	text-align: center;
+	margin-top: 30px;
+	  line-height:40px;
+	  margin:auto;
+  }
+  
+  .overlay a {
+	//padding: 8px;
+	//text-decoration: none;
+	//font-size: 36px;
+	color: #818181;
+	//display: block;
+	transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	opacity:0.5;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 60px;
+	  text-decoration: none;
+  
+  }
+  
+  @media screen and (max-height: 450px) {
+	//.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+  }
+
+  media screen and (max-width: 928px) {
+    
+    .overlay-content {
+  font-size:18px;
+  position: relative;
+  top: 15%;
+  width: 95%;
+  text-align: center;
+  line-height: 25px;
+}
+    
+}
+	  
+
+
 
 
 /*
