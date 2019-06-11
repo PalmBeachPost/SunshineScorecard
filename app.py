@@ -15,7 +15,7 @@ import csv
 
 
 BUILDURL = "" #edit this back to /SunshineScorecard19/
-BASEURL = "https://apps.palmbeachpost.com" + BUILDURL
+BASEURL = "https://content-static.naplesnews.com/projects" + BUILDURL
 EDITION = "2019"
 COUNTYDICT = {}
 MASTERDICT = {}
@@ -163,10 +163,14 @@ def structure_data():
                 pol['legname'] = last.replace("NuÌ±ez", "Nunez").replace("Nuñez", "Nunez")
             else:
                 pol['legname'] = last + ", " + pol['first'][0] + "."
+                if pol['alphaname'] == "Rodriguez, Ana Maria":
+                    pol['legname'] = "Rodriguez, A. M."
                 if pol['legname'] == "Cortes, R.":
                     pol['legname'] = "Cortes, B."   # Robert goes by Bob, and wants his initials to go that way too.
                 #if pol['legname'] == "Miller":
-                    #pol['legname'] == "Miller, M."    
+                    #pol['legname'] == "Miller, M."  
+            if pol['alphaname'] == "Rodrigues, Ray Wesley":
+                pol['legname'] = "Rodrigues, R."  
             for county in pol['counties'].split("|"):
                 if county not in COUNTYDICT:
                     COUNTYDICT[county] = []

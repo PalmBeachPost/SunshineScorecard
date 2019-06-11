@@ -71,7 +71,7 @@
             <br><div class="row votes">
                 <div class="col-sm-8"><b>Committees voted in:</b><br>
                     {% for cmte in pol['committeesdict'] %}
-                        &nbsp;&nbsp;&nbsp;<b>{{ cmte }}</b>: {{ pol['chamber'] }} {{ pol['committeesdict'][cmte] }}<br>
+                        &nbsp;&nbsp;&nbsp;{{ pol['chamber'] }} {{ pol['committeesdict'][cmte] }}<br>
                     {% endfor %}
                 </div>
             </div>

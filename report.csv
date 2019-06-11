@@ -83,7 +83,7 @@ Senate|Benacquisto,"Benacquisto, Lizbeth",Senate,R,-16,15,0,F--,Lee,"{'SJU': 'Ju
 House|Caldwell,"Caldwell, Matt",House,R,9,27,11,B,Lee,"{'HGO': 'Government Accountability Committee', 'HOV': 'Oversight, Transparency & Administration Subcommittee'}"
 House|Eagle,"Eagle, Dane",House,R,0,24,8,C,Lee,"{'HAP': 'Appropriations Committee', 'HCR': 'Criminal Justice Subcommittee'}"
 House|Fitzenhagen,"Fitzenhagen, Heather",House,R,3,15,10,B-,Lee,{}
-House|Rodrigues,"Rodrigues, Ray Wesley",House,R,10,21,12,B+,Lee,{'HAP': 'Appropriations Committee'}
+"House|Rodrigues, R.","Rodrigues, Ray Wesley",House,R,10,21,12,B+,Lee,{'HAP': 'Appropriations Committee'}
 House|Ausley,"Ausley, Loranne",House,D,3,15,10,B-,Leon,{}
 House|Stone,"Stone, Charlie",House,R,6,42,9,C+,Levy|Marion,"{'HOV': 'Oversight, Transparency & Administration Subcommittee', 'HGO': 'Government Accountability Committee'}"
 House|Boyd,"Boyd, Jim",House,R,3,21,9,C+,Manatee|Sarasota,{'HAP': 'Appropriations Committee'}
