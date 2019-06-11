@@ -1,4 +1,124 @@
 billno,chamber,member,vote,points
+HB1249,House,Alexander,Y,-3
+HB1249,House,Aloupis,Y,-3
+HB1249,House,Altman,Y,-3
+HB1249,House,Andrade,Y,-3
+HB1249,House,Antone,Y,-3
+HB1249,House,Ausley,-,0
+HB1249,House,Avila,Y,-3
+HB1249,House,Bell,Y,-3
+HB1249,House,Beltran,Y,-3
+HB1249,House,Brannan,Y,-3
+HB1249,House,Brown,Y,-3
+HB1249,House,Buchanan,Y,-3
+HB1249,House,Burton,Y,-3
+HB1249,House,Bush,Y,-3
+HB1249,House,Byrd,Y,-3
+HB1249,House,Caruso,Y,-3
+HB1249,House,Casello,Y,-3
+HB1249,House,Clemons,Y,-3
+HB1249,House,"Cortes, J.",Y,-3
+HB1249,House,Cummings,Y,-3
+HB1249,House,Daniels,Y,-3
+HB1249,House,Davis,Y,-3
+HB1249,House,Diamond,Y,-3
+HB1249,House,DiCeglie,Y,-3
+HB1249,House,Donalds,Y,-3
+HB1249,House,Drake,Y,-3
+HB1249,House,Driskell,Y,-3
+HB1249,House,DuBose,Y,-3
+HB1249,House,Duggan,Y,-3
+HB1249,House,Duran,Y,-3
+HB1249,House,Eagle,Y,-3
+HB1249,House,Eskamani,Y,-3
+HB1249,House,FernÃ¡ndez,Y,-3
+HB1249,House,Fernandez-Barquin,Y,-3
+HB1249,House,Fetterhoff,Y,-3
+HB1249,House,Fine,Y,-3
+HB1249,House,Fischer,Y,-3
+HB1249,House,Fitzenhagen,Y,-3
+HB1249,House,Geller,Y,-3
+HB1249,House,Goff-Marcil,Y,-3
+HB1249,House,Good,Y,-3
+HB1249,House,Gottlieb,Y,-3
+HB1249,House,Grall,Y,-3
+HB1249,House,"Grant, J.",Y,-3
+HB1249,House,"Grant, M.",Y,-3
+HB1249,House,Gregory,Y,-3
+HB1249,House,Grieco,Y,-3
+HB1249,House,Hage,Y,-3
+HB1249,House,Hart,Y,-3
+HB1249,House,Hattersley,Y,-3
+HB1249,House,Hill,Y,-3
+HB1249,House,Hogan Johnson,Y,-3
+HB1249,House,Ingoglia,Y,-3
+HB1249,House,Jacobs,-,0
+HB1249,House,Jacquet,Y,-3
+HB1249,House,Jenne,Y,-3
+HB1249,House,Jones,-,0
+HB1249,House,Joseph,Y,-3
+HB1249,House,Killebrew,-,0
+HB1249,House,La Rosa,Y,-3
+HB1249,House,LaMarca,Y,-3
+HB1249,House,Latvala,Y,-3
+HB1249,House,Leek,Y,-3
+HB1249,House,Magar,Y,-3
+HB1249,House,Mariano,Y,-3
+HB1249,House,Massullo,Y,-3
+HB1249,House,McClain,Y,-3
+HB1249,House,McClure,Y,-3
+HB1249,House,McGhee,Y,-3
+HB1249,House,Mercado,Y,-3
+HB1249,House,Newton,Y,-3
+HB1249,House,Oliva,Y,-3
+HB1249,House,Omphroy,Y,-3
+HB1249,House,Overdorf,Y,-3
+HB1249,House,Payne,Y,-3
+HB1249,House,Perez,Y,-3
+HB1249,House,Pigman,Y,-3
+HB1249,House,Plakon,Y,-3
+HB1249,House,Plasencia,Y,-3
+HB1249,House,Polo,Y,-3
+HB1249,House,Polsky,Y,-3
+HB1249,House,Ponder,Y,-3
+HB1249,House,Pritchett,Y,-3
+HB1249,House,Raschein,Y,-3
+HB1249,House,Renner,Y,-3
+HB1249,House,Roach,Y,-3
+HB1249,House,Robinson,Y,-3
+HB1249,House,"Rodrigues, R.",Y,-3
+HB1249,House,"Rodriguez, A.",Y,-3
+HB1249,House,"Rodriguez, A. M.",Y,-3
+HB1249,House,Rommel,Y,-3
+HB1249,House,Roth,Y,-3
+HB1249,House,Sabatini,Y,-3
+HB1249,House,Santiago,Y,-3
+HB1249,House,Silvers,Y,-3
+HB1249,House,Sirois,Y,-3
+HB1249,House,Slosberg,Y,-3
+HB1249,House,"Smith, C.",Y,-3
+HB1249,House,"Smith, D.",Y,-3
+HB1249,House,Sprowls,Y,-3
+HB1249,House,Stark,Y,-3
+HB1249,House,Stevenson,Y,-3
+HB1249,House,Stone,Y,-3
+HB1249,House,Sullivan,Y,-3
+HB1249,House,Thompson,Y,-3
+HB1249,House,Toledo,Y,-3
+HB1249,House,Tomkow,Y,-3
+HB1249,House,Trumbull,Y,-3
+HB1249,House,Vacant,-,0
+HB1249,House,Vacant,-,0
+HB1249,House,Vacant,-,0
+HB1249,House,Valdes,Y,-3
+HB1249,House,"Watson, B.",Y,-3
+HB1249,House,"Watson, C.",Y,-3
+HB1249,House,Webb,Y,-3
+HB1249,House,Willhite,Y,-3
+HB1249,House,Williams,Y,-3
+HB1249,House,Williamson,Y,-3
+HB1249,House,Yarborough,Y,-3
+HB1249,House,Zika,Y,-3
 HB407,House,Alexander,Y,3
 HB407,House,Aloupis,Y,3
 HB407,House,Altman,Y,3
@@ -119,6 +239,126 @@ HB407,House,Williams,Y,3
 HB407,House,Williamson,Y,3
 HB407,House,Yarborough,Y,3
 HB407,House,Zika,Y,3
+HB759,House,Alexander,Y,3
+HB759,House,Aloupis,Y,3
+HB759,House,Altman,Y,3
+HB759,House,Andrade,Y,3
+HB759,House,Antone,Y,3
+HB759,House,Ausley,Y,3
+HB759,House,Avila,-,0
+HB759,House,Bell,Y,3
+HB759,House,Beltran,Y,3
+HB759,House,Brannan,Y,3
+HB759,House,Brown,Y,3
+HB759,House,Buchanan,Y,3
+HB759,House,Burton,Y,3
+HB759,House,Bush,Y,3
+HB759,House,Byrd,Y,3
+HB759,House,Caruso,Y,3
+HB759,House,Casello,Y,3
+HB759,House,Clemons,Y,3
+HB759,House,"Cortes, J.",Y,3
+HB759,House,Cummings,Y,3
+HB759,House,Daniels,Y,3
+HB759,House,Davis,Y,3
+HB759,House,Diamond,Y,3
+HB759,House,DiCeglie,Y,3
+HB759,House,Donalds,Y,3
+HB759,House,Drake,Y,3
+HB759,House,Driskell,Y,3
+HB759,House,DuBose,Y,3
+HB759,House,Duggan,Y,3
+HB759,House,Duran,Y,3
+HB759,House,Eagle,Y,3
+HB759,House,Eskamani,Y,3
+HB759,House,FernÃ¡ndez,Y,3
+HB759,House,Fernandez-Barquin,Y,3
+HB759,House,Fetterhoff,Y,3
+HB759,House,Fine,Y,3
+HB759,House,Fischer,Y,3
+HB759,House,Fitzenhagen,Y,3
+HB759,House,Geller,Y,3
+HB759,House,Goff-Marcil,Y,3
+HB759,House,Good,Y,3
+HB759,House,Gottlieb,Y,3
+HB759,House,Grall,N,-3
+HB759,House,"Grant, J.",Y,3
+HB759,House,"Grant, M.",Y,3
+HB759,House,Gregory,Y,3
+HB759,House,Grieco,Y,3
+HB759,House,Hage,Y,3
+HB759,House,Hart,Y,3
+HB759,House,Hattersley,Y,3
+HB759,House,Hill,Y,3
+HB759,House,Hogan Johnson,Y,3
+HB759,House,Ingoglia,Y,3
+HB759,House,Jacobs,Y,3
+HB759,House,Jacquet,Y,3
+HB759,House,Jenne,Y,3
+HB759,House,Jones,Y,3
+HB759,House,Joseph,Y,3
+HB759,House,Killebrew,Y,3
+HB759,House,La Rosa,Y,3
+HB759,House,LaMarca,Y,3
+HB759,House,Latvala,Y,3
+HB759,House,Leek,Y,3
+HB759,House,Magar,Y,3
+HB759,House,Mariano,Y,3
+HB759,House,Massullo,Y,3
+HB759,House,McClain,Y,3
+HB759,House,McClure,Y,3
+HB759,House,McGhee,Y,3
+HB759,House,Mercado,Y,3
+HB759,House,Newton,Y,3
+HB759,House,Oliva,Y,3
+HB759,House,Omphroy,Y,3
+HB759,House,Overdorf,Y,3
+HB759,House,Payne,Y,3
+HB759,House,Perez,Y,3
+HB759,House,Pigman,Y,3
+HB759,House,Plakon,Y,3
+HB759,House,Plasencia,Y,3
+HB759,House,Polo,Y,3
+HB759,House,Polsky,Y,3
+HB759,House,Ponder,Y,3
+HB759,House,Pritchett,Y,3
+HB759,House,Raschein,Y,3
+HB759,House,Renner,Y,3
+HB759,House,Roach,Y,3
+HB759,House,Robinson,Y,3
+HB759,House,"Rodrigues, R.",Y,3
+HB759,House,"Rodriguez, A.",Y,3
+HB759,House,"Rodriguez, A. M.",Y,3
+HB759,House,Rommel,Y,3
+HB759,House,Roth,Y,3
+HB759,House,Sabatini,Y,3
+HB759,House,Santiago,Y,3
+HB759,House,Silvers,Y,3
+HB759,House,Sirois,Y,3
+HB759,House,Slosberg,-,0
+HB759,House,"Smith, C.",Y,3
+HB759,House,"Smith, D.",Y,3
+HB759,House,Sprowls,Y,3
+HB759,House,Stark,Y,3
+HB759,House,Stevenson,Y,3
+HB759,House,Stone,Y,3
+HB759,House,Sullivan,Y,3
+HB759,House,Thompson,Y,3
+HB759,House,Toledo,Y,3
+HB759,House,Tomkow,Y,3
+HB759,House,Trumbull,-,0
+HB759,House,Vacant,-,0
+HB759,House,Vacant,-,0
+HB759,House,Vacant,-,0
+HB759,House,Valdes,Y,3
+HB759,House,"Watson, B.",Y,3
+HB759,House,"Watson, C.",Y,3
+HB759,House,Webb,Y,3
+HB759,House,Willhite,Y,3
+HB759,House,Williams,Y,3
+HB759,House,Williamson,Y,3
+HB759,House,Yarborough,Y,3
+HB759,House,Zika,Y,3
 SB248,House,Alexander,Y,-3
 SB248,House,Aloupis,Y,-3
 SB248,House,Altman,Y,-3
