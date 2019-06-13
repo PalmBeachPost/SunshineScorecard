@@ -27,7 +27,7 @@ House|LaMarca,"LaMarca, Chip",House,R,-6,30,7,C-,Broward,{'tee': 'Judiciary Comm
 House|Omphroy,"Omphroy, Anika Tene",House,D,6,15,11,B,Broward,{'tee': 'Civil Justice Subcommittee'}
 House|Polo,"Polo, Cindy",House,D,10,12,14,A,Broward|Miami-Dade,{}
 House|Pritchett,"Pritchett, Sharon",House,D,0,12,8,C,Broward|Miami-Dade,{}
-Senate|Rader,"Rader, Kevin J.",Senate,D,-12,18,3,F+,Broward|Palm Beach,{'ity': 'Governmental Oversight and Accountability'}
+Senate|Rader,"Rader, Kevin J.",Senate,D,-2,18,7,C-,Broward|Palm Beach,{'ity': 'Governmental Oversight and Accountability'}
 "House|Rodriguez, A. M.","Rodriguez, Ana Maria",House,R,3,15,10,B-,Broward|Collier|Miami-Dade,{'tee': 'Civil Justice Subcommittee'}
 House|Stark,"Stark, Richard",House,D,0,18,8,C,Broward,{'tee': 'Appropriations Committee'}
 Senate|Thurston,"Thurston, Perry E., Jr.",Senate,D,-21,21,1,F-,Broward,"{'ons': 'Appropriations', 'nce': 'Banking and Insurance', 'les': 'Rules'}"
@@ -82,7 +82,7 @@ Senate|Benacquisto,"Benacquisto, Lizbeth",Senate,R,-18,18,1,F-,Lee,"{'ons': 'App
 House|Eagle,"Eagle, Dane",House,R,-6,18,6,D+,Lee,{'tee': 'Appropriations Committee'}
 House|Fitzenhagen,"Fitzenhagen, Heather",House,R,-6,24,6,D+,Lee,{'tee': 'Judiciary Committee'}
 House|Roach,"Roach, Spencer",House,R,-3,15,7,C-,Lee,{'tee': 'Criminal Justice Subcommittee'}
-"House|Rodrigues, R.","Rodrigues, Ray Wesley",House,R,-3,18,7,C-,Lee,{'tee': 'Appropriations Committee'}
+"House|Rodrigues, R.","Rodrigues, Ray Wesley",House,R,7,18,11,B,Lee,{'tee': 'Appropriations Committee'}
 House|Ausley,"Ausley, Loranne",House,D,0,12,8,C,Leon,{}
 House|Stone,"Stone, Charlie",House,R,3,21,9,C+,Levy|Marion,{'tee': 'Commerce Committee'}
 House|Gregory,"Gregory, Tommy",House,R,-3,21,7,C-,Manatee|Sarasota,{'tee': 'Judiciary Committee'}

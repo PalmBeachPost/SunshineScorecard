@@ -1289,7 +1289,7 @@ div.logolinkythingy {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: rgba(215, 228, 244, 0.9);
+	background-color: rgb(223,224,223,0.9);
 	color: grey;
 	opacity: 1;
 	text-align: right;
@@ -1308,20 +1308,20 @@ div.logolinkythingy {
 	bottom: 0;
 	left: 0;
 	margin-top:40px;
-	background-color: rgba(215, 228, 244, 0.9);
+	background-color: rgb(223,224,223,1);
 	overflow-x: hidden;
 	transition: 0.5s;
   }
   
   .overlay-content {
-	font-size:25px;
+	font-size:16px;
 	position: relative;
-	top: 25%;
 	width: 80%;
-	text-align: center;
+	text-align: left;
 	margin-top: 30px;
-	  line-height:40px;
+	  line-height:20px;
 	  margin:auto;
+	padding-bottom:60px;
   }
   
   .overlay a {
@@ -1358,17 +1358,23 @@ div.logolinkythingy {
   media screen and (max-width: 928px) {
     
     .overlay-content {
-  font-size:18px;
+  font-size:15px;
   position: relative;
-  top: 15%;
   width: 95%;
-  text-align: center;
-  line-height: 25px;
+  text-align: left;
+  line-height: 20px;
+  padding-bottom:60px;
 }
     
 }
-	  
-
+	
+a{
+	color:inherit;
+}
+a:hover{
+	text-decoration:inherit;
+	color:inherit;
+}
 
 
 

@@ -7,12 +7,23 @@
 
 <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-        
-      <p style="padding-top:20px">All data from the Florida Forest Service, and includes only wildfires on state land. <a href="https://docs.google.com/spreadsheets/d/1gYMvrE40q6aP3Q0m3a_5aHeHJIfUeuMc3aVtA0jceyQ/edit?usp=sharing" target="_blank">Click here to view in Google Sheets</a>.
-        </p>
-        <p style="padding-top:20px">See more Florida data at <a href="https://data.naplesnews.com/" target="_blank">data.naplesnews.com</a>.</p>
-        <p style="margin-top:6%;font-size:18px">This tool created by</p><p style="margin-top:-10px;font-size:18px"><a href="https://www.naplesnews.com/staff/50229/janie-haseman/" target="_blank">Janie Haseman</a></p>
+    <div class="overlay-content" style="padding-top:50px">
+        <h3 style="font-size:18px"><b>About the Scorecard</b></h3>
+        {% include 'explainertext.html' %}
+        <table class="creditbox">
+            <tr><td class="credit">Implementation</td><td>Mike Stucka, The Palm Beach Post; Adelaide Chen, The Orlando Sentinel; Janie Haseman, Naples Daily News</td></tr>
+            <tr><td class="credit">Design</td><td>Adelaide Chen, The Orlando Sentinel; Mike Stucka and Mark Buzek, The Palm Beach Post; Janie Haseman, Naples Daily News</td></tr>
+            <tr><td class="credit">Concept</td><td>Sunshine Week Committee, Florida Society of News Editors</td></tr>
+            <tr><td class="credit">Bill selection</td><td>Barbara Petersen, First Amendment Foundation</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td class="credit" style="vertical-align: top;">Previous versions</td>
+                <td>
+                    <li><a href="http://content.orlandosentinel.com/SunshineScorecard18/">2018 edition by Orlando Sentinel</a>
+                    <li><a href="http://apps.palmbeachpost.com/SunshineScorecard17/">2017 edition by The Palm Beach Post</a>
+                </td></tr>
+            </table>
+            <br>
+            <p><i>See data and code for this project <a style="color:black !important" href="https://github.com/PalmBeachPost/SunshineScorecard" target="_blank">on GitHub</a>.</i></p>
     </div>
   </div>
 
@@ -30,13 +41,15 @@
         </p>
         <div class="navholder"><div class="navselector" style="margin-top:20px"><select name="dropdown" size="1" id="select-anchor">
                 <option value="">Choose a county</option>
-            {% for county in counties %}    <option value="{{ buildurl }}#{{ county.replace(" ", "-") }}">{{ county }} County</option>{% endfor %}
+            {% for county in counties %}    <option value="#{{ county.replace(" ", "-") }}">{{ county }} County</option>{% endfor %}
             </select></div>
          </div><br clear>
     </div>
 </div>
 
-<div class="navabout"><A HREF="#explainertext">About this project</div>
+
+
+<!--<div class="navabout"><A HREF="#explainertext">About this project</div>-->
 
 <div class="container">
     {% for county in counties %}
@@ -49,11 +62,11 @@
                     <img class="polpicpic" alt="Photo of {{ pol['title']}} {{ pol['first'] }} {{ pol['last'] }}" src="{{buildurl}}{{ url_for('static', filename="imgthumbs/" + pol['slug'] + ".jpg") }}">
                 </div>
                 <div class="col polbio">
-                    <A HREF="{{buildurl}}scorecard/{{pol['slug']}}/"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4>
+                    <A HREF="{{buildurl}}/scorecard/{{pol['slug']}}/index.html"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4>
                     <span class="biodeets">{{ pol['party'] }}-{{ pol['city']}} for District {{ pol['district']}}</span></A>
                 </div>
                 <div class="col grade">
-                    <A HREF="{{buildurl}}scorecard/{{pol['slug']}}/"><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1:] }}</span></span><br><span class="pollink">Details</span>
+                    <A HREF="{{buildurl}}/scorecard/{{pol['slug']}}/index.html"><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1:] }}</span></span><br><span class="pollink">Details</span>
                 </A></div>
             </div>
             {% endfor %}
@@ -80,7 +93,7 @@
 
 </div>
 
-<div id="footer" style="z-index:100;cursor:pointer" onclick="openNav()"><p id="nomargin" onclick="openNav()" style="cursor:pointer;text-decoration:underline">About this map
+<div id="footer" style="z-index:100;cursor:pointer" onclick="openNav()"><p id="nomargin" onclick="openNav()" style="cursor:pointer;text-decoration:underline">About this project
 </p></div>
 
 

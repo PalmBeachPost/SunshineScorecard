@@ -14,8 +14,8 @@ import uucsv
 import csv
 
 
-BUILDURL = "" #edit this back to /SunshineScorecard19/
-BASEURL = "https://content-static.naplesnews.com/projects" + BUILDURL
+BUILDURL = "/projects/SunshineScorecard19" #edit this back to /SunshineScorecard19/
+BASEURL = "https://content-static.naplesnews.com" + BUILDURL
 EDITION = "2019"
 COUNTYDICT = {}
 MASTERDICT = {}
@@ -356,7 +356,7 @@ if __name__ == '__main__':
     application.url_map.strict_slashes = False
     if (len(sys.argv) > 1) and (sys.argv[1] == "build"):
         application.config.update(FREEZER_RELATIVE_URLS=False, FREEZER_DESTINATION="../openflorida-frozen")
-        #application.config.update(FREEZER_BASE_URL=BUILDURL, FREEZER_RELATIVE_URLS=False, FREEZER_DESTINATION="..\openflorida-frozen")
+        # application.config.update(FREEZER_BASE_URL=BUILDURL, FREEZER_RELATIVE_URLS=False, FREEZER_DESTINATION="..\openflorida-frozen")
         try:
             freezer.freeze()
         except OSError:
