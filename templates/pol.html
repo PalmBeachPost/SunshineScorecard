@@ -6,47 +6,71 @@
 
 {% block content %}
 
-<p class="polspacer">&nbsp;</p>
 
 
-    <div class="container" >
-        <div class="row pol"  style="margin-top:25px;">
-            <div class="col-sm-3 polpic">
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content" style="padding-top:50px">
+        <h3 style="font-size:18px"><b>About the Scorecard</b></h3>
+        {% include 'explainertext.html' %}
+        <p><i><a style="color:black !important" href="https://github.com/PalmBeachPost/SunshineScorecard" target="_blank">See data and code for this project on GitHub</a>.</i></p>
+    </div>
+  </div>
+
+<div style="margin:auto;">
+    <div class="mobileonly" style="position:absolute;left:5vw;top:60px;" >
+        <A HREF="../{{ pol["previousslug"] }}/index.html">
+        <i class="fa fa-caret-left" style="margin-right:5px;transform:translate(0px,3px)"></i>
+        <span style="opacity:0.3">Previous</span></A>
+    </div>
+
+    <div class="mobileonly" style="position:absolute;right:5vw;top:60px;text-align:right;" >
+        <A HREF="../{{ pol["previousslug"] }}/index.html"><span style="opacity:0.3">Next</span>
+        <i class="fa fa-caret-right" style="margin-left:5px;transform:translate(0px,3px)"></i>
+        </A>
+    </div>
+
+    <div class="container" style="margin:auto;box-shadow:0px 0px 10px gray;margin-top:50px;max-width:850px" >
+        <div class="row pol justify-content-center"  style="padding-top:60px;">
+            <div class="col-sm-8">
+            <div class="polpic" style="float:left;margin-right:15px;">
                 <A HREF="{{ pol['personurl'] }}"><img class="polpicpic" alt="Photo of {{ pol['title']}} {{ pol['first'] }} {{ pol['last'] }}" src="{{'../../static/imgthumbs/'}}{{ pol['slug'] }}{{ '.jpg' }} "></A>
             </div>
-            <div class="col-sm-5 polbio">
+            <div class="polbio" style="padding:5px;margin: 0;position: absolute;top: 50%;-ms-transform: translateY(-50%);transform: translateY(-50%);left:170px;">
                 <A HREF="{{ pol['personurl'] }}"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4></A>
                 <span class="biodeets">{{ pol['party'] }}-{{ pol['city']}} for District {{ pol['district']}}<br>
                 Representing {% set lastcounty = pol['counties'].split("|")[-1] %}{% for county in pol['counties'].split("|") %}<A HREF="{{buildurl}}#{{county.replace(" ", "-")}}">{{ county }}</A>{% if lastcounty != county %}, {% endif %}{% endfor %}</span>
             </div>
+        </div>
 
         </div>
-        <div class="row pol">
+        <div class="row pol justify-content-center">
             <div class="col-sm-8 grade">
-                    <span class="basegrade grade normalweight">Overall grade: </span><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1:] }}</span></span><span class="explainertoggleholder"><span class="explainertoggle">Show explanation</span></span>
+                    <span class="basegrade grade normalweight">Overall grade: </span><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1:] }}</span></span><!--<span class="explainertoggleholder"><span class="explainertoggle">Show explanation</span></span>-->
 
                 <div class="explainertext">
                     {% include 'explainertext.html' %}
                 </div>                    
             </div>
         </div>
-        <div class="row pol">
+        <div class="row pol justify-content-center">
             <div class="col-sm-8">
-                In a standardized range of -{{ pol['potentialscore'] }} to {{ pol['potentialscore'] }} points, {{ pol['name'] }} received {{ pol['numericscore'] }} points for a grade of {{ pol['lettergrade'] }}. See explanation for more.
+                {{ pol['name'] }} could have received as low as -{{ pol['potentialscore'] }} points or as high as {{ pol['potentialscore'] }} points based on their opportunities to vote. They received {{ pol['numericscore'] }} points for a grade of {{ pol['lettergrade'] }}.<!--<span class="explainertoggleholder"><span class="explainertoggle">See explanation for more.</span></span>-->
             </div>
         </div>
         
-        <div class="row votes">
+        <div class="row votes justify-content-center" style="margin-top:35px;">
             <div class="col-sm-2 votehead">Bill No.</div>
-            <div class="col-sm-4 votehead">Description</div>
-            <div class="col-sm-2 votehead">Action</div>
+            <div class="col-sm-4 votehead descriptionhead">Description</div>
+            <div class="col-sm-2 votehead actionhead">Action</div>
             <div class="col-sm-1 votehead goright">Points</div>
+            <div class="pol-line"></div>
         </div>
 
         {% for vote in pol["votes"] %}
 
-            <div class="row votes">
-                <div class="col-sm-2 voteaction">
+            <div class="row votes justify-content-center">
+                <div class="col-sm-2 voteaction billtitle">
                     {%- if vote['vote URL'] | length > 1 -%}
                         <a href="{{ vote['vote URL'] }}" target="_blank">
                     {%- else -%}
@@ -59,15 +83,18 @@
                     {%- endif -%}
                 </A></div>
                 <div class="col-sm-4 voteaction"><A HREF="{{ vote["url"] }}" target="_blank">{{ vote['description'] }}</A></div>
-                <div class="col-sm-2 voteaction"><A HREF="{{ vote["url"] }}" target="_blank">{{ vote['vote'] }}</A></div>
-                <div class="col-sm-1 voteaction goright {% if vote['points'][0] != "-" %}positivevote {% else %}negativevote{% endif %}"><A HREF="{{ vote["url"] }}" target="_blank">
-                    {%- if vote['points'][0] != "-" %}+{%- endif -%}
+                <!--<div class="col-sm-2 voteaction"><A HREF="{{ vote["url"] }}" target="_blank">{{ vote['vote'] }}</A></div>-->
+                <div class="col-sm-2 voteaction voted">{{ vote['vote'] }}</div>
+                <!--<div class="col-sm-1 voteaction goright {% if vote['points'][0] != "-" %}positivevote {% else %}negativevote{% endif %}"><A HREF="{{ vote["url"] }}" target="_blank">-->
+                <div class="col-sm-1 voteaction goright {% if vote['points'][0] == "-" %}negativevote {% elif vote['points'][0] == "0" %}zerovote {% else %}positivevote{% endif %}">
+                    {%- if vote['points'][0] != "-" and vote['points'][0] != "0" %}+{%- endif -%}
                 
                     {{- vote['points'] -}}
-                </A></div>
+                </div>
+            <div class="pol-line"></div>
             </div>
         {% endfor %}
-        {% if pol['committeesdict'] | length > 0 %}
+        <!--{% if pol['committeesdict'] | length > 0 %}
             <br><div class="row votes">
                 <div class="col-sm-8"><b>Committees voted in:</b><br>
                     {% for cmte in pol['committeesdict'] %}
@@ -75,27 +102,42 @@
                     {% endfor %}
                 </div>
             </div>
-        {% endif %}
+        {% endif %}-->
 
+        <div style="position:fixed;left:5vw;top:50%;max-width:75px">
+            <A HREF="../{{ pol["previousslug"] }}/index.html">
+            <i class="fa fa-caret-left desktop"></i><br>
+            <span class="arrowname">{{ pol["previousname"] }}</span></A>
+        </div>
+
+        <div style="position:fixed;right:5vw;top:50%;text-align:right;max-width:75px;">
+            <A HREF="../{{ pol["previousslug"] }}/index.html">
+            <i class="fa fa-caret-right desktop"></i><br>
+            <span class="arrowname">{{ pol["nextname"] }}</span></A>
+        </div>
         
         
-        <div class="row polbottomlinks">
-            <div class="col-sm-3">
-                <A HREF="../{{ pol["previousslug"] }}/">
+        <div class="row polbottomlinks justify-content-center" style="padding-bottom:15px;">
+            <div class="col-sm-3 mobileonly">
+                <!--<A HREF="../{{ pol["previousslug"] }}/index.html">
                 <i class="fa fa-caret-left inline"></i><br>
-                {{ pol["previousname"] }}</A>
+                {{ pol["previousname"] }}</A>-->
             </div>
             <div class="col-sm-2 center">
                 <A HREF="https://content-static.naplesnews.com/projects/SunshineScorecard19/index.html"><i class="fa fa-home inline center" aria-hidden="true"></i></A>
             </div>
-            <div class="col-sm-4 right">            
-                <A HREF="../{{ pol["nextslug"] }}/">
+            <div class="col-sm-4 right mobileonly">            
+                <!--<A HREF="../{{ pol["nextslug"] }}/index.html">
                 <i class="fa fa-caret-right inline"></i><br>
-                {{ pol["nextname"] }}</A>
+                {{ pol["nextname"] }}</A>-->
             </div>
         </div>
         
     </div>
+    </div>
+
+    <div id="footer" style="z-index:100;cursor:pointer" onclick="openNav()"><p id="nomargin" onclick="openNav()" style="cursor:pointer;text-decoration:underline">About the scoring
+    </p></div>
 
 
 {% endblock content %}

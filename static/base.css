@@ -29,8 +29,8 @@ a{
 }
 
 .container{
-	margin-top:-35px !important;
-	margin:0px !important;
+	//margin-top:-35px !important;
+	margin:0px;
 }
 
 .navholder{
@@ -129,12 +129,88 @@ a{
     font-weight: 500;
 }
 
+.pol-line{
+	border-bottom: solid 1px gainsboro;
+	width:95%;
+}
+
+.arrowname{
+	display:none;
+}
+
+@media only screen and (min-width: 1150px){
+	.arrowname{
+		display:block;
+	}
+}
+
+.fa{
+	font-size: 1.5em;
+}
+
+.desktop{
+	display:none;
+}
+
+.billtitle{
+	font-weight:bold;
+}
+
+.voted{
+	font-style:italic;
+}
+
+.descriptionhead{
+	font-weight:normal;
+}
+
+.actionhead{
+	font-style:italic;
+	font-weight:normal;
+}
+
+@media only screen and (min-width: 576px){
+
+.descriptionhead{
+	font-weight:bold;
+}
+
+.actionhead{
+	font-style:normal;
+	font-weight:bold;
+}
+
+.voted{
+	font-style:normal;
+}
+
+.billtitle{
+	font-weight:normal;
+}
+
+.mobileonly{
+	display:none;
+}
+
+.desktop{
+	display:inline-block;
+}
+
 .positivevote{
     background-color: #abdda4;
 }
 
+.zerovote{
+	background-color:gainsboro;
+}
+
 .negativevote{
     background-color: lightsalmon;
+}
+.pol-line{
+	border-bottom: solid 1px gainsboro;
+	width:80%;
+}
 }
 
 .creditbox{
@@ -150,9 +226,7 @@ a{
     margin-top: 45px;
 } 
  
-.fa{
-    font-size: 2em;
-} 
+
 
 .right{
     text-align: right;
@@ -184,9 +258,9 @@ targetheight = 176 */
 }
 
 .explainertoggleholder{
-    margin-left:25px;
-    font-size: 75%;
-    position: relative;
+    //margin-left:25px;
+    //font-size: 75%;
+    //position: relative;
     color: #7777EE;
 }
 
@@ -209,7 +283,7 @@ targetheight = 176 */
 	position: fixed;
 	top: 0;
 	height: 50px;
-	background-color:black;
+	background-color:white;
 	z-index: 5000;
 	-webkit-box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
@@ -399,7 +473,7 @@ a:-webkit-any-link , .victimbox a{
 }
 
 body{
-	padding-bottom: 5em;
+	margin-bottom: 45px;
 }
 
 /* mapstuff for homepage */
@@ -1289,7 +1363,7 @@ div.logolinkythingy {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: rgb(223,224,223,0.9);
+	background-color: rgba(223,224,223,1);
 	color: grey;
 	opacity: 1;
 	text-align: right;
@@ -1308,7 +1382,7 @@ div.logolinkythingy {
 	bottom: 0;
 	left: 0;
 	margin-top:40px;
-	background-color: rgb(223,224,223,1);
+	background-color: rgba(223,224,223,1);
 	overflow-x: hidden;
 	transition: 0.5s;
   }

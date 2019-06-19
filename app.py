@@ -15,7 +15,9 @@ import csv
 
 
 BUILDURL = "/projects/SunshineScorecard19" #edit this back to /SunshineScorecard19/
+#BUILDURL = "" #edit this back to /SunshineScorecard19/
 BASEURL = "https://content-static.naplesnews.com" + BUILDURL
+#BASEURL = "localhost:8080" + BUILDURL
 EDITION = "2019"
 COUNTYDICT = {}
 MASTERDICT = {}
@@ -58,6 +60,10 @@ def index():
     global COUNTYDICT
     return render_template(template, masterdict=MASTERDICT, counties=COUNTYDICT, baseurl=BASEURL, buildurl=BUILDURL, edition=EDITION)
 
+def bill_list():
+    template = 'bill-list.html'
+    global MASTERDICT
+    return render_template(template, masterdict=MASTERDICT, baseurl=BASEURL, buildurl=BUILDURL, edition=EDITION)
 
 @application.route('/scorecard/<slug>/')
 # @flask_optimize.optimize('html')
@@ -88,11 +94,11 @@ def get_neighbors(key,sourcelist): #https://stackoverflow.com/questions/18453290
     return newlist                        
          
 def get_bracket(max, instancevalue):
-    lengthofrange = 2 * max
-    spread = lengthofrange / 15.0
+    lengthofrange = 2 * max #create full range, negative and positive
+    spread = lengthofrange / 15.0 #divide that range into 15 parts
     # print(spread)
     brackets = []
-    for i in range(0, 15):    # Get 15 results, 0-14
+    for i in range(0, 15):    # Get 15 results, 0-14 get 15 potential results
         target = 0 - max + (i * spread)
         brackets.append(target)
     brackets.append(1000.0)
@@ -106,7 +112,7 @@ def get_bracket(max, instancevalue):
             # print(str(i + 1) + ": " + str(brackets[i]))
             # print(str(instancevalue) + " instancevalue")
             # print("bracket range " + str(brackets[i]) + " to " + str(brackets[i+1]))
-            if instancevalue >= brackets[i] and instancevalue < brackets[i+1]:
+            if instancevalue >= brackets[i] and instancevalue < brackets[i+1]: #if actual score is greater than bracket score, and actual score is less than bracket score above it, then make that the bracket
                 bracketnumber = i + 1   # Show brackets as 1-15 rather than 0-14
                 # break
         if bracketnumber == sys.maxsize:
@@ -255,6 +261,7 @@ def structure_data():
         row['billnono'] = int(row['billno'][2:])
         row['description'] = billlu[row['billno']]['description']
         row['url'] = billlu[row['billno']]['url']
+        row['billno'] = row['billno'] + ": " + row['chamber'] + " Floor"
         if row["vote"] == "Y":
             row["vote"] = "Voted Yes"
         if row["vote"] == "N":

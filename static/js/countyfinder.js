@@ -18,14 +18,6 @@ function myFunction() {
     };
 
 
-    $(document).ready(function(){
-        $(document).scroll(function() {
-            var alpha = Math.min(0 + 0.4 * $(this).scrollTop() / 210, 1);
-            var channel = Math.round(alpha * 255);
-            $(".topnav").css('background-color', 'rgb(' + channel + ',' + channel + ',' + channel + ')');
-        });
-    });
-
 
     function openNav() {
         document.getElementById("myNav").style.height = "calc(100% - 40px)";

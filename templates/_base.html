@@ -17,11 +17,7 @@
 <title>{% if request.url_rule.endpoint == "scorecard" %}SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}{% else %}SunshineScorecard: Documenting Florida legislators' support for open government{% endif %}</title>
 {% endblock metatags %}
 
-{% block styles %}
-<link href="{{buildurl}}/static/base.css" rel="stylesheet"> 
-<!--was <link href="{{buildurl}}static/base.css" rel="stylesheet">-->
 
-{% endblock styles %}
 
 {% block fontawesome %}
 <script src="https://use.fontawesome.com/2b8e6f392d.js"></script>
@@ -32,6 +28,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+{% block styles %}
+<link href="{{buildurl}}/static/base.css" rel="stylesheet"> 
+<!--was <link href="{{buildurl}}static/base.css" rel="stylesheet">-->
+
+{% endblock styles %}
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> -->
 <script src="{{buildurl}}/static/js/countyfinder.js"></script>
