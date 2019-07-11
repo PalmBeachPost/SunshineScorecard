@@ -1,21 +1,21 @@
 ﻿legid,alphaname,chamber,party,numericscore,potentialscore,bracket,lettergrade,counties,committesdict
 House|Brannan,"Brannan III, Robert Charles",House,R,-6,18,6,D+,Alachua|Baker|Columbia|Hamilton|Suwannee,{'tee': 'Judiciary Committee'}
 House|Clemons,"Clemons, Sr., Charles Wesley",House,R,0,27,8,C,Alachua|Dixie|Gilchrist,{'tee': 'State Affairs Committee'}
-Senate|Perry,"Perry, Keith",Senate,R,-22,18,0,F--,Alachua|Marion|Putnam,"{'ice': 'Criminal Justice', 'nce': 'Banking and Insurance'}"
+Senate|Perry,"Perry, Keith",Senate,R,-9,12,2,F,Alachua|Marion|Putnam,"{'nce': 'Banking and Insurance', 'ice': 'Criminal Justice'}"
 "House|Watson, C.","Watson, Jr., Clovis",House,D,6,24,10,B-,Alachua|Marion,{'tee': 'State Affairs Committee'}
-Senate|Bradley,"Bradley, Rob",Senate,R,-18,18,1,F-,Baker|Bradford|Clay|Columbia|Dixie|Gilchrist|Lafayette|Levy|Marion|Suwannee|Union,"{'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Bradley,"Bradley, Rob",Senate,R,-15,15,1,F-,Baker|Bradford|Clay|Columbia|Dixie|Gilchrist|Lafayette|Levy|Marion|Suwannee|Union,{'les': 'Rules'}
 House|Drake,"Drake, Brad",House,R,-3,27,7,C-,Bay|Holmes|Jackson|Walton|Washington,{'tee': 'State Affairs Committee'}
-Senate|Gainer,"Gainer, George B.",Senate,R,-9,12,2,F,Bay|Holmes|Jackson|Okaloosa|Walton|Washington,"{'ice': 'Appropriations Subcommittee on Criminal and Civil Justice', 'ons': 'Appropriations'}"
+Senate|Gainer,"Gainer, George B.",Senate,R,-6,6,1,F-,Bay|Holmes|Jackson|Okaloosa|Walton|Washington,{}
 House|Trumbull,"Trumbull, Jay",House,R,-9,27,6,D+,Bay,{'tee': 'Appropriations Committee'}
 House|Payne,"Payne, Bobby",House,R,3,27,9,C+,Bradford|Clay|Putnam|Union,{'tee': 'State Affairs Committee'}
 House|Altman,"Altman, Thad",House,R,-6,18,6,D+,Brevard,{'tee': 'Insurance & Banking Subcommittee'}
 House|Fine,"Fine, Randy",House,R,-6,18,6,D+,Brevard,{'tee': 'Appropriations Committee'}
-Senate|Mayfield,"Mayfield, Debbie",Senate,R,-9,9,1,F-,Brevard|Indian River,{'ons': 'Appropriations'}
+Senate|Mayfield,"Mayfield, Debbie",Senate,R,-6,6,1,F-,Brevard|Indian River,{}
 House|Plasencia,"Plasencia, Rene ""Coach P""",House,R,3,30,9,C+,Brevard|Orange,{'tee': 'Appropriations Committee'}
 House|Sirois,"Sirois, Tyler I.",House,R,-13,18,3,F+,Brevard,{'tee': 'Judiciary Committee'}
 Senate|Wright,"Wright, Tom A.",Senate,R,-3,9,6,D+,Brevard|Volusia,{'ism': 'Commerce and Tourism'}
-Senate|Book,"Book, Lauren",Senate,D,-25,18,0,F--,Broward,"{'ons': 'Appropriations', 'les': 'Rules'}"
-Senate|Braynon,"Braynon, Oscar II",Senate,D,-18,18,1,F-,Broward|Miami-Dade,"{'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Book,"Book, Lauren",Senate,D,-22,15,0,F--,Broward,{'les': 'Rules'}
+Senate|Braynon,"Braynon, Oscar II",Senate,D,-15,15,1,F-,Broward|Miami-Dade,{'les': 'Rules'}
 House|DuBose,"DuBose, Bobby B.",House,D,-9,39,6,D+,Broward,{'tee': 'Appropriations Committee'}
 Senate|Farmer,"Farmer, Gary M., Jr.",Senate,D,-15,15,1,F-,Broward,{'les': 'Rules'}
 House|Geller,"Geller, Joseph",House,D,-9,21,5,D,Broward|Miami-Dade,{'tee': 'Appropriations Committee'}
@@ -30,55 +30,55 @@ House|Pritchett,"Pritchett, Sharon",House,D,0,12,8,C,Broward|Miami-Dade,{}
 Senate|Rader,"Rader, Kevin J.",Senate,D,-2,18,7,C-,Broward|Palm Beach,{'ity': 'Governmental Oversight and Accountability'}
 "House|Rodriguez, A. M.","Rodriguez, Ana Maria",House,R,3,15,10,B-,Broward|Collier|Miami-Dade,{'tee': 'Civil Justice Subcommittee'}
 House|Stark,"Stark, Richard",House,D,0,18,8,C,Broward,{'tee': 'Appropriations Committee'}
-Senate|Thurston,"Thurston, Perry E., Jr.",Senate,D,-21,21,1,F-,Broward,"{'ons': 'Appropriations', 'nce': 'Banking and Insurance', 'les': 'Rules'}"
+Senate|Thurston,"Thurston, Perry E., Jr.",Senate,D,-18,18,1,F-,Broward,"{'nce': 'Banking and Insurance', 'les': 'Rules'}"
 House|Williams,"Williams, Patricia H.",House,D,-3,15,7,C-,Broward,{'tee': 'Education Committee'}
-Senate|Montford,"Montford, Bill",Senate,D,-28,18,0,F--,Calhoun|Franklin|Gadsden|Gulf|Hamilton|Jefferson|Leon|Liberty|Madison|Taylor|Wakulla,"{'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Montford,"Montford, Bill",Senate,D,-25,15,0,F--,Calhoun|Franklin|Gadsden|Gulf|Hamilton|Jefferson|Leon|Liberty|Madison|Taylor|Wakulla,{'les': 'Rules'}
 Senate|Albritton,"Albritton, Ben",Senate,R,-12,18,3,F+,Charlotte|DeSoto|Glades|Hardee|Highlands|Lee|Okeechobee|Polk,{'ity': 'Governmental Oversight and Accountability'}
 "House|Grant, M.","Grant, Michael",House,R,0,12,8,C,Charlotte,{}
-Senate|Gruters,"Gruters, Joe",Senate,R,-3,15,7,C-,Charlotte|Sarasota,"{'ice': 'Appropriations Subcommittee on Criminal and Civil Justice', 'nce': 'Banking and Insurance', 'ism': 'Commerce and Tourism'}"
+Senate|Gruters,"Gruters, Joe",Senate,R,7,12,12,B+,Charlotte|Sarasota,"{'nce': 'Banking and Insurance', 'ism': 'Commerce and Tourism'}"
 House|Massullo,"Massullo, Ralph E.",House,R,4,18,10,B-,Citrus|Hernando,{'tee': 'Appropriations Committee'}
-Senate|Simpson,"Simpson, Wilton",Senate,R,-19,18,0,F--,Citrus|Hernando|Pasco,"{'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Simpson,"Simpson, Wilton",Senate,R,-22,15,0,F--,Citrus|Hernando|Pasco,{'les': 'Rules'}
 House|Cummings,"Cummings, W. Travis",House,R,-3,15,7,C-,Clay,{'tee': 'Appropriations Committee'}
 House|Donalds,"Donalds, Byron",House,R,-6,18,6,D+,Collier|Hendry,{'tee': 'Criminal Justice Subcommittee'}
-Senate|Passidomo,"Passidomo, Kathleen",Senate,R,-18,18,1,F-,Collier|Hendry|Lee,"{'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Passidomo,"Passidomo, Kathleen",Senate,R,-15,15,1,F-,Collier|Hendry|Lee,{'les': 'Rules'}
 House|Rommel,"Rommel, Bob",House,R,-3,21,7,C-,Collier,{'tee': 'Judiciary Committee'}
 House|Bell,"Bell, Melony M.",House,R,3,15,10,B-,DeSoto|Hardee|Polk,{'tee': 'Civil Justice Subcommittee'}
-Senate|Bean,"Bean, Aaron",Senate,R,-25,21,0,F--,Duval|Nassau,"{'ons': 'Appropriations', 'ity': 'Governmental Oversight and Accountability'}"
+Senate|Bean,"Bean, Aaron",Senate,R,-22,18,0,F--,Duval|Nassau,{'ity': 'Governmental Oversight and Accountability'}
 House|Byrd,"Byrd, Cord",House,R,-3,18,7,C-,Duval|Nassau,{'tee': 'Appropriations Committee'}
 House|Daniels,"Daniels, Kimberly",House,D,-3,27,7,C-,Duval,"{'tee': 'Oversight, Transparency & Public Management Subcommittee'}"
 House|Davis,"Davis, Tracie",House,D,0,12,8,C,Duval,{}
 House|Duggan,"Duggan, Wyman",House,R,-3,15,7,C-,Duval,{'tee': 'Insurance & Banking Subcommittee'}
 House|Fischer,"Fischer, Jason",House,R,3,27,9,C+,Duval,"{'tee': 'Oversight, Transparency & Public Management Subcommittee'}"
-Senate|Gibson,"Gibson, Audrey",Senate,D,-18,18,1,F-,Duval,"{'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Gibson,"Gibson, Audrey",Senate,D,-15,15,1,F-,Duval,{'les': 'Rules'}
 House|Yarborough,"Yarborough, Clay",House,R,-3,27,7,C-,Duval,{'tee': 'Appropriations Committee'}
 House|Andrade,"Andrade, Robert Alexander",House,R,3,27,9,C+,Escambia|Santa Rosa,"{'tee': 'Oversight, Transparency & Public Management Subcommittee'}"
-Senate|Broxson,"Broxson, Doug",Senate,R,-16,9,0,F--,Escambia|Okaloosa|Santa Rosa,{'nce': 'Banking and Insurance'}
+Senate|Broxson,"Broxson, Doug",Senate,R,-9,9,1,F-,Escambia|Okaloosa|Santa Rosa,{'nce': 'Banking and Insurance'}
 House|Hill,"Hill, Mike",House,R,-3,21,7,C-,Escambia,{'tee': 'Judiciary Committee'}
-Senate|Hutson,"Hutson, Travis",Senate,R,-9,21,5,D,Flagler|St. Johns|Volusia,"{'ons': 'Appropriations', 'les': 'Rules', 'ism': 'Commerce and Tourism'}"
+Senate|Hutson,"Hutson, Travis",Senate,R,-9,18,4,D-,Flagler|St. Johns|Volusia,"{'les': 'Rules', 'ism': 'Commerce and Tourism'}"
 House|Renner,"Renner, Paul",House,R,-9,21,5,D,Flagler|St. Johns|Volusia,{'tee': 'Appropriations Committee'}
 House|Alexander,"Alexander, Ramon",House,D,-6,18,6,D+,Gadsden|Leon,{'tee': 'Judiciary Committee'}
 House|Pigman,"Pigman, Cary",House,R,-3,39,7,C-,Glades|Highlands|Okeechobee|St. Lucie,{'tee': 'Appropriations Committee'}
 House|Ingoglia,"Ingoglia, Blaise",House,R,-6,24,6,D+,Hernando,{'tee': 'State Affairs Committee'}
 House|Beltran,"Beltran, Mike",House,R,-3,21,7,C-,Hillsborough,{'tee': 'Judiciary Committee'}
-Senate|Cruz,"Cruz, Janet",Senate,D,-13,6,0,F--,Hillsborough,{}
+Senate|Cruz,"Cruz, Janet",Senate,D,-6,6,1,F-,Hillsborough,{}
 House|Driskell,"Driskell, Fentrice",House,D,-9,21,5,D,Hillsborough,{'tee': 'Judiciary Committee'}
 Senate|Galvano,"Galvano, Bill",Senate,R,-6,6,1,F-,Hillsborough|Manatee,{}
 "House|Grant, J.","Grant, James ""J.W.""",House,R,-12,33,5,D,Hillsborough|Pinellas,{'tee': 'Judiciary Committee'}
 House|Hart,"Hart, Dianne ""Ms Dee""",House,D,6,24,10,B-,Hillsborough,{'tee': 'State Affairs Committee'}
 House|Hattersley,"Hattersley, Adam Roger",House,D,3,27,9,C+,Hillsborough,{'tee': 'State Affairs Committee'}
-Senate|Lee,"Lee, Tom",Senate,R,-18,21,2,F,Hillsborough|Pasco|Polk,"{'ons': 'Appropriations', 'nce': 'Banking and Insurance', 'les': 'Rules'}"
+Senate|Lee,"Lee, Tom",Senate,R,-15,18,2,F,Hillsborough|Pasco|Polk,"{'nce': 'Banking and Insurance', 'les': 'Rules'}"
 House|McClure,"McClure, Lawrence",House,R,0,24,8,C,Hillsborough,{'tee': 'State Affairs Committee'}
 House|Newton,"Newton, Wengay",House,D,0,24,8,C,Hillsborough|Manatee|Pinellas|Sarasota,{'tee': 'State Affairs Committee'}
-Senate|Rouson,"Rouson, Darryl Ervin",Senate,D,-22,15,0,F--,Hillsborough|Pinellas,"{'ice': 'Appropriations Subcommittee on Criminal and Civil Justice', 'ons': 'Appropriations', 'nce': 'Banking and Insurance'}"
+Senate|Rouson,"Rouson, Darryl Ervin",Senate,D,-9,9,1,F-,Hillsborough|Pinellas,{'nce': 'Banking and Insurance'}
 House|Toledo,"Toledo, Jackie",House,R,3,15,10,B-,Hillsborough,{'tee': 'Civil Justice Subcommittee'}
 House|Valdes,"Valdes, Susan L.",House,D,3,21,9,C+,Hillsborough,{'tee': 'Insurance & Banking Subcommittee'}
 House|Grall,"Grall, Erin",House,R,1,36,8,C,Indian River|St. Lucie,{'tee': 'State Affairs Committee'}
 Senate|Baxley,"Baxley, Dennis",Senate,R,-13,6,0,F--,Lake|Marion|Sumter,{}
 House|Hage,"Hage, Brett Thomas",House,R,3,15,10,B-,Lake|Marion|Sumter,{'tee': 'Commerce Committee'}
 House|Sabatini,"Sabatini, Anthony",House,R,0,18,8,C,Lake,{'tee': 'Commerce Committee'}
-Senate|Stargel,"Stargel, Kelli",Senate,R,-12,18,3,F+,Lake|Polk,"{'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Stargel,"Stargel, Kelli",Senate,R,-15,15,1,F-,Lake|Polk,{'les': 'Rules'}
 House|Sullivan,"Sullivan, Jennifer Mae",House,R,-3,15,7,C-,Lake|Orange,{'tee': 'Education Committee'}
-Senate|Benacquisto,"Benacquisto, Lizbeth",Senate,R,-18,18,1,F-,Lee,"{'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Benacquisto,"Benacquisto, Lizbeth",Senate,R,-15,15,1,F-,Lee,{'les': 'Rules'}
 House|Eagle,"Eagle, Dane",House,R,-6,18,6,D+,Lee,{'tee': 'Appropriations Committee'}
 House|Fitzenhagen,"Fitzenhagen, Heather",House,R,-6,24,6,D+,Lee,{'tee': 'Judiciary Committee'}
 House|Roach,"Roach, Spencer",House,R,-3,15,7,C-,Lee,{'tee': 'Criminal Justice Subcommittee'}
@@ -88,7 +88,7 @@ House|Stone,"Stone, Charlie",House,R,3,21,9,C+,Levy|Marion,{'tee': 'Commerce Com
 House|Gregory,"Gregory, Tommy",House,R,-3,21,7,C-,Manatee|Sarasota,{'tee': 'Judiciary Committee'}
 House|Robinson,"Robinson, Jr., William Cloud",House,R,0,18,8,C,Manatee|Sarasota,{'tee': 'Commerce Committee'}
 House|McClain,"McClain, Stan",House,R,-3,30,7,C-,Marion,{'tee': 'State Affairs Committee'}
-Senate|Harrell,"Harrell, Gayle",Senate,R,-9,9,1,F-,Martin|Palm Beach|St. Lucie,{'ice': 'Appropriations Subcommittee on Criminal and Civil Justice'}
+Senate|Harrell,"Harrell, Gayle",Senate,R,-6,6,1,F-,Martin|Palm Beach|St. Lucie,{}
 House|Magar,"Magar, MaryLynn",House,R,-3,15,7,C-,Martin|Palm Beach,{'tee': 'Appropriations Committee'}
 House|Overdorf,"Overdorf, Tobin Rogers",House,R,3,15,10,B-,Martin|St. Lucie,{'tee': 'Commerce Committee'}
 House|Aloupis,"Aloupis, Jr., Vance Arthur",House,R,-6,30,7,C-,Miami-Dade,{'tee': 'Insurance & Banking Subcommittee'}
@@ -98,28 +98,28 @@ Senate|Diaz,"Diaz, Manny, Jr.",Senate,R,-6,6,1,F-,Miami-Dade,{}
 House|Duran,"Duran, Nicholas X.",House,D,-3,15,7,C-,Miami-Dade,{'tee': 'Appropriations Committee'}
 House|Fernandez-Barquin,"Fernandez-Barquin, Juan Alfonso",House,R,-12,21,4,D-,Miami-Dade,{'tee': 'Judiciary Committee'}
 House|Fernández,"Fernández, Javier E.",House,D,-6,27,6,D+,Miami-Dade,"{'tee': 'Oversight, Transparency & Public Management Subcommittee'}"
-Senate|Flores,"Flores, Anitere",Senate,R,-24,24,1,F-,Miami-Dade|Monroe,"{'ice': 'Criminal Justice', 'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Flores,"Flores, Anitere",Senate,R,-18,18,1,F-,Miami-Dade|Monroe,"{'les': 'Rules', 'ice': 'Criminal Justice'}"
 House|Grieco,"Grieco, Michael",House,D,-3,15,7,C-,Miami-Dade,{'tee': 'Criminal Justice Subcommittee'}
 House|Joseph,"Joseph, Dotie",House,D,0,12,8,C,Miami-Dade,{}
 House|McGhee,"McGhee, Kionne L.",House,D,-3,15,7,C-,Miami-Dade,{'tee': 'Appropriations Committee'}
 House|Oliva,"Oliva, Jose R.",House,R,0,12,8,C,Miami-Dade,{}
 House|Perez,"Perez, Daniel",House,R,-6,18,6,D+,Miami-Dade,{'tee': 'Insurance & Banking Subcommittee'}
-Senate|Pizzo,"Pizzo, Jason W. B.",Senate,D,-12,12,1,F-,Miami-Dade,{'ice': 'Criminal Justice'}
+Senate|Pizzo,"Pizzo, Jason W. B.",Senate,D,-9,9,1,F-,Miami-Dade,{'ice': 'Criminal Justice'}
 House|Raschein,"Raschein, Holly",House,R,-3,27,7,C-,Miami-Dade|Monroe,{'tee': 'Appropriations Committee'}
 "House|Rodriguez, A.","Rodriguez, Anthony",House,R,0,24,8,C,Miami-Dade,{'tee': 'State Affairs Committee'}
 Senate|Rodriguez,"Rodriguez, Jose Javier",Senate,D,-5,15,6,D+,Miami-Dade,{'les': 'Rules'}
-Senate|Taddeo,"Taddeo, Annette",Senate,D,-19,12,0,F--,Miami-Dade,"{'ice': 'Appropriations Subcommittee on Criminal and Civil Justice', 'nce': 'Banking and Insurance'}"
+Senate|Taddeo,"Taddeo, Annette",Senate,D,-9,9,1,F-,Miami-Dade,{'nce': 'Banking and Insurance'}
 "House|Watson, B.","Watson, Barbara",House,D,-3,15,7,C-,Miami-Dade,{'tee': 'Appropriations Committee'}
 House|Ponder,"Ponder, Mel",House,R,0,12,8,C,Okaloosa,{}
 House|Williamson,"Williamson, Jayer",House,R,0,18,8,C,Okaloosa|Santa Rosa,{'tee': 'Appropriations Committee'}
 House|Antone,"Antone, Bruce",House,D,6,18,11,B,Orange,{'tee': 'Civil Justice Subcommittee'}
-Senate|Bracy,"Bracy, Randolph",Senate,D,-9,15,4,D-,Orange,{'ice': 'Criminal Justice'}
+Senate|Bracy,"Bracy, Randolph",Senate,D,-3,9,6,D+,Orange,{'ice': 'Criminal Justice'}
 House|Brown,"Brown, Kamia L.",House,D,0,12,8,C,Orange,{}
 House|Eskamani,"Eskamani, Anna V.",House,D,-6,24,6,D+,Orange,"{'tee': 'Oversight, Transparency & Public Management Subcommittee'}"
 House|Goff-Marcil,"Goff-Marcil, Joy",House,D,0,12,8,C,Orange|Seminole,{}
 House|Mercado,"Mercado, Amy",House,D,-6,21,6,D+,Orange,{'tee': 'Judiciary Committee'}
 "House|Smith, C.","Smith, Carlos Guillermo",House,D,3,21,9,C+,Orange,{'tee': 'Appropriations Committee'}
-Senate|Stewart,"Stewart, Linda",Senate,D,-6,12,4,D-,Orange,"{'ons': 'Appropriations', 'ism': 'Commerce and Tourism'}"
+Senate|Stewart,"Stewart, Linda",Senate,D,-3,9,6,D+,Orange,{'ism': 'Commerce and Tourism'}
 House|Thompson,"Thompson, Geraldine F.",House,D,0,15,8,C,Orange,{'tee': 'Civil Justice Subcommittee'}
 Senate|Torres,"Torres, Victor M., Jr.",Senate,D,-6,21,6,D+,Orange|Osceola,"{'ity': 'Governmental Oversight and Accountability', 'ism': 'Commerce and Tourism'}"
 "House|Cortes, J.","Cortes, John",House,D,0,12,8,C,Osceola,{}
@@ -130,7 +130,7 @@ House|Caruso,"Caruso, Michael A.",House,R,-3,15,7,C-,Palm Beach,{'tee': 'Insuran
 House|Casello,"Casello, Joseph A.",House,D,3,15,10,B-,Palm Beach,{'tee': 'Commerce Committee'}
 House|Jacquet,"Jacquet, Al",House,D,3,15,10,B-,Palm Beach,{'tee': 'Commerce Committee'}
 House|Polsky,"Polsky, Tina Scott",House,D,6,24,10,B-,Palm Beach,{'tee': 'State Affairs Committee'}
-Senate|Powell,"Powell, Bobby",Senate,D,-9,9,1,F-,Palm Beach,{'ons': 'Appropriations'}
+Senate|Powell,"Powell, Bobby",Senate,D,-6,6,1,F-,Palm Beach,{}
 House|Roth,"Roth, Rick",House,R,-3,24,7,C-,Palm Beach,{'tee': 'State Affairs Committee'}
 House|Silvers,"Silvers, David",House,D,3,15,10,B-,Palm Beach,{'tee': 'Commerce Committee'}
 House|Slosberg,"Slosberg, Emily",House,D,3,24,9,C+,Palm Beach,{'tee': 'State Affairs Committee'}
@@ -138,7 +138,7 @@ House|Willhite,"Willhite, Matt",House,D,3,15,10,B-,Palm Beach,{'tee': 'Commerce 
 Senate|Hooper,"Hooper, Ed",Senate,R,-22,18,0,F--,Pasco|Pinellas,{'ity': 'Governmental Oversight and Accountability'}
 House|Mariano,"Mariano, Amber",House,R,-3,15,7,C-,Pasco,{'tee': 'Education Committee'}
 House|Zika,"Zika, Ardian",House,R,-13,27,4,D-,Pasco,{'tee': 'State Affairs Committee'}
-Senate|Brandes,"Brandes, Jeff",Senate,R,-37,30,0,F--,Pinellas,"{'ice': 'Criminal Justice', 'ons': 'Appropriations', 'nce': 'Banking and Insurance', 'les': 'Rules'}"
+Senate|Brandes,"Brandes, Jeff",Senate,R,-18,21,2,F,Pinellas,"{'nce': 'Banking and Insurance', 'les': 'Rules', 'ice': 'Criminal Justice'}"
 House|DiCeglie,"DiCeglie, Nick",House,R,-4,27,7,C-,Pinellas,{'tee': 'State Affairs Committee'}
 House|Diamond,"Diamond, Ben",House,D,-9,27,6,D+,Pinellas,{'tee': 'Appropriations Committee'}
 House|Latvala,"Latvala, Chris",House,R,-13,30,5,D,Pinellas,{'tee': 'Appropriations Committee'}
@@ -149,7 +149,7 @@ House|Killebrew,"Killebrew, Sam H.",House,R,-6,18,6,D+,Polk,{'tee': 'Judiciary C
 House|Buchanan,"Buchanan, James",House,R,3,15,10,B-,Sarasota,{'tee': 'Commerce Committee'}
 House|Good,"Good, Margaret",House,D,-6,36,7,C-,Sarasota,{'tee': 'State Affairs Committee'}
 House|Plakon,"Plakon, Scott",House,R,-3,39,7,C-,Seminole,{'tee': 'Appropriations Committee'}
-Senate|Simmons,"Simmons, David",Senate,R,-18,18,1,F-,Seminole|Volusia,"{'ons': 'Appropriations', 'les': 'Rules'}"
+Senate|Simmons,"Simmons, David",Senate,R,-15,15,1,F-,Seminole|Volusia,{'les': 'Rules'}
 "House|Smith, D.","Smith, David",House,R,0,12,8,C,Seminole,{}
 House|Stevenson,"Stevenson, Cyndi",House,R,0,18,8,C,St. Johns,{'tee': 'Insurance & Banking Subcommittee'}
 House|Hogan Johnson,"Hogan Johnson, Delores D.",House,D,0,15,8,C,St. Lucie,{'tee': 'Education Committee'}
