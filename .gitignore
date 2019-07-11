@@ -1,2 +1,4 @@
 venv
 static/imgthumbs
+.gitignore.txt
+pip-selfcheck.json
