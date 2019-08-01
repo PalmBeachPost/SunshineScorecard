@@ -13,11 +13,10 @@ from collections import OrderedDict
 import uucsv
 import csv
 
-
 BUILDURL = "/projects/SunshineScorecard19" #edit this back to /SunshineScorecard19/
 #BUILDURL = "" #edit this back to /SunshineScorecard19/
 BASEURL = "https://content-static.naplesnews.com" + BUILDURL
-#BASEURL = "localhost:8080" + BUILDURL
+#BASEURL = "localhost:8000" + BUILDURL
 EDITION = "2019"
 COUNTYDICT = {}
 MASTERDICT = {}
@@ -33,13 +32,20 @@ IMGORIGINALPATH = "./static/imgoriginals/"
 IMGTHUMBPATH = "./static/imgthumbs/"
 TARGETWIDTH = 132
 TARGETHEIGHT = 176
+#BRACKETLU = {
+    #0: "F--",
+    #1: "F-", 2: "F", 3: "F+", 4: "D-", 5: "D", 6: "D+",
+    #7: "C-", 8: "C", 9: "C+", 10: "B-", 11: "B", 12: "B+",
+    #13: "A-", 14: "A", 15: "A+",
+    #16: "A++"
+    #}
 BRACKETLU = {
-    0: "F--",
-    1: "F-", 2: "F", 3: "F+", 4: "D-", 5: "D", 6: "D+",
-    7: "C-", 8: "C", 9: "C+", 10: "B-", 11: "B", 12: "B+",
-    13: "A-", 14: "A", 15: "A+",
-    16: "A++"
-    }
+    1: "F", 2: "D-", 3: "D", 4: "D+",
+    5: "C-", 6: "C", 7: "C+", 8: "B-", 9: "B", 10: "B+",
+    11: "A-", 12: "A", 13: "A+"
+}
+    #16: "A++"
+    #}
 
 
 application = Flask(__name__)
@@ -95,20 +101,20 @@ def get_neighbors(key,sourcelist): #https://stackoverflow.com/questions/18453290
          
 def get_bracket(max, instancevalue):
     lengthofrange = 2 * max #create full range, negative and positive
-    spread = lengthofrange / 15.0 #divide that range into 15 parts
+    spread = lengthofrange / 13.0 #divide that range into 15 parts
     # print(spread)
     brackets = []
-    for i in range(0, 15):    # Get 15 results, 0-14 get 15 potential results
+    for i in range(0, 13):    # Get 15 results, 0-14 get 15 potential results
         target = 0 - max + (i * spread)
         brackets.append(target)
     brackets.append(1000.0)
     bracketnumber = sys.maxsize
-    if instancevalue < (0 - max):         # If off the charts low, assign F--
-        bracketnumber = 0
-    elif instancevalue > max:               # If off the charts high, assign A++
-        bracketnumber = 16
+    if instancevalue < (0 - max):         # If off the charts low, assign F
+        bracketnumber = 1
+    #elif instancevalue > max:               # If off the charts high, assign A++
+        #bracketnumber = 16
     else:
-        for i in range(0, 15):
+        for i in range(0, 13):
             # print(str(i + 1) + ": " + str(brackets[i]))
             # print(str(instancevalue) + " instancevalue")
             # print("bracket range " + str(brackets[i]) + " to " + str(brackets[i+1]))
@@ -261,7 +267,14 @@ def structure_data():
         row['billnono'] = int(row['billno'][2:])
         row['description'] = billlu[row['billno']]['description']
         row['url'] = billlu[row['billno']]['url']
-        row['billno'] = row['billno'] + ": " + row['chamber'] + " Floor"
+        if (row['billno'] == 'SB186') or (row['billno'] == 'SB342') or (row['billno'] =='HB1249'):
+            row['billno'] = row['billno'] + ": " + row['chamber']
+        elif row['billno'] == 'HB7124': #weird hack to get in bill with two floor votes
+            row['billno'] = 'HB7125' + ": " + row['chamber'] + " Floor"
+        elif row['billno'] == 'HB7125' and row['chamber'] == 'House':
+            row['billno'] = 'HB7125' + ": " + row['chamber'] + " Floor (second vote)"
+        else:
+            row['billno'] = row['billno'] + ": " + row['chamber'] + " Floor"
         if row["vote"] == "Y":
             row["vote"] = "Voted Yes"
         if row["vote"] == "N":
@@ -322,6 +335,8 @@ def structure_data():
             MASTERDICT[pol["slug"]] = pol
     return
 
+#just finding legislature score total
+#print("***Total score: " + str(get_bracket(3198, -963)))
 
 @freezer.register_generator
 def generate_slugs():

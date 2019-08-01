@@ -39,7 +39,7 @@
             <div class="polbio" style="padding:5px;margin: 0;position: absolute;top: 50%;-ms-transform: translateY(-50%);transform: translateY(-50%);left:170px;">
                 <A HREF="{{ pol['personurl'] }}"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4></A>
                 <span class="biodeets">{{ pol['party'] }}-{{ pol['city']}} for District {{ pol['district']}}<br>
-                Representing {% set lastcounty = pol['counties'].split("|")[-1] %}{% for county in pol['counties'].split("|") %}<A HREF="{{buildurl}}#{{county.replace(" ", "-")}}">{{ county }}</A>{% if lastcounty != county %}, {% endif %}{% endfor %}</span>
+                Representing {% set lastcounty = pol['counties'].split("|")[-1] %}{% for county in pol['counties'].split("|") %}<A HREF="{{buildurl}}/index.html#{{county.replace(" ", "-")}}">{{ county }}</A>{% if lastcounty != county %}, {% endif %}{% endfor %}</span>
             </div>
         </div>
 
