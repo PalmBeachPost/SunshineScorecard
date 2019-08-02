@@ -13,10 +13,10 @@ from collections import OrderedDict
 import uucsv
 import csv
 
-BUILDURL = "/projects/SunshineScorecard19" #edit this back to /SunshineScorecard19/
-#BUILDURL = "" #edit this back to /SunshineScorecard19/
-BASEURL = "https://content-static.naplesnews.com" + BUILDURL
-#BASEURL = "localhost:8000" + BUILDURL
+#BUILDURL = "/projects/SunshineScorecard19" #for prod
+BUILDURL = "" #for dev
+#BASEURL = "https://content-static.naplesnews.com" + BUILDURL #for prod
+BASEURL = "localhost:8000" + BUILDURL #for dev
 EDITION = "2019"
 COUNTYDICT = {}
 MASTERDICT = {}
@@ -207,26 +207,8 @@ def structure_data():
             billlu[row['billno']] = row
            
     csvmembers = []
+    latevotes = []
     print("listofvotes size before data load: " + str(len(LISTOFVOTES)))
-    with open('autovotes2.csv', 'r', encoding='utf-8-sig') as autovotesfile:
-        autovotesreader = uucsv.UnicodeDictReader(autovotesfile)
-        sortedautovotesreader = sorted(autovotesreader)
-        autovotesreader = sortedautovotesreader[0] #to remove extra outer list, not sure where the outer list came from
-        sortedautovotesreader = None
-        
-        for row in autovotesreader: 
-            memberid = row['chamber'] + "|" + row['member']
-            row['memberid'] = memberid
-            LISTOFVOTES.append(row)            
-            csvmembers.append(memberid)
-            if memberid not in SCORESDICT:
-                SCORESDICT[memberid] = 0
-            SCORESDICT[memberid] += int(row["points"])
-            if memberid not in POTENTIALSCORESDICT:
-                POTENTIALSCORESDICT[memberid] = 0
-            POTENTIALSCORESDICT[memberid] += FLOORVOTEPOINTS    
-
-    print("listofvotes size after autovotes: " + str(len(LISTOFVOTES)))
     with open('extracredits2.csv', 'r', encoding='utf-8-sig') as extrasfile:
         extrasreader = uucsv.UnicodeDictReader(extrasfile)
         sortedextrasreader = sorted(extrasreader)
@@ -239,6 +221,9 @@ def structure_data():
 
             LISTOFVOTES.append(row)
             csvmembers.append(memberid)
+
+            if 'Late' in row['vote']:
+                latevotes.append([memberid, row['billno']])
 
             if memberid not in SCORESDICT:
                 SCORESDICT[memberid] = 0
@@ -256,7 +241,30 @@ def structure_data():
                     else:                    
                         MEMBERCOMMITTEESDICT[memberid][row['slug'][-3:]] = row['cmte name']
 
-    print("listofvotes size after extracredits: " + str(len(LISTOFVOTES)))                        
+    print("listofvotes size after extracredits: " + str(len(LISTOFVOTES)))  
+
+    with open('autovotes2.csv', 'r', encoding='utf-8-sig') as autovotesfile:
+        autovotesreader = uucsv.UnicodeDictReader(autovotesfile)
+        sortedautovotesreader = sorted(autovotesreader)
+        autovotesreader = sortedautovotesreader[0] #to remove extra outer list, not sure where the outer list came from
+        sortedautovotesreader = None
+        
+        for row in autovotesreader:
+            memberid = row['chamber'] + "|" + row['member']
+            row['memberid'] = memberid
+            #remove missed votes if replaced by late vote
+            if [memberid, row['billno']] not in latevotes:
+                LISTOFVOTES.append(row)            
+            csvmembers.append(memberid)
+            if memberid not in SCORESDICT:
+                SCORESDICT[memberid] = 0
+            SCORESDICT[memberid] += int(row["points"])
+            if memberid not in POTENTIALSCORESDICT:
+                POTENTIALSCORESDICT[memberid] = 0
+            POTENTIALSCORESDICT[memberid] += FLOORVOTEPOINTS    
+
+    print("listofvotes size after autovotes: " + str(len(LISTOFVOTES)))
+
     for memberid in SCORESDICT:
         if HIGHESTSCORE < abs(SCORESDICT[memberid]):
             HIGHESTSCORE = abs(SCORESDICT[memberid])
