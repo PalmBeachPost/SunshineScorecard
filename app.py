@@ -13,10 +13,10 @@ from collections import OrderedDict
 import uucsv
 import csv
 
-#BUILDURL = "/projects/SunshineScorecard19" #for prod
-BUILDURL = "" #for dev
-#BASEURL = "https://content-static.naplesnews.com" + BUILDURL #for prod
-BASEURL = "localhost:8000" + BUILDURL #for dev
+BUILDURL = "/projects/SunshineScorecard19" #for prod
+#BUILDURL = "" #for dev
+BASEURL = "https://content-static.naplesnews.com" + BUILDURL #for prod
+#BASEURL = "localhost:8000" + BUILDURL #for dev
 EDITION = "2019"
 COUNTYDICT = {}
 MASTERDICT = {}
