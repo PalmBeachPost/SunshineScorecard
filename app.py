@@ -344,7 +344,7 @@ def structure_data():
     return
 
 #just finding legislature score total
-#print("***Total score: " + str(get_bracket(3198, -963)))
+print("***Total score: " + str(get_bracket(3666, -1410)))
 
 @freezer.register_generator
 def generate_slugs():
