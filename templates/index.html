@@ -46,7 +46,7 @@
         </p>
         <div class="navholder"><div class="navselector" style="margin-top:20px"><select name="dropdown" size="1" id="select-anchor">
                 <option value="">Choose a county</option>
-            {% for county in counties %}    <option value="#{{ county.replace(" ", "-") }}">{{ county }} County</option>{% endfor %}
+            {% for county in counties %}    <option value="#{{ county.replace(" ", "-").replace(".", "") }}">{{ county }} County</option>{% endfor %}
             </select></div>
          </div><br clear>
     </div>
@@ -56,21 +56,21 @@
 
 <!--<div class="navabout"><A HREF="#explainertext">About this project</div>-->
 
-<div class="container">
+<div class="container" style="margin:auto !important">
     {% for county in counties %}
-        <div class="row county" style="background-color:#f8c30a;padding:0px 100px;padding-top:5px;width:80vw;margin-bottom:25px;box-shadow:0px 3px 10px #f8c30a">
-            <a class="anchor" id="{{ county.replace(" ", "-") }}"></A><h2>{{ county }} County</h2>
+        <div class="row county">
+            <a class="anchor" id="{{ county.replace(" ", "-").replace(".","") }}"></A><h2>{{ county }} County</h2>
         </div>
             {% for pol in counties[county] %}
             <div class="row pol">
-                <div class="col polpic">
-                    <img class="polpicpic" alt="Photo of {{ pol['title']}} {{ pol['first'] }} {{ pol['last'] }}" src="{{buildurl}}{{ url_for('static', filename="imgthumbs/" + pol['slug'] + ".jpg") }}">
+                <div class="col home polpic">
+                    <img class="home polpicpic" alt="Photo of {{ pol['title']}} {{ pol['first'] }} {{ pol['last'] }}" src="{{buildurl}}{{ url_for('static', filename="imgthumbs/" + pol['slug'] + ".jpg") }}">
                 </div>
-                <div class="col polbio">
+                <div class="col home polbio">
                     <A HREF="{{buildurl}}/scorecard/{{pol['slug']}}/index.html"><h4 class="polname">{{ pol['title'] }} {{ pol['name'] }}</h4>
                     <span class="biodeets">{{ pol['party'] }}-{{ pol['city']}} for District {{ pol['district']}}</span></A>
                 </div>
-                <div class="col grade">
+                <div class="col home grade">
                     <A HREF="{{buildurl}}/scorecard/{{pol['slug']}}/index.html"><span class="basegrade grade">{{ pol["lettergrade"][0]}}<span class="superscript subgrade grade">{{ pol["lettergrade"][1:] }}</span></span><br><span class="pollink">Details</span>
                 </A></div>
             </div>

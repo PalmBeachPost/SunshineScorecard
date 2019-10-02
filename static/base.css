@@ -44,7 +44,48 @@ a{
 
 
 .county{
-	margin-top: 35px;
+	margin-top: 60px;
+	background-color:white;
+	color:black;
+	padding:0px 100px;
+	width:100vw;
+	padding-top:5px;
+	margin-bottom:40px;
+	box-shadow:0px 3px 10px #f8c30a;
+	font-weight:900 !important;
+}
+
+@media only screen and (min-width: 575px) {
+	.county{
+		margin-left:22px;
+	}
+
+
+}
+
+@media only screen and (min-width: 850px) {
+	.county{
+		width:60vw;
+	}
+
+
+}
+
+@media only screen and (min-width: 995px) {
+	.county{
+		margin-left:60px;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.county{
+		margin-left:100px;
+	}
+
+
 }
 
 .pol{
@@ -81,14 +122,59 @@ a{
 	
 }
 
+
+
 .poldeets{
 	
 }
+
+@media only screen and (max-width:500px){
+	.home{
+		padding-right:0px;
+
+	}
+	.home.polpic{
+		padding-left:0px;
+		margin-left:-10px;
+
+	}
+
+	.home.polpicpic{
+		width:110px;
+		height:auto;
+		padding-left:0px;
+
+	}
+
+	.polname{
+		font-size:1.3rem !important;
+	}
+
+	.home.grade{
+		margin-right:-65px;
+		padding-left:10px;
+	}
+
+	.county{
+		padding-left:15px;
+		padding-right:10px;
+	}
+
+}
+
 
 .grade{
 /*	display: inline-block; */
 	/*vertical-align: top; */
 	align-items: center; 
+}
+
+.polgrade{
+	background-color:#EEEEEE;
+	padding:10px;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:5px;
 }
 
 .basegrade{
@@ -97,10 +183,20 @@ a{
 	
 }
 
+.basegradepol{
+	font-size:28px;
+	font-weight: 800;
+}
+
 .superscript {
 	position: relative;
 	top: -9px; 
 	left: -2px; /* 4 was too tight*/
+}
+
+.polsuper{
+	top:-3px;
+	left:0px;
 }
 
 .subgrade{
@@ -1429,7 +1525,7 @@ div.logolinkythingy {
 	}
   }
 
-  media screen and (max-width: 928px) {
+@media screen and (max-width: 928px) {
     
     .overlay-content {
   font-size:15px;
@@ -1450,6 +1546,13 @@ a:hover{
 	color:inherit;
 }
 
+@media only screen and (max-width:350px){
+	.polpage {
+		font-size:13px;
+		line-height:1.1 !important;
+	}
+
+}
 
 
 /*

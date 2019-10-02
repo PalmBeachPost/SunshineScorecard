@@ -5,11 +5,11 @@
 {% block metatags %}
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
-<meta name="description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government in {{edition}} "{% endif %} />
-<meta property="og:description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }} in {{edition}}"{% else %}"SunshineScorecard: Documenting Florida legislators' support for open government in {{edition}}"{% endif %} />
-<meta property="og:title" content="SunshineScorecard gives grades to Florida lawmakers for their support of -- and opposition to -- open government." />
-<meta property="og:image" content="{{ baseurl }}/static/sunshinescorecard-fbwide.png" />
-<meta property="og:url" content="{{ baseurl[:-1] }}{{ request.path }}" />
+<meta name="description" content={% if request.url_rule.endpoint == "scorecard" %}"Did {{ pol['title'] }} {{ pol['name'] }} support open government in Florida? Find out here."{% else %}"Sunshine Scorecard: Documenting Florida legislators' support for open government in {{edition}} "{% endif %} />
+<meta property="og:description" content={% if request.url_rule.endpoint == "scorecard" %}"SunshineScorecard for {{ pol['title'] }} {{ pol['name'] }} in {{edition}}"{% else %}"Sunshine Scorecard: Documenting Florida legislators' support for open government in {{edition}}"{% endif %} />
+<meta property="og:title" content="The Sunshine Scorecard gives grades to Florida lawmakers for their support of — and opposition to — open government." />
+<meta property="og:image" content="https://content-static.naplesnews.com/projects/static/SunshineScorecard19/fb_graphic.png" />
+<meta property="og:url" content="https://content-static.naplesnews.com/projects/SunshineScorecard19/index.html" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@ndn" />
@@ -115,5 +115,33 @@
 {% block custom_js %}
 
 {% endblock custom_js %}
+
+<!--adobe analytics-->
+<script type="text/javascript" src="http://tags.tiqcdn.com/utag/gci/naplesnews-cobrand/prod/utag.js"></script>
+<script src="https://aas.gannettdigital.com/PNDN-AAS-INTERACTIVES/jab.min.js"></script>
+
+<script type="json/pageinfo" class="pageinfo"> {
+		"origin": "Naples Daily News",
+		"share_url": "https://content-static.naplesnews.com/projects/SunshineScorecard19/index.html",
+		"byline": "Janie Haseman",
+		"headline": "Sunshine Scorecard 2019",
+		"ssts": "news/data",
+		"basePageType": "story",
+		"full_url": "https://content-static.naplesnews.com/projects/SunshineScorecard19/index.html",
+		"section_name": "news",
+		"taxonomykeywords": "mental health, kids, florida",
+		"published_date": "2019-10-02T0:00:00.000Z",
+		"topic": "open records, florida, state government",
+		"comma_ssts": "news,data",
+		"canonical": "https://content-static.naplesnews.com/projects/SunshineScorecard19/index.html",
+		"contenttype": "interactives",
+		"shortheadline": "Sunshine Scorecard 2019",
+		"texttype": "story",
+		"description": "Sunshine Scorecard 2019",
+		"seotitle": "Sunshine Scorecard 2019",
+		"ssts_byline": "news:local:custom-page"
+	} 
+</script>
+
 </body>
 </html>
